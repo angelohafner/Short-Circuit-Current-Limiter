@@ -1,0 +1,29 @@
+Generation method: built-in imagegen tool. Final image copied to this project and exported as a 1280x720 JPEG using FFmpeg.
+
+Use case: ads-marketing with an engineering-accurate circuit illustration.
+Asset: ONE finished YouTube thumbnail, landscape 16:9, ideally 2048 x 1152, opaque background.
+Image 1 is the existing thumbnail to redesign. Image 2 is the authoritative circuit-topology reference from the video.
+
+Redesign image 1 into a clear, striking circuit-based thumbnail. Retain the polished dark navy, cyan and copper visual language and huge readable English typography. REMOVE the entire PSCAD SIMULATION badge, the percentage result, all RMS-result text, and the photograph of the standalone reactor. Do not show the word PSCAD anywhere. Use a clean dark background with a very subtle engineering grid. No logos, watermarks, software names, fake graphs or explosions.
+
+Headline, exact spelling, in the upper portion: "FAULT CURRENT" in white and "LIMITER" in bright cyan. Strong condensed sans serif, very legible at small thumbnail size. Keep generous outer margins. The lower portion is dominated by ONE large luminous, crisp electrical schematic showing the actual limiter topology.
+
+Engineering invariant, use Image 2 as the circuit authority:
+INPUT -- main series reactor L -- node A -- capacitor C -- node B -- OUTPUT.
+A parallel bypass starts at node A, passes through a smaller bypass reactor L_b, then through a bidirectional thyristor valve, and rejoins node B.
+The bidirectional valve is TWO SCRs in ANTIPARALLEL (one pointing right, the other pointing left), each with its own visible gate lead, exactly as in Image 2. The small reactor L_b is in series with this antiparallel pair. The bypass is across the capacitor ONLY. The main reactor L remains upstream of both branches and is never bypassed.
+For this simplified thumbnail omit R_L, R_C and R_b, preserving every other electrical connection. Do not draw sources, ground symbols, loads, external control boxes or extra components.
+Make the main reactor a recognizable large coil symbol and the bypass reactor a smaller coil symbol. Show the capacitor as TWO parallel plates with a real break between them. Show actual SCR circuit symbols, not generic diode icons. Use distinct junction dots at node A and node B. Continuous clean orthogonal wiring, no accidental wires crossing capacitor plates, no missing connections, no third branch. Do not put the two thyristors in series with each other.
+
+Use cyan for the main line and capacitor, warm copper/orange for the bypass branch and thyristors, luminous clean strokes with restrained depth and glow. Component symbols and connectivity must remain as precise and readable as a vector engineering diagram; no decorative electricity obscuring them. This circuit is the hero, large enough to read in a 1280x720 export.
+Only additional visible text: the concise component labels "L", "C", "L_b", "T+" and "T-". The smaller reactor label should preferably render b as a subscript. No extra prose. Keep the bottom right corner clear for YouTube's duration overlay. Produce a single final thumbnail, no mockup frame.
+
+CORRECTION PASS
+
+Use case: precise-object-edit. Make ONLY this engineering-symbol correction to the supplied thumbnail. Preserve all text, layout, colors, glow, component placement and every main electrical wire.
+
+Each SCR must have exactly ONE gate lead, not two. Remove exactly the two extraneous diagonal gate strokes described below:
+1) Upper right-pointing SCR labeled T+: DELETE the extra short diagonal that rises from the cathode region toward the upper-right (approximately from image coordinates 1147,590 to 1174,561). Preserve its ONE correct gate, which runs from the cathode region DOWN and RIGHT to about 1198,650 with a small downward terminal. Preserve the vertical cathode bar and the horizontal main current path.
+2) Lower left-pointing SCR labeled T-: DELETE the extra short diagonal that descends toward the lower-left (approximately from 1113,763 to 1084,795). Preserve its ONE correct gate, which runs from the cathode region UP and LEFT toward about 1060,704 with its short upward terminal. Preserve the vertical cathode bar and the horizontal main path.
+
+The result must still be a main reactor L in series with a capacitor C, with capacitor bypass formed by L_b in series with two antiparallel SCRs. Two SCRs total, one gate per SCR. Do not add arrows, terminals or extra components. Absolutely no PSCAD text. Keep original aspect ratio and composition.

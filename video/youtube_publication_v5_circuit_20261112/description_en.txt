@@ -1,0 +1,15 @@
+Learn how a series reactor and a thyristor-protected series capacitor work together to reduce short-circuit current while keeping the normal operating voltage drop low.
+
+During normal operation, the capacitor compensates the reactor's reactance. During a fault, the thyristor bypass removes this compensation, allowing the reactor to limit fault current. The reactor remains connected throughout the sequence.
+
+In a simulated 138 kV, 60 Hz two-source network, total symmetrical RMS fault current decreased from 79.96 kA to 49.91 kA, a 37.58% reduction. The limiter acts on Source 1; Source 2 remains connected directly to the downstream bus. These results describe this simulated case and are not instantaneous peak currents.
+
+The animation follows current transfer to the bypass, natural thyristor turn-off, feeder reclosure, and the restoration of normal operation.
+
+CHAPTERS
+00:00 Normal operation and series compensation
+00:18 Fault response and thyristor bypass
+00:44 Network layout and fault-current comparison
+01:12 Fault clearing, recovery and reclosure
+
+#ElectricalEngineering #PowerSystems #PowerElectronics
