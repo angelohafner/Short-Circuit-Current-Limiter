@@ -1,0 +1,265 @@
+{
+  "frequency_Hz": 60,
+  "voltage_LL_kV": 138,
+  "discrete_channels": [
+    "Gate",
+    "Detect",
+    "Pickup",
+    "FeederOpen",
+    "FaultOpen",
+    "Recovery",
+    "Reclose",
+    "BRA",
+    "BRB",
+    "BRC",
+    "FSA",
+    "FSB",
+    "FSC",
+    "EnergyTrip"
+  ],
+  "metrics": {
+    "A": {
+      "I1_rms_kA": 39.975858326913404,
+      "I2_rms_kA": 39.984747157527465,
+      "IF_rms_kA": 79.9590286084,
+      "peak_kA": 203.55782829907,
+      "window_s": [
+        0.95,
+        1.05
+      ]
+    },
+    "B": {
+      "I1_rms_kA": 9.927221006709946,
+      "I2_rms_kA": 39.991003960095235,
+      "IF_rms_kA": 49.91348063132299,
+      "peak_kA": 128.53463688021,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1227624342913
+    },
+    "L10": {
+      "I1_rms_kA": 13.729630405843166,
+      "I2_rms_kA": 39.99013871580237,
+      "IF_rms_kA": 53.71721720882076,
+      "peak_kA": 137.93274825864,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.3062487609928
+    },
+    "L12": {
+      "I1_rms_kA": 12.15209484013598,
+      "I2_rms_kA": 39.99052995146359,
+      "IF_rms_kA": 52.139179699621224,
+      "peak_kA": 134.07862512691,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1041725415779
+    },
+    "L20": {
+      "I1_rms_kA": 8.324577417101239,
+      "I2_rms_kA": 39.99128249041026,
+      "IF_rms_kA": 48.31033109206833,
+      "peak_kA": 124.46763082752,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.6718859896475
+    },
+    "L25": {
+      "I1_rms_kA": 6.9550799588528776,
+      "I2_rms_kA": 39.99148715519531,
+      "IF_rms_kA": 46.94060163708346,
+      "peak_kA": 120.93723086676,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 3.4553103657691
+    },
+    "fixed10": {
+      "I1_rms_kA": 13.729319083618586,
+      "I2_rms_kA": 39.990141141366706,
+      "IF_rms_kA": 53.71689624781652,
+      "peak_kA": 137.97159610258,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 4.3818136002663
+    },
+    "fixed25": {
+      "I1_rms_kA": 6.955114271391197,
+      "I2_rms_kA": 39.99148188690879,
+      "IF_rms_kA": 46.94063591963296,
+      "peak_kA": 120.91006778817,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1491580237203
+    }
+  },
+  "events": {
+    "B": {
+      "detect_s": 0.50038,
+      "gate_on_s": 0.50048,
+      "first_conduction_s": 0.50049
+    },
+    "C": {
+      "detect_s": 0.50038,
+      "gate_on_s": 0.50048,
+      "first_conduction_s": 0.50049,
+      "gate_off_s": 0.65606,
+      "all_poles_open_s": 0.58994,
+      "last_SCR_off_s": 0.81890929728319,
+      "recovery_s": 0.8376,
+      "reclose_s": 1.2
+    }
+  },
+  "sensitivity": [
+    {
+      "case": "B",
+      "L_mH": 15.9,
+      "C_uF": 442.5,
+      "I1_rms_kA": 9.927221006709946,
+      "I2_rms_kA": 39.991003960095235,
+      "IF_rms_kA": 49.91348063132299,
+      "peak_kA": 128.53463688021,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1227624342913
+    },
+    {
+      "case": "L10",
+      "L_mH": 10.0,
+      "C_uF": 703.619330849568,
+      "I1_rms_kA": 13.729630405843166,
+      "I2_rms_kA": 39.99013871580237,
+      "IF_rms_kA": 53.71721720882076,
+      "peak_kA": 137.93274825864,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.3062487609928
+    },
+    {
+      "case": "L12",
+      "L_mH": 12.0,
+      "C_uF": 586.3494423746401,
+      "I1_rms_kA": 12.15209484013598,
+      "I2_rms_kA": 39.99052995146359,
+      "IF_rms_kA": 52.139179699621224,
+      "peak_kA": 134.07862512691,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1041725415779
+    },
+    {
+      "case": "L20",
+      "L_mH": 20.0,
+      "C_uF": 351.809665424784,
+      "I1_rms_kA": 8.324577417101239,
+      "I2_rms_kA": 39.99128249041026,
+      "IF_rms_kA": 48.31033109206833,
+      "peak_kA": 124.46763082752,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.6718859896475
+    },
+    {
+      "case": "L25",
+      "L_mH": 25.0,
+      "C_uF": 281.4477323398272,
+      "I1_rms_kA": 6.9550799588528776,
+      "I2_rms_kA": 39.99148715519531,
+      "IF_rms_kA": 46.94060163708346,
+      "peak_kA": 120.93723086676,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 3.4553103657691
+    },
+    {
+      "case": "fixed10",
+      "L_mH": 10,
+      "C_uF": 442.5,
+      "I1_rms_kA": 13.729319083618586,
+      "I2_rms_kA": 39.990141141366706,
+      "IF_rms_kA": 53.71689624781652,
+      "peak_kA": 137.97159610258,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 4.3818136002663
+    },
+    {
+      "case": "fixed25",
+      "L_mH": 25,
+      "C_uF": 442.5,
+      "I1_rms_kA": 6.955114271391197,
+      "I2_rms_kA": 39.99148188690879,
+      "IF_rms_kA": 46.94063591963296,
+      "peak_kA": 120.91006778817,
+      "window_s": [
+        0.95,
+        1.05
+      ],
+      "capacitor_peak_kV": 2.1491580237203
+    }
+  ],
+  "extension": {
+    "case": "recovery_extended",
+    "project_sha256": "edf729b488ae81c25e3afaa36bda870939820901cefd9a0434c9391da1f10891",
+    "start_utc": "2026-11-03T17:01:12.826867+00:00",
+    "finish_utc": "2026-11-03T17:02:00.734243+00:00",
+    "licensed": true,
+    "pscad_version": "5.1.0",
+    "fresh_outputs": true,
+    "errors": [],
+    "duration_s": 2.5,
+    "relative_result_directory": "native_results/20261103T170112_822858Z",
+    "output_sha256": {
+      "SCCL_C_Extended.inf": "20497f724486db37e2d3aa156b522b1109727c262c25b71d70f816628b2cbdd0",
+      "SCCL_C_Extended_01.out": "b6ad9044c1f8e72fad3dde464d3a965d11ebf61cd0c1afed8880fb35f015d427",
+      "SCCL_C_Extended_02.out": "80f8001fa586f2f5765f4ea1dfb28595fe86de3c2e196e8277c3e0b4a06d8331",
+      "SCCL_C_Extended_03.out": "5e3cb83bdef3dc3141b07492d3864e2fee9b7e59e58a835ecd5ac5df056bc106",
+      "SCCL_C_Extended_04.out": "90e3861ae23fd2e31168d8157e88185f5acc52b1e00ff60e3c83d4f6e92780e7",
+      "SCCL_C_Extended_05.out": "3a336208923c56feee7f632967f7388cac93eba713e4410deeda52bc3d600789",
+      "SCCL_C_Extended_06.out": "93d9dc9c4c5114c89318563505e3ad2f0e9712b3f1cee970b0d6f8bce5bd3ab8",
+      "SCCL_C_Extended_07.out": "e11aeba1d9fed1e70014a8caf826da43f332dd1787b5be8fdcb77262b5192ea4",
+      "SCCL_C_Extended_08.out": "737d7d43667e94a36c65c1863b703b08f625120415d70f68ac1135614be0dc66",
+      "SCCL_C_Extended_09.out": "0c457af9be2554f56328146f287d0311ff43b2d3d5c97022f6b04d7517b9b522",
+      "SCCL_C_Extended_10.out": "dad944d95803f07ee8b6a43a2a920a9e28a11ed53ffd3d768a8dcb5cd3e2f9ee",
+      "SCCL_C_Extended_11.out": "bad5e696593bc5f2fa8584f4854388c87dc5d0b89f7a6cc0dfc8b586383ef78a"
+    },
+    "protected_original_hashes": {
+      "pscad/SCCL_A_Without.pscx": "1e2ea2fb07263fc40c0fd940815e7b2aba8788197d5a989760bbf9d4da2920a4",
+      "pscad/SCCL_B_With.pscx": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+      "pscad/SCCL_C_Recovery.pscx": "aacca449ce15e3c8082c82e7e7710590285a3dd0354ea8ff1a15ab69561f6c1e"
+    },
+    "originals_unchanged": true,
+    "prefault_source1_rms_kA": 0.16439891478654953,
+    "settled_source1_rms_kA": 0.16452060599331988,
+    "last_window_sliding_rms_ripple_percent": 0.038343758912196546,
+    "all_SCRs_off_at_end": true
+  },
+  "waveforms": "Native EMTDC samples, unscaled; plotting retains local extrema.",
+  "signs": "I1 = IC + IV - IM; I1 + I2 = IF + ILOAD; IV includes SCR snubbers.",
+  "rms_definition": "Mean of three phase 60 Hz phasor magnitudes, least squares with DC term, 0.95 <= t < 1.05 s."
+}

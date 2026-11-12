@@ -1,0 +1,74 @@
+1
+00:00:01,156 --> 00:00:12,844
+A short circuit can unleash enormous current! Here, two sources feed
+the fault. The limiter acts on source one. Source two connects
+directly to the downstream bus.
+
+2
+00:00:14,584 --> 00:00:20,716
+In normal operation, the reactor stays in series. The capacitor
+compensates its reactance.
+
+3
+00:00:21,798 --> 00:00:30,702
+The thyristors are blocked. At sixty hertz, inductive and capacitive
+reactances nearly cancel, keeping the normal voltage drop small.
+
+4
+00:00:32,770 --> 00:00:39,130
+Now watch the fault response in slow motion. Initially, current
+flows through the capacitor.
+
+5
+00:00:39,885 --> 00:00:46,915
+Detection takes zero point three seven milliseconds. Conduction
+starts after zero point four eight milliseconds.
+
+6
+00:00:47,385 --> 00:00:57,415
+Current transfers to the bypass, removing capacitor compensation.
+The reactor now limits source one's fault contribution. It was
+connected all along!
+
+7
+00:00:59,452 --> 00:01:04,348
+Compare phase A on identical axes: red without the limiter, blue
+with it.
+
+8
+00:01:07,096 --> 00:01:13,504
+Symmetrical R M S fault current falls from seventy-nine point nine
+six to forty-nine point nine one kiloamps.
+
+9
+00:01:15,612 --> 00:01:19,188
+That's a thirty-seven point five eight percent reduction!
+
+10
+00:01:21,048 --> 00:01:26,952
+The feeder opens to clear the fault. Now watch the thyristors during
+recovery.
+
+11
+00:01:28,260 --> 00:01:34,740
+Removing gate pulses does not force turn-off. Each thyristor needs
+its own current zero.
+
+12
+00:01:35,554 --> 00:01:39,946
+Once conduction ends and recovery is ready, the feeder can reclose.
+
+13
+00:01:40,932 --> 00:01:49,068
+The magnified trace reveals a small damped transient. Current
+returns to normal, with capacitor compensation restored.
+
+14
+00:01:50,822 --> 00:01:57,278
+A larger reactor reduces fault current. These five points come from
+simulated cases.
+
+15
+00:01:58,250 --> 00:02:07,250
+The capacitor is retuned at every point for sixty hertz. Reactor
+size sets limitation; capacitor tuning sets normal compensation.

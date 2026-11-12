@@ -1,0 +1,17 @@
+Generation method: built-in image_gen tool.
+
+Use case: ads-marketing.
+Create ONE finished, premium YouTube thumbnail for a serious electrical engineering educational video about a thyristor-protected series-capacitor short-circuit current limiter (SCCL/TPSC), based on a PSCAD simulation.
+Output landscape 16:9, ideally 3840 by 2160 pixels. Opaque background.
+Creative direction: highly legible technical editorial cover, polished cinematic 3D engineering illustration paired with very bold flat typography. Deep midnight navy background, subtle grid and muted substation silhouettes; cyan, copper and restrained red accents. Professional, uncluttered, credible.
+Layout: left 58 percent contains the huge headline on two lines, clear at phone thumbnail size. Right 42 percent contains a beautifully rendered representative copper air-core power reactor, large coil with visible turns and ceramic supports, rim-lit in cyan. Behind the coil, a conceptual red large-amplitude sinusoid transitions into a smaller cyan sinusoid. These are decorative signals, not a measured graph: no axes, no numeric scales, no fake plot legends. The coil is a conceptual illustration, not a photograph of tested hardware.
+Exact visible text, and NO other text:
+Small top-left outlined label: "PSCAD SIMULATION"
+Huge headline first line, white: "FAULT CURRENT"
+Huge headline second line, cyan: "LIMITER"
+Large amber result in the lower-left: "-37.58%"
+Directly below the result, white smaller but easily readable: "SYMMETRICAL RMS"
+The result is the reduction in the simulated total symmetrical RMS fault current, not a universal equipment rating. Keep the simulation label visually associated with the result through the left-hand text block.
+Typography: clean heavy condensed sans serif, accurate spelling and decimal point, no warped letters, strong contrast, generous safe margins. Make the number a secondary focal point after the headline.
+Keep every text element within a 6 percent outer safe margin. Keep the lower-right corner quiet for the YouTube duration overlay. No people, no logos, no watermarks, no explosions, no lightning striking the coil, no unreadable microtext, no equations, no invented circuit schematic. Single thumbnail, no mockup frame.
+

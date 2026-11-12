@@ -1,0 +1,2 @@
+short circuit current limiter, fault current limiter, SCCL, FCL, TPSC, PSCAD, EMTDC, power systems, electrical engineering, power system protection, short circuit analysis, fault current limitation, series reactor, series compensation, thyristor, SCR, capacitor bypass, transient simulation, high voltage, 138 kV, symmetrical RMS, circuit breaker, power electronics, Manim, electrical animation
+

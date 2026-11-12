@@ -1,0 +1,129 @@
+{
+  "verified_utc": "2026-11-12T18:32:20.707333+00:00",
+  "video_status": "PASS",
+  "request_status": "COMPLETE",
+  "audited_movie": "output\\SCCL_TPSC_final.mp4",
+  "movie_sha256": "8d5ed9d28f9d6cb81d0e9eef798ec064c4f919ed8cda3c68802d7c7f5b31d0e2",
+  "duration_s": 128.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "frames": 3840,
+  "chapters": [
+    {
+      "id": 0,
+      "time_base": "1/15360",
+      "start": 0,
+      "start_time": "0.000000",
+      "end": 215040,
+      "end_time": "14.000000",
+      "tags": {
+        "title": "NetworkOverview"
+      }
+    },
+    {
+      "id": 1,
+      "time_base": "1/15360",
+      "start": 215040,
+      "start_time": "14.000000",
+      "end": 491520,
+      "end_time": "32.000000",
+      "tags": {
+        "title": "NormalOperation"
+      }
+    },
+    {
+      "id": 2,
+      "time_base": "1/15360",
+      "start": 491520,
+      "start_time": "32.000000",
+      "end": 890880,
+      "end_time": "58.000000",
+      "tags": {
+        "title": "FaultTransfer"
+      }
+    },
+    {
+      "id": 3,
+      "time_base": "1/15360",
+      "start": 890880,
+      "start_time": "58.000000",
+      "end": 1228800,
+      "end_time": "80.000000",
+      "tags": {
+        "title": "FaultComparison"
+      }
+    },
+    {
+      "id": 4,
+      "time_base": "1/15360",
+      "start": 1228800,
+      "start_time": "80.000000",
+      "end": 1689600,
+      "end_time": "110.000000",
+      "tags": {
+        "title": "Recovery"
+      }
+    },
+    {
+      "id": 5,
+      "time_base": "1/15360",
+      "start": 1689600,
+      "start_time": "110.000000",
+      "end": 1966080,
+      "end_time": "128.000000",
+      "tags": {
+        "title": "Sizing"
+      }
+    }
+  ],
+  "fresh_scene_renders": 6,
+  "data_and_media_checks": {
+    "passed": 47,
+    "total": 47
+  },
+  "unit_tests": {
+    "passed": 16,
+    "total": 16
+  },
+  "representative_symbol_checks": 5,
+  "original_preservation": {
+    "video\\SCCL_TPSC\\build_assets.py": true,
+    "video\\SCCL_TPSC\\data_access.py": true,
+    "video\\SCCL_TPSC\\extend_recovery.py": true,
+    "video\\SCCL_TPSC\\package_video.py": true,
+    "video\\SCCL_TPSC\\portable_test.py": true,
+    "video\\SCCL_TPSC\\prepare_data.py": true,
+    "video\\SCCL_TPSC\\render_video.py": true,
+    "video\\SCCL_TPSC\\scenes.py": true,
+    "video\\SCCL_TPSC\\source_reader.py": true,
+    "video\\SCCL_TPSC\\validate_video.py": true,
+    "video\\SCCL_TPSC\\visuals.py": true,
+    "video\\SCCL_TPSC\\output\\SCCL_TPSC_final.mp4": true,
+    "video\\SCCL_TPSC\\data\\measurements.npz": true,
+    "video\\SCCL_TPSC\\data\\metadata.json": true
+  },
+  "narration_generated": true,
+  "narration_status": "PASS",
+  "visual_review": "Original 21 samples; corrected full-film 19 samples and four focused transfer frames; full media decode passed.",
+  "new_electrical_simulation": false,
+  "source_sha256": {
+    "audition_voice.py": "d144365c7136853f83b33e6a36a5d4c279320d01b87e55d443455ac3fb35724b",
+    "build_assets.py": "ca482d877b0eb15d32362763ba5b5c21e3a07f59e50500d067a13a5b8c81d215",
+    "data_access.py": "3eaf5068e5b9de3a6f12a2ce5bdf704a41a560df95a05b07f497f8cf0204a35a",
+    "extend_recovery.py": "8bb3bbf20d4c7d8ed0d72c58c64ea0fab5792a33a5f633759a22670a201c23cb",
+    "finalize_audit.py": "42dd177e77ee78c0d709c63d57db3c828576ae8ea98cf5ea3cc986d54ec3477e",
+    "generate_narration.py": "dc46ed2370192ecc8bc42bc92de4b724e93ea1c83b4ce2b467c65333b1f5dea8",
+    "package_video.py": "b8ecdef1eeab51cbb9c7fa67f3bf776ef33aea4e037b224c6c1756ac6550a7ce",
+    "portable_test.py": "6f2f98962ac06ef27af7999faaa66e5dd96e6ee50f895fb0124bfd623b9393e4",
+    "prepare_data.py": "d48a8573d24726ac41f89cceed7701f1a5d4c5f6970df2eb297fa8f09007855a",
+    "render_video.py": "74668a41957f492d673a1fd9f8ebe04acf5c92b9e14bea631073f1458a909fe0",
+    "scenes.py": "97595567e00ca8501807c1d93084f18a7da5c5f6f6853705cf4b7e0f546a20ce",
+    "source_reader.py": "06b3394e812ccca7013d2caf72f15b3df7fa6f650200636ad736a4bf6716867e",
+    "validate_narration.py": "783984ce60c31b7bb5613c077a26118e72a82a6d19767294fb47e9b66166d107",
+    "validate_video.py": "6c89d7ad09fa8cdf892d6f01efbd4ca737eea4ea8ee9aba74c7f36bc02474333",
+    "visuals.py": "0ddc5540124867dc7578a44d4f0547894575acc9baed1f7fc5545dbbdd2ca77a"
+  }
+}

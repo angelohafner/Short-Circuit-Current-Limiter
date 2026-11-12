@@ -1,0 +1,1668 @@
+{
+  "passed": 332,
+  "total": 332,
+  "partial_analysis": false,
+  "selected_run_index_sha256": "d286cfcf1700d45ad927418f36d7cd37a7137dad1606cd6a96df169e26ef3788",
+  "checks": [
+    {
+      "name": "with_sccl: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.978596730900506e-10
+    },
+    {
+      "name": "with_sccl: internal KCL < 1 A",
+      "pass_": true,
+      "value": 4.150163710339758e-06
+    },
+    {
+      "name": "with_sccl: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.1227624342913
+    },
+    {
+      "name": "with_sccl: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0026716413986384254
+    },
+    {
+      "name": "with_sccl: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0017857932848031055
+    },
+    {
+      "name": "with_sccl: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00016481900987352915
+    },
+    {
+      "name": "recovery: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.980468566920024e-10
+    },
+    {
+      "name": "recovery: internal KCL < 1 A",
+      "pass_": true,
+      "value": 4.150163710339758e-06
+    },
+    {
+      "name": "recovery: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.4833113689691
+    },
+    {
+      "name": "recovery: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0026716413986384254
+    },
+    {
+      "name": "without_sccl: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: network KCL < 1 A",
+      "pass_": true,
+      "value": 5.945749448343918e-11
+    },
+    {
+      "name": "without_sccl: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012113346480324694
+    },
+    {
+      "name": "without_sccl: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012122611445786191
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.780364189407635e-10
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.6712611388378642e-06
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.3062487609928
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0029230926461995765
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.004568093279488927
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_0: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001918011369284045
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: network KCL < 1 A",
+      "pass_": true,
+      "value": 4.287714627793093e-11
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.904964284760871e-06
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.1041725415779
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.002566008937118351
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0032377361746105393
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_0: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00018083267796509261
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.3840928403396902e-10
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: internal KCL < 1 A",
+      "pass_": true,
+      "value": 6.592624411211823e-06
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.6718859896475
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0025575150588679593
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0010342588860901003
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_0: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001691719552887605
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.0319312071516151e-10
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: internal KCL < 1 A",
+      "pass_": true,
+      "value": 1.0311514488346183e-05
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 3.4553103657691
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0026942600575095453
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0006713588262430292
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_0: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00016241846104714242
+    },
+    {
+      "name": "baseline_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 5.945799408380026e-11
+    },
+    {
+      "name": "baseline_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012113346476994025
+    },
+    {
+      "name": "baseline_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012122611442455522
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.7803764018609058e-10
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.6091799877437253e-06
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.2509988424562
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.002616460472796254
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.004574544195379282
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001848744135446445
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 4.2875092365335377e-11
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.8336244945873203e-06
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.0728476584621
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.002211237096819411
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0032375409574791902
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001829932429364689
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.9785556526485948e-10
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: internal KCL < 1 A",
+      "pass_": true,
+      "value": 4.046456895261964e-06
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 1.9649684436831
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0023387562392867683
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0017722742660097879
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001787257473684356
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.3840545376453406e-10
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: internal KCL < 1 A",
+      "pass_": true,
+      "value": 5.985826163051224e-06
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.4248020228285
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.004268095342221621
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0010148339920856841
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001865779935106282
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.0319561871696692e-10
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: internal KCL < 1 A",
+      "pass_": true,
+      "value": 8.735727127886876e-06
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 3.2078039129478
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.00649704394631796
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0006408683646430546
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_45: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001792133958344877
+    },
+    {
+      "name": "baseline_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "baseline_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 5.945832715070765e-11
+    },
+    {
+      "name": "baseline_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012113346480324694
+    },
+    {
+      "name": "baseline_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00012122611445786191
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.7803508667313395e-10
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.481342871452271e-06
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.327427212067
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.002846662941234344
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.004570747304799561
+    },
+    {
+      "name": "sensitivity/L_10mH_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0001887368208497442
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 4.2874648276125527e-11
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.8130698514185116e-06
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.1214778952785
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0027303915981828817
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.003229532206461272
+    },
+    {
+      "name": "sensitivity/L_12mH_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00018704944900749254
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.9784751614793095e-10
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: internal KCL < 1 A",
+      "pass_": true,
+      "value": 4.016419729937191e-06
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 1.8612727497482
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.004211923948553015
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.001771048902821093
+    },
+    {
+      "name": "sensitivity/L_15.9mH_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00017523507912509118
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.3842144097608866e-10
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: internal KCL < 1 A",
+      "pass_": true,
+      "value": 6.130941621615147e-06
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.4230497121486
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.004505966604002647
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0010222437449414201
+    },
+    {
+      "name": "sensitivity/L_20mH_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00018091762209460072
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.0320372334504668e-10
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: internal KCL < 1 A",
+      "pass_": true,
+      "value": 9.173216252342864e-06
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 3.2061465396503
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.006896546994411273
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0006367034623089296
+    },
+    {
+      "name": "sensitivity/L_25mH_angle_90: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00018386816931226235
+    },
+    {
+      "name": "convergence/without_sccl_5us: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/without_sccl_5us: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/without_sccl_5us: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/without_sccl_5us: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/without_sccl_5us: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/without_sccl_5us: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.3529899423048164e-11
+    },
+    {
+      "name": "convergence/without_sccl_5us: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 3.27685525047805e-05
+    },
+    {
+      "name": "convergence/without_sccl_5us: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 3.285542425901511e-05
+    },
+    {
+      "name": "convergence/with_sccl_5us: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.7043921829440478e-11
+    },
+    {
+      "name": "convergence/with_sccl_5us: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.11112555650792e-06
+    },
+    {
+      "name": "convergence/with_sccl_5us: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.1493673373356
+    },
+    {
+      "name": "convergence/with_sccl_5us: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/with_sccl_5us: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0014164829082246866
+    },
+    {
+      "name": "convergence/with_sccl_5us: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0018938959365444319
+    },
+    {
+      "name": "convergence/with_sccl_5us: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 6.518898021390385e-05
+    },
+    {
+      "name": "convergence/recovery_5us: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: network KCL < 1 A",
+      "pass_": true,
+      "value": 1.7092272042162904e-11
+    },
+    {
+      "name": "convergence/recovery_5us: internal KCL < 1 A",
+      "pass_": true,
+      "value": 2.11112555650792e-06
+    },
+    {
+      "name": "convergence/recovery_5us: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.4833171812568
+    },
+    {
+      "name": "convergence/recovery_5us: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "convergence/recovery_5us: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0014164829082246866
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: network KCL < 1 A",
+      "pass_": true,
+      "value": 2.0558144075977225e-10
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: internal KCL < 1 A",
+      "pass_": true,
+      "value": 8.58917833059001e-06
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 4.3818136002663
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0034930012203720933
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.002300468901639263
+    },
+    {
+      "name": "fixed_C/L_10mH_C_442p5uF: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00018573574239733048
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: fresh EMTDC receipt",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: source-bound project",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: complete native output hashes",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: unchanged specified source equivalents",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: both source phase settings match case label",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: network KCL < 1 A",
+      "pass_": true,
+      "value": 2.014042266296201e-10
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: internal KCL < 1 A",
+      "pass_": true,
+      "value": 4.638704237840432e-06
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: capacitor within assumed 15 kV peak operating envelope",
+      "pass_": true,
+      "value": 2.1491580237203
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: bypass before feeder opening",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: no energy lockout",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: thyristors blocked during normal operation",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: bypass-transition energy residual below 1%",
+      "pass_": true,
+      "value": 0.0025434055375874657
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: source1 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.0011647071253673147
+    },
+    {
+      "name": "fixed_C/L_25mH_C_442p5uF: source2 phasor within 2% of circuit reference",
+      "pass_": true,
+      "value": 0.00017559195953920081
+    },
+    {
+      "name": "without_sccl: RMS within 5% of requested target",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "with_sccl: RMS within 5% of requested target",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: naturally conducting after gate removal",
+      "pass_": true,
+      "value": 161.54000000000002
+    },
+    {
+      "name": "recovery: native SCR turn-off before recovery-ready",
+      "pass_": true,
+      "value": 0.81890929728319
+    },
+    {
+      "name": "recovery: all six native SCRs remain off after reclosure",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: ready before reclosure",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: reclosure at 1.20 s",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "recovery: source1 normal transfer restored within 5%",
+      "pass_": true,
+      "value": null
+    },
+    {
+      "name": "without_sccl: 10/5 us source1_rms_kA change < 2%",
+      "pass_": true,
+      "value": 8.836501932396601e-05
+    },
+    {
+      "name": "without_sccl: 10/5 us source2_rms_kA change < 2%",
+      "pass_": true,
+      "value": 8.837079732426645e-05
+    },
+    {
+      "name": "without_sccl: 10/5 us fault_rms_kA change < 2%",
+      "pass_": true,
+      "value": 8.836756200114593e-05
+    },
+    {
+      "name": "without_sccl: 10/5 us fault_peak_kA change < 2%",
+      "pass_": true,
+      "value": 0.00013023451970184396
+    },
+    {
+      "name": "with_sccl: 10/5 us source1_rms_kA change < 2%",
+      "pass_": true,
+      "value": 0.00010810072128553116
+    },
+    {
+      "name": "with_sccl: 10/5 us source2_rms_kA change < 2%",
+      "pass_": true,
+      "value": 9.963019387271288e-05
+    },
+    {
+      "name": "with_sccl: 10/5 us fault_rms_kA change < 2%",
+      "pass_": true,
+      "value": 0.00010127619070043892
+    },
+    {
+      "name": "with_sccl: 10/5 us fault_peak_kA change < 2%",
+      "pass_": true,
+      "value": 0.0003621399969011563
+    },
+    {
+      "name": "with_sccl: 10/5 us capacitor_peak_kV change < 2%",
+      "pass_": true,
+      "value": 1.2533151432549516
+    },
+    {
+      "name": "with_sccl: 10/5 us valve_branch_peak_kA change < 2%",
+      "pass_": true,
+      "value": 0.005413994944447609
+    },
+    {
+      "name": "recovery: 10/5 us source1_rms_kA change < 2%",
+      "pass_": true,
+      "value": 0.0001210512150739973
+    },
+    {
+      "name": "recovery: 10/5 us source2_rms_kA change < 2%",
+      "pass_": true,
+      "value": 0.00011333605487440224
+    },
+    {
+      "name": "recovery: 10/5 us fault_rms_kA change < 2%",
+      "pass_": true,
+      "value": 0.00011484495110458681
+    },
+    {
+      "name": "recovery: 10/5 us fault_peak_kA change < 2%",
+      "pass_": true,
+      "value": 0.0003621399969011563
+    },
+    {
+      "name": "recovery: 10/5 us capacitor_peak_kV change < 2%",
+      "pass_": true,
+      "value": 0.0002340539238199213
+    },
+    {
+      "name": "recovery: 10/5 us valve_branch_peak_kA change < 2%",
+      "pass_": true,
+      "value": 0.005413994944447609
+    }
+  ]
+}

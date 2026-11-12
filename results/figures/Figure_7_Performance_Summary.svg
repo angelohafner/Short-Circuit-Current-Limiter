@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="457.72332pt" viewBox="0 0 684 457.72332" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-03T11:03:04.055097</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 457.72332 
+L 684 457.72332 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 7.2 120.78 
+L 348.696 120.78 
+L 348.696 95.58 
+L 7.2 95.58 
+z
+" style="fill: #17334b; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="177.948" y="110.778047" transform="rotate(-0 177.948 110.778047)">Measured quantity</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 348.696 120.78 
+L 402.264 120.78 
+L 402.264 95.58 
+L 348.696 95.58 
+z
+" style="fill: #17334b; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="375.48" y="110.778047" transform="rotate(-0 375.48 110.778047)">Unit</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 402.264 120.78 
+L 539.532 120.78 
+L 539.532 95.58 
+L 402.264 95.58 
+z
+" style="fill: #17334b; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="470.898" y="110.778047" transform="rotate(-0 470.898 110.778047)">Without SCCL</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 539.532 120.78 
+L 676.8 120.78 
+L 676.8 95.58 
+L 539.532 95.58 
+z
+" style="fill: #17334b; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="608.166" y="110.778047" transform="rotate(-0 608.166 110.778047)">With SCCL</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 7.2 145.98 
+L 348.696 145.98 
+L 348.696 120.78 
+L 7.2 120.78 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="135.978047" transform="rotate(-0 41.3496 135.978047)">Source 1 symmetrical RMS</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 348.696 145.98 
+L 402.264 145.98 
+L 402.264 120.78 
+L 348.696 120.78 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="135.978047" transform="rotate(-0 354.0528 135.978047)">kA</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 402.264 145.98 
+L 539.532 145.98 
+L 539.532 120.78 
+L 402.264 120.78 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="135.977656" transform="rotate(-0 415.9908 135.977656)">39.976</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 539.532 145.98 
+L 676.8 145.98 
+L 676.8 120.78 
+L 539.532 120.78 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="135.977656" transform="rotate(-0 553.2588 135.977656)">9.927</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 7.2 171.18 
+L 348.696 171.18 
+L 348.696 145.98 
+L 7.2 145.98 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="161.178047" transform="rotate(-0 41.3496 161.178047)">Source 2 symmetrical RMS</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 348.696 171.18 
+L 402.264 171.18 
+L 402.264 145.98 
+L 348.696 145.98 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="161.178047" transform="rotate(-0 354.0528 161.178047)">kA</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 402.264 171.18 
+L 539.532 171.18 
+L 539.532 145.98 
+L 402.264 145.98 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="161.177656" transform="rotate(-0 415.9908 161.177656)">39.985</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 539.532 171.18 
+L 676.8 171.18 
+L 676.8 145.98 
+L 539.532 145.98 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="161.177656" transform="rotate(-0 553.2588 161.177656)">39.991</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 7.2 196.38 
+L 348.696 196.38 
+L 348.696 171.18 
+L 7.2 171.18 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="186.378047" transform="rotate(-0 41.3496 186.378047)">Fault symmetrical RMS</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 348.696 196.38 
+L 402.264 196.38 
+L 402.264 171.18 
+L 348.696 171.18 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="186.378047" transform="rotate(-0 354.0528 186.378047)">kA</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 402.264 196.38 
+L 539.532 196.38 
+L 539.532 171.18 
+L 402.264 171.18 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="186.377656" transform="rotate(-0 415.9908 186.377656)">79.959</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 539.532 196.38 
+L 676.8 196.38 
+L 676.8 171.18 
+L 539.532 171.18 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="186.377656" transform="rotate(-0 553.2588 186.377656)">49.913</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 7.2 221.58 
+L 348.696 221.58 
+L 348.696 196.38 
+L 7.2 196.38 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="211.578047" transform="rotate(-0 41.3496 211.578047)">Maximum asymmetrical fault peak</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 348.696 221.58 
+L 402.264 221.58 
+L 402.264 196.38 
+L 348.696 196.38 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="211.578047" transform="rotate(-0 354.0528 211.578047)">kA</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 402.264 221.58 
+L 539.532 221.58 
+L 539.532 196.38 
+L 402.264 196.38 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="211.577656" transform="rotate(-0 415.9908 211.577656)">203.558</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 539.532 221.58 
+L 676.8 221.58 
+L 676.8 196.38 
+L 539.532 196.38 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="211.577656" transform="rotate(-0 553.2588 211.577656)">128.535</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 7.2 246.78 
+L 348.696 246.78 
+L 348.696 221.58 
+L 7.2 221.58 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="236.778047" transform="rotate(-0 41.3496 236.778047)">Total RMS reduction</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 348.696 246.78 
+L 402.264 246.78 
+L 402.264 221.58 
+L 348.696 221.58 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="236.777656" transform="rotate(-0 354.0528 236.777656)">%</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 402.264 246.78 
+L 539.532 246.78 
+L 539.532 221.58 
+L 402.264 221.58 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="236.777656" transform="rotate(-0 415.9908 236.777656)">0.000</text>
+    </g>
+    <g id="patch_25">
+     <path d="M 539.532 246.78 
+L 676.8 246.78 
+L 676.8 221.58 
+L 539.532 221.58 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="236.777656" transform="rotate(-0 553.2588 236.777656)">37.576</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 7.2 271.98 
+L 348.696 271.98 
+L 348.696 246.78 
+L 7.2 246.78 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="261.978047" transform="rotate(-0 41.3496 261.978047)">Fault detection delay</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 348.696 271.98 
+L 402.264 271.98 
+L 402.264 246.78 
+L 348.696 246.78 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="261.977656" transform="rotate(-0 354.0528 261.977656)">ms</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 402.264 271.98 
+L 539.532 271.98 
+L 539.532 246.78 
+L 402.264 246.78 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="261.978047" transform="rotate(-0 415.9908 261.978047)">Not applicable</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 539.532 271.98 
+L 676.8 271.98 
+L 676.8 246.78 
+L 539.532 246.78 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="261.977656" transform="rotate(-0 553.2588 261.977656)">0.370</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 7.2 297.18 
+L 348.696 297.18 
+L 348.696 271.98 
+L 7.2 271.98 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="287.178047" transform="rotate(-0 41.3496 287.178047)">First effective valve response</text>
+    </g>
+    <g id="patch_31">
+     <path d="M 348.696 297.18 
+L 402.264 297.18 
+L 402.264 271.98 
+L 348.696 271.98 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="287.177656" transform="rotate(-0 354.0528 287.177656)">ms</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 402.264 297.18 
+L 539.532 297.18 
+L 539.532 271.98 
+L 402.264 271.98 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="287.178047" transform="rotate(-0 415.9908 287.178047)">Not applicable</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 539.532 297.18 
+L 676.8 297.18 
+L 676.8 271.98 
+L 539.532 271.98 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="287.177656" transform="rotate(-0 553.2588 287.177656)">0.480</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 7.2 322.38 
+L 348.696 322.38 
+L 348.696 297.18 
+L 7.2 297.18 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="312.378047" transform="rotate(-0 41.3496 312.378047)">Maximum capacitor voltage</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 348.696 322.38 
+L 402.264 322.38 
+L 402.264 297.18 
+L 348.696 297.18 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="312.378047" transform="rotate(-0 354.0528 312.378047)">kV</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 402.264 322.38 
+L 539.532 322.38 
+L 539.532 297.18 
+L 402.264 297.18 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="312.378047" transform="rotate(-0 415.9908 312.378047)">Not applicable</text>
+    </g>
+    <g id="patch_37">
+     <path d="M 539.532 322.38 
+L 676.8 322.38 
+L 676.8 297.18 
+L 539.532 297.18 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="312.377656" transform="rotate(-0 553.2588 312.377656)">2.123</text>
+    </g>
+    <g id="patch_38">
+     <path d="M 7.2 347.58 
+L 348.696 347.58 
+L 348.696 322.38 
+L 7.2 322.38 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="337.578047" transform="rotate(-0 41.3496 337.578047)">Maximum reactor / interconnection current</text>
+    </g>
+    <g id="patch_39">
+     <path d="M 348.696 347.58 
+L 402.264 347.58 
+L 402.264 322.38 
+L 348.696 322.38 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="337.578047" transform="rotate(-0 354.0528 337.578047)">kA</text>
+    </g>
+    <g id="patch_40">
+     <path d="M 402.264 347.58 
+L 539.532 347.58 
+L 539.532 322.38 
+L 402.264 322.38 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="337.577656" transform="rotate(-0 415.9908 337.577656)">101.736</text>
+    </g>
+    <g id="patch_41">
+     <path d="M 539.532 347.58 
+L 676.8 347.58 
+L 676.8 322.38 
+L 539.532 322.38 
+z
+" style="fill: #eef5f7; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="337.577656" transform="rotate(-0 553.2588 337.577656)">26.457</text>
+    </g>
+    <g id="patch_42">
+     <path d="M 7.2 372.78 
+L 348.696 372.78 
+L 348.696 347.58 
+L 7.2 347.58 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_41">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="41.3496" y="362.778047" transform="rotate(-0 41.3496 362.778047)">Maximum per-phase MOV energy</text>
+    </g>
+    <g id="patch_43">
+     <path d="M 348.696 372.78 
+L 402.264 372.78 
+L 402.264 347.58 
+L 348.696 347.58 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_42">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="354.0528" y="362.778047" transform="rotate(-0 354.0528 362.778047)">kJ</text>
+    </g>
+    <g id="patch_44">
+     <path d="M 402.264 372.78 
+L 539.532 372.78 
+L 539.532 347.58 
+L 402.264 347.58 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_43">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="415.9908" y="362.778047" transform="rotate(-0 415.9908 362.778047)">Not applicable</text>
+    </g>
+    <g id="patch_45">
+     <path d="M 539.532 372.78 
+L 676.8 372.78 
+L 676.8 347.58 
+L 539.532 347.58 
+z
+" style="fill: #ffffff; stroke: #d5e0e8; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_44">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="553.2588" y="362.777656" transform="rotate(-0 553.2588 362.777656)">0.045</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_45">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17334b" x="331.2" y="20.191719" transform="rotate(-0 331.2 20.191719)">Quantitative performance | native PSCAD results</text>
+  </g>
+  <g id="text_46">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17334b" transform="translate(116.54375 435.117266)">Symmetrical RMS: 0.95–1.05 s least-squares fundamental phasor. Peaks: 0.50–1.10 s.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #17334b" transform="translate(141.032031 447.12)">Instantaneous peaks include DC offset and must not be interpreted as RMS.</text>
+  </g>
+ </g>
+</svg>

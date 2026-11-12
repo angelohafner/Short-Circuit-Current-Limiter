@@ -1,0 +1,153 @@
+SCCL / TPSC VIDEO AUDIT AND CORRECTIVE REVISION
+Date: 2026-11-12
+
+Narration completion addendum - 2026-11-12
+----------------------------------------
+The earlier synthesis blocker described below has been resolved. The complete
+English narration is now delivered in output/SCCL_TPSC_Narrated_EN.mp4, with
+the synchronized WAV and optional English captions. The existing text and
+all 15 event windows are unchanged. Voice: en-US-GuyNeural, +6%, +4 Hz.
+
+Actual synthesis succeeded for all 15 clips. Three clips used pitch-preserving
+tempo adjustment (maximum factor 1.1122); no words were trimmed. All clips fit
+their windows without overlap. The full 128-second MP4 retains 1920x1080,
+30 fps, six chapters, and the exact H.264 video payload of the silent master.
+All 46 narration checks passed, including full audiovisual decode, timed
+audible signals, hashes, optional English subtitles and loudness/peak checks.
+Measured final audio: -16.14 LUFS integrated and -1.45 dBTP true peak.
+
+The first assembly attempt exposed an FFmpeg log-parsing defect: progress
+text after the loudnorm JSON caused JSONDecodeError: Extra data. The parser
+now reads the JSON object independently of trailing log text in both the
+generator and validator. Reassembly from the saved speech clips then passed.
+This completion used automated media checks, not a subjective listening review.
+See evidence/narration_completion.json and evidence/narration_validation.json.
+
+The blocked status later in this document is historical and superseded by
+this addendum. The original study and original video remain unchanged.
+
+Scope
+-----
+Audit the existing 128-second Manim movie, apply evidenced presentation
+corrections, rerender all six chapters, and add an animated American male
+English narration. Original directory: ../SCCL_TPSC. Revision directory:
+SCCL_TPSC_Narrated_20261112. The original study and movie are preserved.
+
+The audit combines extracted full-resolution frames, source/geometry review,
+recorded native state and numerical verification, full media decode, and a
+fresh independent code review. It is not a new PSCAD simulation. Visual review
+is temporal sampling, not a claim that every rendered frame was watched.
+
+Confirmed findings and corrections
+----------------------------------
+ID   Finding / evidence                       Applied correction
+A01  FaultTransfer at 42.80 s morphs Text      Replace dissimilar glyph morphs
+     into MathTex; digits overlap during      with an immediate, stable typeset
+     the delay-caption transition.            caption and the same timed hold.
+
+A02  Recovery captions are updated after      Derive each caption from native
+     whole animation intervals. This can      gate, SCR, feeder and recovery
+     leave stale event wording. At 1.2 s       states. Distinguish a reclosure
+     simulation time, reclosure is commanded  command from physical closure.
+     but physical poles have not yet closed.  Five regression cases added.
+
+A03  NativePlot iterates [minimum, 0, max].    Deduplicate ordinate values and
+     With a zero minimum, zero is drawn       enlarge tick labels from 15 to 17.
+     twice, including recovery insets.
+
+A04  The sizing title suggests independent    State explicitly that C is retuned
+     L/C variation, while the displayed       for 60 Hz at each of the five
+     five cases retune C at each L.            simulated L values. Keep the
+                                              existing physical data unchanged.
+
+A05  Comparison headings are arranged by      Align headings at the same x
+     text widths rather than by their        positions as their numerical
+     numerical column positions.              columns; label the last Total fault.
+
+A06  Long headings, crowded captions and      Use a consistent title safe area,
+     small graph ticks reduce readability.    a fitting width, an explicit
+                                              recovery time unit and a clearer
+                                              instantaneous-versus-RMS note.
+
+A07  Strict final frame counting found one    Fit each scene to its exact frame
+     missing frame in FaultTransfer and       count before concatenation. Append
+     one in Recovery (3838 picture frames     one final hold frame to each of
+     instead of 3840). Container duration     those two scenes. Recorded data and
+     still read 128 s because of chapters.    electrical animation timing are
+                                              unchanged; chapter boundaries now
+                                              match the picture timeline exactly.
+
+Before evidence: evidence/before/*.png and contact_sheet.jpg.
+Corrected transfer evidence: evidence/after_transfer/*.png.
+Full-film after evidence: evidence/frames_SCCL_TPSC_final/.
+
+Technical checks
+----------------
+- The original numerical audit passed 42/42 electrical and provenance checks.
+- All nine source-case INF/OUT sets were found and their recorded hashes matched:
+  A, B, C, L10, L12, L20, L25, fixed10 and fixed25.
+- Mean three-phase fundamental fault RMS: 79.9590286084 kA without the limiter
+  and 49.9134806313 kA with it, over the same 0.95 <= t < 1.05 s window.
+  Displayed values remain 79.96 / 49.91 kA and 37.58% reduction.
+- No rescaling or smoothing of measured waveforms was introduced.
+- Network and internal current balance, previous-sample digital state,
+  SCR TON/TOFF conduction, gate withdrawal before natural extinction, and
+  extended recovery at 2.5 seconds remain verified by validate_video.py.
+- Five representative placed symbol instances were checked against their
+  actual vector terminal coordinates: rotated source, forward SCR, reverse
+  SCR, reactor and capacitor. Maximum terminal error was about 1.32e-8 scene
+  units, below the 1e-6 tolerance. See terminal_geometry.json. This supports
+  those placements; it is not an exhaustive automatic circuit-netlist audit.
+- Visual inspection confirms the main reactor remains in series; the protective
+  path bypasses capacitor compensation. No topology correction was required.
+- Sixteen unit tests pass, including five recovery-caption regressions, timing
+  checks rejecting overlong audio, and an FFmpeg frame-count regression that
+  failed before the frame-quantization correction and passed afterward.
+
+Earlier narration status: BLOCKED (resolved by the addendum above)
+------------------------------------------------
+The user selected an animated American male voice. A concise 234-word English
+script is prepared in 15 event-aligned windows. The intended online voice is
+en-US-GuyNeural, with +6% speech rate and +4 Hz pitch. Those are requested
+generation settings, not an assertion about a voice that has been heard.
+
+Observed environment failures:
+- Online dependency/TTS access: restricted package/network access; connection
+  through the configured 127.0.0.1:9 proxy was refused.
+- Installed David SAPI voice: HRESULT 0x80045040 (invalid registry key).
+- Diagnostic installed Zira SAPI voice: HRESULT 0x80070005 (access denied).
+- WinRT voice enumeration yielded no usable voices in this execution context.
+- Browser automation host unavailable.
+
+No proxy, security setting, registry setting or voice installation was changed.
+Empty failed diagnostic WAV files are not deliverables and are excluded from
+the package. No silent file is presented as a narrated movie.
+
+Prepared files:
+  narration/script.json              English text and event windows
+  narration/narration_en.txt         Human-readable English script
+  narration/narration_planned.srt    Planned windows, NOT measured speech timing
+  generate_narration.py              Speech, timing, loudness and mux pipeline
+  validate_narration.py              Requires genuine generated audio to pass
+  complete_narration.ps1             Local completion command with network access
+
+When speech is available, generation centers each actual clip inside its
+window, allows at most 15% pitch-preserving timing adjustment, refuses longer
+clips, normalizes to -16 LUFS / -1.5 dBTP, and retains all six chapters. Optional
+English subtitles are selectable instead of burned over the diagrams.
+The audible result, actual cue lengths, audio mix and subjective expressiveness
+still require execution and verification. The current timing unit tests do not
+certify that ungenerated speech fits, sounds natural or is enthusiastic.
+
+Rendering and release status
+----------------------------
+See evidence/release_validation.json for the final observed movie metadata,
+decode result, hashes, original-preservation result and explicit audio status.
+See evidence/independent_revision_review.txt for the fresh code review and any
+review dispositions recorded in evidence/review_resolution.txt.
+
+Speech implementation references (consulted 2026-11-12)
+------------------------------------------------------
+https://github.com/rany2/edge-tts
+https://pypi.org/project/edge-tts/  (7.3.1)
+Windows SDK sperror.h for the observed SAPI HRESULT meanings.

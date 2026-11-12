@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "unchanged_export:SCCL_TPSC_Didactic_Diagram.pdf": true,
+    "unchanged_export:SCCL_TPSC_Didactic_Diagram.png": true,
+    "unchanged_export:SCCL_TPSC_Didactic_Diagram.svg": true,
+    "input_hash_matches_exports": true,
+    "png_5400_by_5100": true,
+    "png_300_dpi": true,
+    "svg_has_vector_paths": true,
+    "svg_has_editable_text": true,
+    "svg_has_no_raster_images": true,
+    "pdf_one_page": true,
+    "pdf_no_raster_images": true,
+    "pdf_embedded_fonts": true,
+    "required_labels_and_values_present": true,
+    "no_literal_newline_escape_in_labels": true,
+    "all_component_anchors_verified_during_generation": true,
+    "native_study_unchanged:config/parameters.json": true,
+    "native_study_unchanged:results/metrics.json": true,
+    "native_study_unchanged:pscad/SCCL_A_Without.pscx": true,
+    "native_study_unchanged:pscad/SCCL_B_With.pscx": true,
+    "native_study_unchanged:pscad/SCCL_C_Recovery.pscx": true
+  },
+  "source_provenance": {
+    "config/parameters.json": "Verified unchanged",
+    "results/metrics.json": "Verified unchanged",
+    "pscad/SCCL_A_Without.pscx": "Verified unchanged",
+    "pscad/SCCL_B_With.pscx": "Verified unchanged",
+    "pscad/SCCL_C_Recovery.pscx": "Verified unchanged"
+  },
+  "pdfinfo": "Creator:         Schemdraw 0.23 and Matplotlib 3.11.2\r\nProducer:        Matplotlib pdf backend v3.11.2\r\nCreationDate:    Tue Nov  3 13:45:28 2026 E. South America Standard Time\r\nCustom Metadata: no\r\nMetadata Stream: no\r\nTagged:          no\r\nUserProperties:  no\r\nSuspects:        no\r\nForm:            none\r\nJavaScript:      no\r\nPages:           1\r\nEncrypted:       no\r\nPage size:       1296 x 1224 pts\r\nPage rot:        0\r\nFile size:       67354 bytes\r\nOptimized:       no\r\nPDF version:     1.4\r\n",
+  "pdffonts": "name                                 type              encoding         emb sub uni object ID\r\n------------------------------------ ----------------- ---------------- --- --- --- ---------\r\nEUEDNN+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\r\nHKYBFD+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     22  0\r\nCONICA+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     29  0\r\nEKJKAO+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     36  0\r\n",
+  "pdfimages": "page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio\r\n--------------------------------------------------------------------------------------------\r\n",
+  "verified_terminal_placements": 33,
+  "passed": 20,
+  "total": 20,
+  "outputs": {
+    "output/SCCL_TPSC_Didactic_Diagram.pdf": "c9378334161b8fefd70776cedc58807d73dd37503193c9f27622283a9e33795b",
+    "output/SCCL_TPSC_Didactic_Diagram.png": "2d87b54542f18f0836177f76c21a55d1b46f0d414e9f4db9fb5c47fe04ee21a5",
+    "output/SCCL_TPSC_Didactic_Diagram.svg": "d08f2cd6fb5358cd59fb2caf038eb873e1c3758385a25cd27efb5843e33dfc5f"
+  }
+}

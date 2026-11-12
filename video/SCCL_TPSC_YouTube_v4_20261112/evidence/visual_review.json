@@ -1,0 +1,25 @@
+{
+  "reviewed_utc": "2026-11-12T19:57:52.252395+00:00",
+  "method": "Assistant visual inspection of final-MP4 restored-state frame at 98 seconds and exact last frame 3059",
+  "video_sha256": "5081ca41078138211ae58ab0cb79c47a8c69366edf33a959cbd6a0e69e00e617",
+  "passed": true,
+  "observations": [
+    "Normal operation restored is visible at 98 seconds and on the final frame",
+    "Electrical time is held at 2.50000 seconds",
+    "Feeder closed and recovery ready are active; fault, gate and SCR conduction indicators are inactive",
+    "Capacitor voltage is present and magnified RMS has settled",
+    "Three-phase RMS including DC remains clearly labeled",
+    "No sizing slide follows the recovery scene"
+  ],
+  "scope": "Visual inspection of the revised closing frames; first three scene files verified unchanged from V3. Timing and complete audiovisual decoding are checked separately. No new PSCAD simulation.",
+  "inspected_frames": [
+    {
+      "path": "evidence/final_frames/frame_098.00s.png",
+      "sha256": "1cd1002ef2fc91d79293dd315cb38ce4661f2d319e0c4f3099ae5fe2c18f48f1"
+    },
+    {
+      "path": "evidence/final_frames/last_frame.png",
+      "sha256": "1075b0a77d3917c8fa79cb11b6385a104b01ca238d1d98a77959d8d9851cc5ae"
+    }
+  ]
+}

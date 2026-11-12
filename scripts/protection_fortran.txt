@@ -1,0 +1,81 @@
+#STORAGE REAL:24012 INTEGER:3
+#LOCAL INTEGER K
+#LOCAL INTEGER J
+#LOCAL INTEGER Q
+#LOCAL INTEGER N
+#LOCAL INTEGER IDX
+#LOCAL REAL X 3
+      K=NSTORF
+      Q=NSTORI
+      NSTORF=NSTORF+24012
+      NSTORI=NSTORI+3
+      IF (TIMEZERO) THEN
+        STORF(K:K+24011)=0.0
+        STORI(Q:Q+2)=0
+        STORF(K+3)=-1.0
+      ENDIF
+      N=NINT(1.0/(60.0*DELT))
+      IF (N.GT.8000) STOP 'RMS buffer limit exceeded'
+      IDX=STORI(Q+2)
+      X(1)=($I1A**2+$I1B**2+$I1C**2)/3.0
+      X(2)=($I2A**2+$I2B**2+$I2C**2)/3.0
+      X(3)=($IFA**2+$IFB**2+$IFC**2)/3.0
+      DO J=1,3
+        STORF(K+6+J)=STORF(K+6+J)+X(J)
+     +    -STORF(K+12+3*IDX+J-1)
+        STORF(K+12+3*IDX+J-1)=X(J)
+      ENDDO
+      STORI(Q+2)=MOD(IDX+1,N)
+      $RMS1=SQRT(MAX(0.0,STORF(K+7)/REAL(N)))
+      $RMS2=SQRT(MAX(0.0,STORF(K+8)/REAL(N)))
+      $RMSF=SQRT(MAX(0.0,STORF(K+9)/REAL(N)))
+      $Imax=MAX(ABS($I1A),ABS($I1B),ABS($I1C))
+      $Vmax=MAX(ABS($VCA),ABS($VCB),ABS($VCC))
+      $ValveOn=0.0
+      IF (MAX(ABS($IVA),ABS($IVB),ABS($IVC)).GT.0.001)
+     +  $ValveOn=1.0
+      $EnergyTrip=0
+      IF (MAX($EA,$EB,$EC).GT.$EnergyLimit) STORI(Q+1)=1
+      $EnergyTrip=STORI(Q+1)
+      $FaultOpen=1
+      IF (TIME.GE.$FaultTime.AND.TIME.LT.$RemoveTime)
+     +  $FaultOpen=0
+      $Pickup=0
+      IF (TIME.GT.0.15.AND.$Enabled.GT.0.5) THEN
+        IF ($Imax.GT.$PickupI.OR.$Vmax.GT.$PickupV)
+     +    $Pickup=1
+      ENDIF
+      IF ($Pickup.EQ.1.AND.STORI(Q).EQ.0) THEN
+        STORI(Q)=1
+        STORF(K+3)=TIME
+      ENDIF
+      IF ($BA.GT.1.5.AND.$BB.GT.1.5.AND.$BC.GT.1.5
+     + .AND.$Imax.LT.$RecoverI.AND.$Vmax.LT.$PickupV
+     + .AND.$EnergyTrip.EQ.0) THEN
+        STORF(K+4)=STORF(K+4)+DELT
+      ELSE
+        STORF(K+4)=0.0
+      ENDIF
+      IF (STORF(K+4).GE.$Hold) STORI(Q)=0
+      $Detect=STORI(Q)
+      $Gate=0
+      IF (STORI(Q).EQ.1.AND.TIME.GE.STORF(K+3)+$GateDelay)
+     + $Gate=1
+      $Recovery=0
+      IF ($Gate.EQ.0.AND.$ValveOn.LT.0.5.AND.
+     + $Vmax.LT.$PickupV.AND.TIME.GT.$OpenTime) THEN
+        STORF(K+5)=STORF(K+5)+DELT
+      ELSE
+        STORF(K+5)=0.0
+      ENDIF
+      IF (STORF(K+5).GT.$Hold) $Recovery=1
+      IF ($Enabled.LT.0.5) $Recovery=1
+      $FeederOpen=0
+      IF (TIME.GE.$OpenTime) $FeederOpen=1
+      $Reclose=0
+      IF (TIME.GE.$CloseTime.AND.$Recovery.EQ.1.AND.
+     + $EnergyTrip.EQ.0.AND.$FaultOpen.EQ.1) THEN
+        $FeederOpen=0
+        $Reclose=1
+      ENDIF
+      IF ($EnergyTrip.EQ.1) $FeederOpen=1

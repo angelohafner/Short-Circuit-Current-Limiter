@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-11-12T19:58:00.953710+00:00",
+  "archive": "SCCL_TPSC_YouTube_v4_20261112.zip",
+  "bytes": 151713799,
+  "sha256": "d3016da67b19126263195e0c8a2625f748183103041fa155be16ae6ab53d5dc4",
+  "crc_passed": true,
+  "payload_hashes_verified": 130,
+  "video_sha256": "5081ca41078138211ae58ab0cb79c47a8c69366edf33a959cbd6a0e69e00e617"
+}

@@ -1,0 +1,6 @@
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/NetworkOverview.mp4'
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/NormalOperation.mp4'
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/FaultTransfer_exact.mp4'
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/FaultComparison.mp4'
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/Recovery_exact.mp4'
+file 'D:/CODES/Short Circuit Current Limiter/SCCL_TPSC_Study/video/SCCL_TPSC_Narrated_20261112/media/final/videos/scenes/1080p30/Sizing.mp4'

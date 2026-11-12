@@ -1,0 +1,25 @@
+{
+  "language": "en-US",
+  "voice": "en-US-GuyNeural",
+  "direction": "Animated, engaged American male engineering explainer. Clear diction and purposeful pauses; avoid shouting.",
+  "rate": "+6%",
+  "pitch": "+4Hz",
+  "duration_s": 128.0,
+  "segments": [
+    {"id": "01_network", "window": [0.5, 13.5], "text": "A short circuit can unleash enormous current! Here, two sources feed the fault. The limiter acts on source one. Source two connects directly to the downstream bus."},
+    {"id": "02_series", "window": [14.5, 20.8], "text": "In normal operation, the reactor stays in series. The capacitor compensates its reactance."},
+    {"id": "03_compensation", "window": [21.0, 31.5], "text": "The thyristors are blocked. At sixty hertz, inductive and capacitive reactances nearly cancel, keeping the normal voltage drop small."},
+    {"id": "04_fault", "window": [32.5, 39.4], "text": "Now watch the fault response in slow motion. Initially, current flows through the capacitor."},
+    {"id": "05_delay", "window": [39.8, 47.0], "text": "Detection takes zero point three seven milliseconds. Conduction starts after zero point four eight milliseconds."},
+    {"id": "06_transfer", "window": [47.3, 57.5], "text": "Current transfers to the bypass, removing capacitor compensation. The reactor now limits source one's fault contribution. It was connected all along!"},
+    {"id": "07_compare", "window": [58.5, 65.3], "text": "Compare phase A on identical axes: red without the limiter, blue with it."},
+    {"id": "08_rms", "window": [65.6, 75.0], "text": "Symmetrical R M S fault current falls from seventy-nine point nine six to forty-nine point nine one kiloamps."},
+    {"id": "09_reduction", "window": [75.2, 79.6], "text": "That's a thirty-seven point five eight percent reduction!"},
+    {"id": "10_clear", "window": [80.5, 87.5], "text": "The feeder opens to clear the fault. Now watch the thyristors during recovery."},
+    {"id": "11_extinction", "window": [88.0, 95.0], "text": "Removing gate pulses does not force turn-off. Each thyristor needs its own current zero."},
+    {"id": "12_ready", "window": [95.4, 100.1], "text": "Once conduction ends and recovery is ready, the feeder can reclose."},
+    {"id": "13_reclose", "window": [100.5, 109.5], "text": "The magnified trace reveals a small damped transient. Current returns to normal, with capacitor compensation restored."},
+    {"id": "14_reactor", "window": [110.5, 117.6], "text": "A larger reactor reduces fault current. These five points come from simulated cases."},
+    {"id": "15_tuning", "window": [118.0, 127.5], "text": "The capacitor is retuned at every point for sixty hertz. Reactor size sets limitation; capacitor tuning sets normal compensation."}
+  ]
+}

@@ -1,0 +1,644 @@
+<Definition classid="UserCmpDefn" name="peswitch" url="" view="false" instances="0" date="0" crc="126152381" id="1150253207" group="HVDC FACTS PE">
+      <paramlist>
+        <param name="Description" value="Power electronic switch" />
+      </paramlist>
+      <form name="Power Electronic Switch" w="300" h="420" splitter="70" commentlines="4">
+        <category name="Configuration" visible="true">
+          <parameter name="Name" desc="Name for Identification" type="Text" group="" helpmode="Overwrite" allowemptystr="true">
+            <value />
+            <cond type="Enable">true</cond>
+            <help>Enter a name for identification</help>
+            <regex />
+            <error_msg />
+          </parameter>
+          <parameter type="Text" name="L" desc="Device Label (optional)" group="" helpmode="Append" allowemptystr="false">
+            <value>T</value>
+            <cond type="Enable" />
+            <help>Optional label</help>
+            <regex />
+            <error_msg />
+          </parameter>
+          <parameter type="Choice" name="Type" desc="Device Type" group="" helpmode="Overwrite" animate="false">
+            <value>1</value>
+            <cond type="Enable" />
+            <help>Select the type of power electronic device</help>
+            <choice>0 = Diode</choice>
+            <choice>1 = Thyristor</choice>
+            <choice>2 = GTO</choice>
+            <choice>3 = IGBT</choice>
+            <choice>4 = Transistor</choice>
+          </parameter>
+          <parameter type="Choice" name="SNUB" desc="Enable Snubber Circuit?" group="" helpmode="Overwrite" animate="false">
+            <value>1</value>
+            <cond type="Enable" />
+            <help>Select Yes or No to enable/disable snubber circuit</help>
+            <choice>1 = Yes</choice>
+            <choice>0 = No</choice>
+          </parameter>
+          <parameter type="Choice" name="INTR" desc="Interpolated Pulse?" group="" helpmode="Overwrite" animate="false">
+            <value>1</value>
+            <cond type="Enable">Type != 0</cond>
+            <help>Select Yes if the input pulses contain interpolation information</help>
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+          <cond>true</cond>
+        </category>
+        <category name="Main Data" visible="true">
+          <parameter type="Real" name="RON" desc="Thyristor ON  Resistance" content_type="Constant" min="0" max="1E+308" unit="ohm" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.01</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="ROFF" desc="Thyristor OFF Resistance" content_type="Constant" min="1" max="1E+308" unit="ohm" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.0E6</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="EFVD" desc="Forward Voltage Drop" content_type="Constant" min="0" max="10" unit="kV" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.0</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="EBO" desc="Forward Breakover Voltage" content_type="Constant" min="1" max="1E+308" unit="kV" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.0E5</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="Erw" desc="Reverse Withstand Voltage" content_type="Constant" min="1" max="1E+308" unit="kV" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.0E5</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="TEXT" desc="Minimum Extinction Time" content_type="Constant" min="0" max="1000" unit="us" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.0</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="RD" desc="Snubber Resistance" content_type="Constant" min="0.001" max="1E+308" unit="ohm" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>5000.0</value>
+            <cond type="Enable">(SNUB==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="CD" desc="Snubber Capacitance" content_type="Constant" min="0.001" max="1E+308" unit="uF" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.05</value>
+            <cond type="Enable">(SNUB==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Choice" name="PFB" desc="Protected against Forward Breakover?" group="" helpmode="Overwrite" animate="false">
+            <value>0</value>
+            <cond type="Enable" />
+            <help>If protected, the device will turn on before the breakdown protecting it from permanent failure</help>
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+          <cond>true</cond>
+        </category>
+        <category name="Internal Output Variables" visible="true">
+          <parameter type="Text" name="I" desc="Current in Device (snubber excluded)" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="It" desc="Total Current in Device" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="V" desc="Voltage Across the Device" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="Ton" desc="Time of Last Turn on" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="Toff" desc="Time of Last Turn off" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="Alpha" desc="Alpha in Seconds" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Text" name="Gamma" desc="Gamma in Seconds" group="" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <cond>true</cond>
+        </category>
+      </form>
+      <svg viewBox="-200 -200 200 200" size="2">
+        <port model="Natural" name="DN" x="0" y="-36" dim="1" mode="Electrical" type="Switched" internal="false">true</port>
+        <port model="Natural" name="DP" x="0" y="0" dim="1" mode="Electrical" type="Switched" internal="false">true</port>
+        <port model="Transfer" name="IPUL" x="36" y="-36" dim="2" mode="Input" type="Real" internal="false">(Type&gt;0)&amp;&amp;(INTR==1)</port>
+        <port model="Transfer" name="APUL" x="36" y="-36" dim="1" mode="Input" type="Integer" internal="false">(Type&gt;0)&amp;&amp;(INTR==0)</port>
+        <cond>true</cond>
+        <rect x="-3" y="-21" width="6" height="11" stroke="White" stroke-dasharray="none" stroke-width="0.2" fill-style="Solid" fill-fg="White" fill-bg="" />
+        <line x1="0" y1="-36" x2="0" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>Type &lt; 3</cond>
+        <line x1="-9" y1="-27" x2="9" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="-27" x2="9" y2="-9" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="9" y1="-9" x2="-9" y2="-9" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="-9" x2="0" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>true</cond>
+        <line x1="0" y1="-9" x2="0" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(SNUB==1)</cond>
+        <line x1="-15" y1="-4" x2="-15" y2="-7" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-15" y1="-7" x2="-20" y2="-10" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-20" y1="-10" x2="-9" y2="-14" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="-14" x2="-15" y2="-17" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-15" y1="-17" x2="-15" y2="-21" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="-21" x2="-20" y2="-21" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="-23" x2="-20" y2="-23" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-15" y1="-23" x2="-15" y2="-33" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-15" y1="-4" x2="0" y2="-4" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-15" y1="-33" x2="0" y2="-33" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type==2)</cond>
+        <line x1="15" y1="-36" x2="24" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type&gt;=3)</cond>
+        <line x1="13" y1="-29" x2="13" y2="-6" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="18" y1="-29" x2="18" y2="-6" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="-9" x2="13" y2="-13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="-27" x2="13" y2="-22" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="-27" x2="6" y2="-22" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="-27" x2="7" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="18" y1="-18" x2="36" y2="-18" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="36" y1="-18" x2="36" y2="-36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type&gt;0)&amp;&amp;(Type &lt; 3)</cond>
+        <line x1="0" y1="-27" x2="36" y2="-36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type &lt; 3)</cond>
+        <text x="0" y="-10" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">%L</text>
+        <cond>(Type&gt;=3)&amp;&amp;(INTR==1)</cond>
+        <text x="27" y="-30" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">2</text>
+        <cond>(Type&gt;=3)</cond>
+        <text x="0" y="-13" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">%L</text>
+        <cond>(Type&gt;0)&amp;&amp;(Type &lt; 3)&amp;&amp;(INTR==1)</cond>
+        <text x="22" y="-34" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">2</text>
+      </svg>
+      <script>
+        <segment name="Branch" id="1464933943" classid="CoreSegment">  NBR = $DP   $DN   BREAKER  $ROFF
+#IF SNUB==1
+  SNBR = $DP $DN  1.0 0.1 1.0
+#ENDIF
+</segment>
+        <segment name="Dsdyn" id="839740734" classid="CoreSegment">#STORAGE STOR:25 INTEGER:8 REAL:7 LOGICAL:2 RTCL:1 RTCI:1 RTCF:6
+#BEGIN
+      CALL PESWITCH1_CFG($TYPE2, $PFB,$RON, $ROFF,
+     + $EBO, $Erw, $EFVD, $TEXT)
+ #IF SNUB==1
+      CALL E_BRANCH_CFG($SNBR,$SS,1,0,1,$RD,0.0,$CD)
+ #ENDIF
+#ENDBEGIN
+! Power Electronic Switch Model: ~
+#CASE Type {~Diode} {~Thyristor} {~GTO} {~IGBT} {~Transistor}
+      CALL COMPONENT_ID(ICALL_NO,$#Component)
+      CALL PESWITCH1_EXE($SS,$NBR,
+#IF Type==0
+     + 1, 0.0)
+#ELSE
+ #IF Intr==0 
+     + $APUL, 0.0)
+ #ELSE
+     + NINT($IPUL(1)), $IPUL(2))
+ #ENDIF
+#ENDIF
+#OUTPUT REAL Ton   {STOR(NEXC-15)}
+#OUTPUT REAL Toff  {STOR(NEXC-14)}
+#OUTPUT REAL Alpha {STOR(NEXC)}
+#OUTPUT REAL Gamma {STOR(NEXC-2)}</segment>
+        <segment name="Dsout" id="1386257460" classid="CoreSegment">#FUNCTION REAL VBRANCH Voltage across the branch
+#OUTPUT REAL I     {$CBR:NBR}
+#OUTPUT REAL V     {VBRANCH($SS,$NBR)}
+#IF SNUB==1
+#OUTPUT REAL It    {$CBR:NBR + $CBR:SNBR}
+#ELSE
+#OUTPUT REAL It    {$CBR:NBR} 
+#ENDIF
+</segment>
+        <segment name="Computations" id="1127459782" classid="CoreSegment">#IF Type &lt; 3
+INTEGER Type2 = Type
+#ELSE
+INTEGER Type2 = 3
+#ENDIF</segment>
+        <segment classid="CoreSegment" id="9888482" name="FlyBy">Power Electronic Device</segment>
+      </script>
+      <graphics size="4">
+        <paramlist>
+          <param name="show_border" value="0" />
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="lock_style" value="3" />
+          <param name="lock_cx" value="0" />
+          <param name="lock_cy" value="0" />
+        </paramlist>
+        <Gfx classid="Graphics.Rectangle" id="430267641" x="-20" y="-23" w="11" h="2">
+          <paramlist>
+            <param name="color" value="#ffffffff" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="Black" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.PathEx" id="1697498150" x="0" y="-18" hs="1" ws="1" locked="false" w="18" h="18">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="Type &lt; 3" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="0" y="-9" />
+            <line x="9" y="9" />
+            <line x="-9" y="9" />
+            <end />
+          </sections>
+        </Gfx>
+        <Port id="60257339" classid="Port" x="0" y="-36">
+          <paramlist>
+            <param name="name" value="DN" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="3" />
+            <param name="datatype" value="0" />
+            <param name="electype" value="2" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="587058053" classid="Port" x="0" y="0">
+          <paramlist>
+            <param name="name" value="DP" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="3" />
+            <param name="datatype" value="0" />
+            <param name="electype" value="2" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="264044838" classid="Port" x="36" y="-36">
+          <paramlist>
+            <param name="name" value="IPUL" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Type&gt;0)&amp;&amp;(INTR==1)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="2" />
+          </paramlist>
+        </Port>
+        <Port id="1470369761" classid="Port" x="36" y="-36">
+          <paramlist>
+            <param name="name" value="APUL" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Type&gt;0)&amp;&amp;(INTR==0)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="2" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Gfx classid="Graphics.Rectangle" id="2094925777" x="-3" y="-21" w="6" h="11">
+          <paramlist>
+            <param name="color" value="White" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="White" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1397631752" x="0" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="677418193" x="-9" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="18" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Type &lt; 3" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="178685179" x="0" y="-9">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="387700551" x="-9" y="-21">
+          <vertex x="0" y="0" />
+          <vertex x="-11" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(SNUB==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="680275713" x="-9" y="-23">
+          <vertex x="0" y="0" />
+          <vertex x="-11" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(SNUB==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="515781168" x="15" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="9" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="820068139" x="13" y="-29">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="23" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="33457429" x="18" y="-29">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="23" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1056452158" x="0" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="13" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="813367224" x="0" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="6" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="253904398" x="0" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="7" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="658550616" x="18" y="-18">
+          <vertex x="0" y="0" />
+          <vertex x="18" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="728967899" x="36" y="-18">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-18" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="684431347" x="0" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="-9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type&gt;0)&amp;&amp;(Type &lt; 3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="1128379424" x="0" y="-10">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="(Type &lt; 3)" />
+            <param name="text" value="%L" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="43850993" x="27" y="-30">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="(Type&gt;=3)&amp;&amp;(INTR==1)" />
+            <param name="text" value="2" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="866866870" x="0" y="-13">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="text" value="%L" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="897986901" x="22" y="-34">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="(Type&gt;0)&amp;&amp;(Type &lt; 3)&amp;&amp;(INTR==1)" />
+            <param name="text" value="2" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.PathEx" id="1341698234" x="-10" y="-12" hs="1" ws="1" locked="false" w="20" h="17">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="(SNUB==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="10" y="8" />
+            <line x="-5" y="8" />
+            <line x="-5" y="5" />
+            <line x="-10" y="2" />
+            <line x="1" y="-2" />
+            <line x="-5" y="-5" />
+            <line x="-5" y="-9" />
+          </sections>
+        </Gfx>
+        <Gfx classid="Graphics.PathEx" id="548036029" x="-7" y="-28" hs="1" ws="1" locked="false" w="15" h="10">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="(SNUB==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="-8" y="5" />
+            <line x="-8" y="-5" />
+            <line x="7" y="-5" />
+          </sections>
+        </Gfx>
+        <Gfx classid="Graphics.PathEx" id="1192774777" x="0" y="-18" hs="1" ws="1" locked="false" w="18" h="18">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="Type &lt; 3" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="0" y="-9" />
+            <line x="9" y="9" />
+            <line x="-9" y="9" />
+            <end />
+          </sections>
+        </Gfx>
+        <Gfx classid="Graphics.PathEx" id="1331330576" x="7" y="-6" hs="1" ws="1" locked="false" w="13" h="13">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="(Type&gt;=3)" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="6" y="-7" />
+            <line x="-7" y="-3" />
+            <line x="-7" y="6" />
+          </sections>
+        </Gfx>
+      </graphics>
+    </Definition>
+    

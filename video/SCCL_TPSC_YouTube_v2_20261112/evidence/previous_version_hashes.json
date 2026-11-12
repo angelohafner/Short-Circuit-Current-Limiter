@@ -1,0 +1,14 @@
+{
+  "directory": "D:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\video\\SCCL_TPSC_Narrated_20261112",
+  "files": {
+    "scenes.py": "97595567e00ca8501807c1d93084f18a7da5c5f6f6853705cf4b7e0f546a20ce",
+    "visuals.py": "0ddc5540124867dc7578a44d4f0547894575acc9baed1f7fc5545dbbdd2ca77a",
+    "narration/script.json": "91912d83d047a7100e94f86c7abd5ec38628f3e9f53e85876679a0378c776458",
+    "narration/narration_en.srt": "ca3047e38e17b818d694d30b6e314142d9e6b9e68922118748ca27893930f53b",
+    "narration/narration_manifest.json": "fb0f04c298477ae11f439cd466f1f63d336d3db0e702e0033a94d5a90827c1a0",
+    "output/SCCL_TPSC_Narrated_EN.mp4": "eb8bbdbb5d1a06234caac7db80aaeccd972a7dbd6196bc8aacb49d5eb3a5a7a1",
+    "output/SCCL_TPSC_final.mp4": "8d5ed9d28f9d6cb81d0e9eef798ec064c4f919ed8cda3c68802d7c7f5b31d0e2",
+    "data/metadata.json": "fb8454d72d2cec7c6d0e005864c51dcc78b4e3e54aacfe8baabbd8272d329372",
+    "data/measurements.npz": "fcb3a5c6f4b1c90f86bcd380c6234378a303804f470d0859d2aa2b288652c0b5"
+  }
+}

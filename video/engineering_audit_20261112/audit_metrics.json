@@ -1,0 +1,248 @@
+{
+  "verified_utc": "2026-11-12T18:54:34.385871+00:00",
+  "video": "D:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\video\\SCCL_TPSC_Narrated_20261112\\output\\SCCL_TPSC_Narrated_EN.mp4",
+  "video_sha256": "eb8bbdbb5d1a06234caac7db80aaeccd972a7dbd6196bc8aacb49d5eb3a5a7a1",
+  "compact_hashes_match": {
+    "measurements.npz": true,
+    "metadata.json": true
+  },
+  "full_audio_video_decode": true,
+  "kcl_max_absolute_error_kA": {
+    "A": 5.945749448343918e-11,
+    "B": 1.978596730900506e-10,
+    "C": 1.980468566920024e-10
+  },
+  "independent_fundamental_rms": {
+    "A": {
+      "I1": {
+        "phases_kA": [
+          39.975858620181654,
+          39.97586210808551,
+          39.975854252473006
+        ],
+        "mean_kA": 39.97585832691339
+      },
+      "I2": {
+        "phases_kA": [
+          39.98474748886723,
+          39.984751463464704,
+          39.984742520250414
+        ],
+        "mean_kA": 39.984747157527444
+      },
+      "IF": {
+        "phases_kA": [
+          79.95902923320982,
+          79.95903669520897,
+          79.9590198967811
+        ],
+        "mean_kA": 79.95902860839998
+      }
+    },
+    "B": {
+      "I1": {
+        "phases_kA": [
+          9.927227329102184,
+          9.927554788801967,
+          9.92688090222567
+        ],
+        "mean_kA": 9.92722100670994
+      },
+      "I2": {
+        "phases_kA": [
+          39.99099883936575,
+          39.99098717722007,
+          39.991025863699804
+        ],
+        "mean_kA": 39.991003960095206
+      },
+      "IF": {
+        "phases_kA": [
+          49.91349154946326,
+          49.91379250027763,
+          49.91315784422799
+        ],
+        "mean_kA": 49.913480631322955
+      }
+    }
+  },
+  "reduction_percent": 37.576179325821165,
+  "reactance_ohm": {
+    "L": 5.9941587830493255,
+    "C": 5.994536462971577
+  },
+  "detection_ms": 0.3700000000000925,
+  "first_conduction_ms": 0.48000000000003595,
+  "recovery_events": {
+    "feeder_trip_command": {
+      "electrical_s": 0.58334,
+      "video_s_approx": 87.53772263358015
+    },
+    "feeder_pole_A_open": {
+      "electrical_s": 0.58698,
+      "video_s_approx": 87.79267560536321
+    },
+    "feeder_pole_B_open": {
+      "electrical_s": 0.58439,
+      "video_s_approx": 87.61126676005603
+    },
+    "feeder_pole_C_open": {
+      "electrical_s": 0.58994,
+      "video_s_approx": 88.0
+    },
+    "fault_removed_all_phases": {
+      "electrical_s": 0.62779,
+      "video_s_approx": 89.71733212341198
+    },
+    "gates_off": {
+      "electrical_s": 0.65606,
+      "video_s_approx": 91.0
+    },
+    "all_SCR_off": {
+      "electrical_s": 0.81892,
+      "video_s_approx": 95.0
+    },
+    "recovery_ready": {
+      "electrical_s": 0.8376,
+      "video_s_approx": 96.99892990904227
+    },
+    "reclose_command": {
+      "electrical_s": 1.2,
+      "video_s_approx": 100.0
+    }
+  },
+  "recovery_RMS_definition": {
+    "window_samples": 1667,
+    "window_s": 0.01667,
+    "max_error_against_native_kA": 9.857119492601846e-09,
+    "examples": [
+      {
+        "electrical_s": 0.51,
+        "aggregate_RMS_kA": 11.177591116234229,
+        "phase_A_RMS_kA": 14.140290050379214
+      },
+      {
+        "electrical_s": 0.64,
+        "aggregate_RMS_kA": 0.5700563691525332,
+        "phase_A_RMS_kA": 0.8657749432263762
+      },
+      {
+        "electrical_s": 1.2431,
+        "aggregate_RMS_kA": 0.2494813832192289,
+        "phase_A_RMS_kA": 0.26704532315207774
+      }
+    ]
+  },
+  "reclosing_transient": {
+    "RMS1_peak_kA": 0.24948138322028,
+    "RMS1_settled_mean_kA": 0.16452271379333513,
+    "overshoot_percent": 51.63947729045213
+  },
+  "clearing_narration": {
+    "id": "10_clear",
+    "text": "The feeder opens to clear the fault. Now watch the thyristors during recovery.",
+    "window": [
+      80.5,
+      87.5
+    ],
+    "start_s": 81.048,
+    "end_s": 86.952,
+    "duration_s": 5.904,
+    "tempo_factor": 1.0,
+    "source_sha256": "409ff1a48b8b97dba1cfac626f4d63937726688d8665edbd697e7a02aa9d4371"
+  },
+  "plot_extents": {
+    "fault_transfer_I1A": {
+      "min": -2.6351970008708,
+      "max": 26.456825522233,
+      "display_limits": [
+        -30,
+        30
+      ],
+      "within_axes": true
+    },
+    "fault_transfer_ICA": {
+      "min": -2.05417872267,
+      "max": 2.8217336564006,
+      "display_limits": [
+        -4,
+        4
+      ],
+      "within_axes": true
+    },
+    "fault_transfer_IVA": {
+      "min": -2.6975848854616,
+      "max": 26.90629812089,
+      "display_limits": [
+        -30,
+        30
+      ],
+      "within_axes": true
+    },
+    "fault_transfer_VCA": {
+      "min": -1.3700326823794,
+      "max": 1.843101822416,
+      "display_limits": [
+        -2.5,
+        2.5
+      ],
+      "within_axes": true
+    },
+    "recovery_IVA": {
+      "min": -9.8753193864696,
+      "max": 26.90629812089,
+      "display_limits": [
+        -30,
+        30
+      ],
+      "within_axes": true
+    },
+    "recovery_VCA": {
+      "min": -2.4833113689691,
+      "max": 2.3884494787573,
+      "display_limits": [
+        -3,
+        3
+      ],
+      "within_axes": true
+    },
+    "recovery_RMS1": {
+      "min": 9.8516609420876e-05,
+      "max": 13.273805250782,
+      "display_limits": [
+        0,
+        16
+      ],
+      "within_axes": true
+    },
+    "reclosure_detail_RMS1": {
+      "min": 0.00010638935768811,
+      "max": 0.24948138322028,
+      "display_limits": [
+        0,
+        0.3
+      ],
+      "within_axes": true
+    },
+    "comparison_A_IFA": {
+      "min": -108.31694186524,
+      "max": 203.55782829907,
+      "display_limits": [
+        -220,
+        220
+      ],
+      "within_axes": true
+    },
+    "comparison_B_IFA": {
+      "min": -65.373317272316,
+      "max": 128.53463688021,
+      "display_limits": [
+        -220,
+        220
+      ],
+      "within_axes": true
+    }
+  },
+  "frame_sampling": "32 frames at exactly 0,4,...124 s plus 17 exact-time full-resolution frames",
+  "new_simulation": false
+}

@@ -1,0 +1,480 @@
+{
+  "project": "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\pscad\\SCCL_B_With.pscx",
+  "sha256": "5ad79acb99c03582120b4f180c58abadce17c73769bd1c7f1474ccd5cf8fa32a",
+  "licensed": true,
+  "version": "5.1.0",
+  "parameters": {
+    "frequency_Hz": 60.0,
+    "source_LL_kV": 138.0,
+    "source_R_ohm": 0.1325,
+    "source_L_H": 0.005272,
+    "source_ramp_s": 0.05,
+    "interconnection_R_ohm": 0.001,
+    "interconnection_L_H": 1e-06,
+    "reactor_L_H": 0.0159,
+    "reactor_R_ohm": 0.1,
+    "capacitor_C_uF": 442.5,
+    "capacitor_ESR_ohm": 0.002,
+    "bypass_L_H": 0.0001,
+    "bypass_R_ohm": 0.05,
+    "SCR_Ron_ohm": 0.002,
+    "SCR_Roff_ohm": 1000000000.0,
+    "SCR_forward_drop_kV": 0.02,
+    "SCR_withstand_kV": 100.0,
+    "SCR_extinction_us": 100.0,
+    "SCR_snubber_R_ohm": 1000.0,
+    "SCR_snubber_C_uF": 0.02,
+    "MOV_rating_kV": 15.0,
+    "MOV_parallel_stacks": 1.0,
+    "pickup_current_kA": 2.0,
+    "pickup_capacitor_kV": 18.0,
+    "MOV_energy_interlock_kJ": 5000.0,
+    "gate_delay_s": 0.0001,
+    "recovery_current_kA": 0.8,
+    "recovery_hold_s": 0.02,
+    "load_MW": 75.0,
+    "load_pf": 0.95,
+    "feeder_Ron_ohm": 0.0001,
+    "fault_R_ohm": 0.005,
+    "fault_time_s": 0.5,
+    "comparison_open_s": 1.1,
+    "comparison_fault_remove_s": 1.15,
+    "recovery_open_s": 0.583333333333,
+    "recovery_fault_remove_s": 0.62,
+    "reclosure_s": 1.2,
+    "duration_s": 1.5,
+    "step_us": 10.0,
+    "sample_us": 10.0,
+    "sensitivity_L_mH": [
+      10.0,
+      12.0,
+      15.9,
+      20.0,
+      25.0
+    ],
+    "fault_inception_phase_degrees": [
+      0.0,
+      45.0,
+      90.0
+    ]
+  },
+  "control": {
+    "PickupI": 2.0,
+    "PickupV": 18.0,
+    "EnergyLimit": 5000.0,
+    "GateDelay": 0.0001,
+    "RecoverI": 0.8,
+    "Hold": 0.02,
+    "FaultTime": 0.5,
+    "RemoveTime": 1.15,
+    "OpenTime": 1.1,
+    "CloseTime": 2.0,
+    "Enabled": 1
+  },
+  "channels": [
+    [
+      "ITAP",
+      "kA"
+    ],
+    [
+      "ITTAP",
+      "kA"
+    ],
+    [
+      "VTAP",
+      "kV"
+    ],
+    [
+      "TONAP",
+      "s"
+    ],
+    [
+      "TOFFAP",
+      "s"
+    ],
+    [
+      "ITAN",
+      "kA"
+    ],
+    [
+      "ITTAN",
+      "kA"
+    ],
+    [
+      "VTAN",
+      "kV"
+    ],
+    [
+      "TONAN",
+      "s"
+    ],
+    [
+      "TOFFAN",
+      "s"
+    ],
+    [
+      "VLA",
+      "kV"
+    ],
+    [
+      "VCA",
+      "kV"
+    ],
+    [
+      "ICA",
+      "kA"
+    ],
+    [
+      "IVA",
+      "kA"
+    ],
+    [
+      "IMA",
+      "kA"
+    ],
+    [
+      "EMA",
+      "kJ"
+    ],
+    [
+      "VDA",
+      "kV"
+    ],
+    [
+      "I1A",
+      "kA"
+    ],
+    [
+      "I2A",
+      "kA"
+    ],
+    [
+      "IFA",
+      "kA"
+    ],
+    [
+      "ILOADA",
+      "kA"
+    ],
+    [
+      "IBRA",
+      "kA"
+    ],
+    [
+      "VBRA",
+      "kV"
+    ],
+    [
+      "VS1A",
+      "kV"
+    ],
+    [
+      "VS2A",
+      "kV"
+    ],
+    [
+      "VB1A",
+      "kV"
+    ],
+    [
+      "VB2A",
+      "kV"
+    ],
+    [
+      "BRA",
+      "state"
+    ],
+    [
+      "FSA",
+      "state"
+    ],
+    [
+      "ITBP",
+      "kA"
+    ],
+    [
+      "ITTBP",
+      "kA"
+    ],
+    [
+      "VTBP",
+      "kV"
+    ],
+    [
+      "TONBP",
+      "s"
+    ],
+    [
+      "TOFFBP",
+      "s"
+    ],
+    [
+      "ITBN",
+      "kA"
+    ],
+    [
+      "ITTBN",
+      "kA"
+    ],
+    [
+      "VTBN",
+      "kV"
+    ],
+    [
+      "TONBN",
+      "s"
+    ],
+    [
+      "TOFFBN",
+      "s"
+    ],
+    [
+      "VLB",
+      "kV"
+    ],
+    [
+      "VCB",
+      "kV"
+    ],
+    [
+      "ICB",
+      "kA"
+    ],
+    [
+      "IVB",
+      "kA"
+    ],
+    [
+      "IMB",
+      "kA"
+    ],
+    [
+      "EMB",
+      "kJ"
+    ],
+    [
+      "VDB",
+      "kV"
+    ],
+    [
+      "I1B",
+      "kA"
+    ],
+    [
+      "I2B",
+      "kA"
+    ],
+    [
+      "IFB",
+      "kA"
+    ],
+    [
+      "ILOADB",
+      "kA"
+    ],
+    [
+      "IBRB",
+      "kA"
+    ],
+    [
+      "VBRB",
+      "kV"
+    ],
+    [
+      "VS1B",
+      "kV"
+    ],
+    [
+      "VS2B",
+      "kV"
+    ],
+    [
+      "VB1B",
+      "kV"
+    ],
+    [
+      "VB2B",
+      "kV"
+    ],
+    [
+      "BRB",
+      "state"
+    ],
+    [
+      "FSB",
+      "state"
+    ],
+    [
+      "ITCP",
+      "kA"
+    ],
+    [
+      "ITTCP",
+      "kA"
+    ],
+    [
+      "VTCP",
+      "kV"
+    ],
+    [
+      "TONCP",
+      "s"
+    ],
+    [
+      "TOFFCP",
+      "s"
+    ],
+    [
+      "ITCN",
+      "kA"
+    ],
+    [
+      "ITTCN",
+      "kA"
+    ],
+    [
+      "VTCN",
+      "kV"
+    ],
+    [
+      "TONCN",
+      "s"
+    ],
+    [
+      "TOFFCN",
+      "s"
+    ],
+    [
+      "VLC",
+      "kV"
+    ],
+    [
+      "VCC",
+      "kV"
+    ],
+    [
+      "ICC",
+      "kA"
+    ],
+    [
+      "IVC",
+      "kA"
+    ],
+    [
+      "IMC",
+      "kA"
+    ],
+    [
+      "EMC",
+      "kJ"
+    ],
+    [
+      "VDC",
+      "kV"
+    ],
+    [
+      "I1C",
+      "kA"
+    ],
+    [
+      "I2C",
+      "kA"
+    ],
+    [
+      "IFC",
+      "kA"
+    ],
+    [
+      "ILOADC",
+      "kA"
+    ],
+    [
+      "IBRC",
+      "kA"
+    ],
+    [
+      "VBRC",
+      "kV"
+    ],
+    [
+      "VS1C",
+      "kV"
+    ],
+    [
+      "VS2C",
+      "kV"
+    ],
+    [
+      "VB1C",
+      "kV"
+    ],
+    [
+      "VB2C",
+      "kV"
+    ],
+    [
+      "BRC",
+      "state"
+    ],
+    [
+      "FSC",
+      "state"
+    ],
+    [
+      "FaultOpen",
+      "state"
+    ],
+    [
+      "FeederOpen",
+      "state"
+    ],
+    [
+      "Gate",
+      "state"
+    ],
+    [
+      "Detect",
+      "state"
+    ],
+    [
+      "Pickup",
+      "state"
+    ],
+    [
+      "Recovery",
+      "state"
+    ],
+    [
+      "Reclose",
+      "state"
+    ],
+    [
+      "EnergyTrip",
+      "state"
+    ],
+    [
+      "RMS1",
+      "kA"
+    ],
+    [
+      "RMS2",
+      "kA"
+    ],
+    [
+      "RMSF",
+      "kA"
+    ],
+    [
+      "Imax",
+      "kA"
+    ],
+    [
+      "Vmax",
+      "kV"
+    ],
+    [
+      "ValveOn",
+      "state"
+    ]
+  ]
+}

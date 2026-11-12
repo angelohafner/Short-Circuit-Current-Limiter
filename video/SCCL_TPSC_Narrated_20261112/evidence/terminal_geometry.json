@@ -1,0 +1,82 @@
+[
+  {
+    "kind": "source",
+    "start": [
+      -5.7,
+      -0.8
+    ],
+    "end": [
+      -5.7,
+      1.2
+    ],
+    "endpoint_errors": [
+      0.0,
+      0.0
+    ],
+    "passed": true
+  },
+  {
+    "kind": "scr",
+    "start": [
+      1.8,
+      0.92
+    ],
+    "end": [
+      3.6,
+      0.92
+    ],
+    "endpoint_errors": [
+      2.224715878183523e-16,
+      1.3776821480501744e-17
+    ],
+    "passed": true
+  },
+  {
+    "kind": "scr",
+    "start": [
+      3.6,
+      0.08
+    ],
+    "end": [
+      1.8,
+      0.08
+    ],
+    "endpoint_errors": [
+      9.811655078325507e-17,
+      2.5513455261088306e-16
+    ],
+    "passed": true
+  },
+  {
+    "kind": "inductor",
+    "start": [
+      -4.5,
+      1.9
+    ],
+    "end": [
+      -2.5,
+      1.9
+    ],
+    "endpoint_errors": [
+      1.3123912623314027e-08,
+      1.3123912623314027e-08
+    ],
+    "passed": true
+  },
+  {
+    "kind": "capacitor",
+    "start": [
+      0.8,
+      1.9
+    ],
+    "end": [
+      3.8,
+      1.9
+    ],
+    "endpoint_errors": [
+      2.220446049250313e-16,
+      0.0
+    ],
+    "passed": true
+  }
+]

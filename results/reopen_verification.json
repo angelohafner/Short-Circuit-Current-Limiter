@@ -1,0 +1,23 @@
+{
+  "workspace": "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\pscad\\SCCL_TPSC_Study.pswx",
+  "project_names": [
+    "SCCL_A_Without",
+    "SCCL_B_With",
+    "SCCL_C_Recovery"
+  ],
+  "workspace_sha256": "f853e5fda191b68ab6d8a46ba893ab976b4633898c549d3a03292b9d1cd21edd",
+  "project_hashes_by_name": {
+    "SCCL_A_Without.pscx": "1e2ea2fb07263fc40c0fd940815e7b2aba8788197d5a989760bbf9d4da2920a4",
+    "SCCL_B_With.pscx": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+    "SCCL_C_Recovery.pscx": "aacca449ce15e3c8082c82e7e7710590285a3dd0354ea8ff1a15ab69561f6c1e"
+  },
+  "project_count": 3,
+  "relative_paths": true,
+  "opened_and_reopened_in_pscad": true,
+  "protected_project_hashes": {
+    "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\pscad\\SCCL_A_Without.pscx": "1e2ea2fb07263fc40c0fd940815e7b2aba8788197d5a989760bbf9d4da2920a4",
+    "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\pscad\\SCCL_B_With.pscx": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+    "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\pscad\\SCCL_C_Recovery.pscx": "aacca449ce15e3c8082c82e7e7710590285a3dd0354ea8ff1a15ab69561f6c1e"
+  },
+  "unchanged_after_reopen": true
+}

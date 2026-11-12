@@ -1,0 +1,47 @@
+{
+  "version": "5.1.0",
+  "licensed": true,
+  "connection": "PSCAD()",
+  "projects": [
+    {
+      "name": "master",
+      "type": "Library",
+      "description": "Master Library"
+    },
+    {
+      "name": "Case_01_AC_Baseline",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_02_Fixed_Series_20pct",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_03_Fixed_Series_40pct",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_04_Series_POD_Off",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_05_Series_POD_On",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_06_Parallel_HVDC_POD_Off",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    },
+    {
+      "name": "Case_07_Parallel_HVDC_POD_On",
+      "type": "Case",
+      "description": "Two-area electromechanical oscillation learning study"
+    }
+  ]
+}

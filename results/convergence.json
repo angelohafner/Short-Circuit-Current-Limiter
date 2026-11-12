@@ -1,0 +1,27 @@
+[
+  {
+    "case": "without_sccl",
+    "source1_rms_kA_change_percent": 8.836501932396601e-05,
+    "source2_rms_kA_change_percent": 8.837079732426645e-05,
+    "fault_rms_kA_change_percent": 8.836756200114593e-05,
+    "fault_peak_kA_change_percent": 0.00013023451970184396
+  },
+  {
+    "case": "with_sccl",
+    "source1_rms_kA_change_percent": 0.00010810072128553116,
+    "source2_rms_kA_change_percent": 9.963019387271288e-05,
+    "fault_rms_kA_change_percent": 0.00010127619070043892,
+    "fault_peak_kA_change_percent": 0.0003621399969011563,
+    "capacitor_peak_kV_change_percent": 1.2533151432549516,
+    "valve_branch_peak_kA_change_percent": 0.005413994944447609
+  },
+  {
+    "case": "recovery",
+    "source1_rms_kA_change_percent": 0.0001210512150739973,
+    "source2_rms_kA_change_percent": 0.00011333605487440224,
+    "fault_rms_kA_change_percent": 0.00011484495110458681,
+    "fault_peak_kA_change_percent": 0.0003621399969011563,
+    "capacitor_peak_kV_change_percent": 0.0002340539238199213,
+    "valve_branch_peak_kA_change_percent": 0.005413994944447609
+  }
+]

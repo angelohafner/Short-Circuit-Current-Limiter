@@ -1,0 +1,23 @@
+How does a short-circuit current limiter reduce fault current while keeping the normal operating voltage drop low?
+
+This animation explains a series-reactor limiter with a thyristor-protected series capacitor (TPSC), using recorded PSCAD/EMTDC simulation results.
+
+During normal operation, the capacitor compensates the reactor's reactance. When a fault occurs, the thyristor bypass removes this compensation, allowing the reactor to limit the fault-current contribution from Source 1. The reactor remains connected throughout the sequence.
+
+In the simulated 138 kV, 60 Hz two-source network, total symmetrical RMS fault current decreases from 79.96 kA to 49.91 kA — a 37.58% reduction. Source 2 remains directly connected to the downstream bus. These values describe the simulated case and are not instantaneous peak currents.
+
+The video also shows fault detection, current transfer to the bypass, natural thyristor turn-off, feeder reclosure, and how reactor sizing and capacitor tuning affect operation.
+
+CHAPTERS
+00:00 Current limiter: normal operation
+00:18 Fault response and thyristor bypass
+00:44 Two-source network and fault-current comparison
+01:12 Fault clearing, recovery and reclosure
+01:42 Reactor sizing and capacitor tuning
+
+Simulation: PSCAD/EMTDC
+Animation: Manim
+Narration: English
+
+#PowerSystems #ElectricalEngineering #PSCAD
+

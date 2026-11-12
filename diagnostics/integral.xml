@@ -1,0 +1,696 @@
+<Definition classid="UserCmpDefn" name="integral" url="" view="false" instances="0" date="0" crc="124198212" id="1656380795" group="CSMF,External C">
+      <paramlist>
+        <param name="Description" value="Interpolated Integrator" />
+      </paramlist>
+      <form name="Integrator" w="460" h="420" splitter="70" commentlines="4" category-width="180" help-width="490">
+        <category name="Configuration" visible="true">
+          <parameter name="Name" desc="Name for Identification" type="Text" group="" helpmode="Overwrite" allowemptystr="true" min="0" max="0">
+            <value />
+            <cond type="Enable">true</cond>
+            <help>Enter a name for identification</help>
+            <regex />
+            <error_msg />
+            <vis />
+          </parameter>
+          <parameter type="Choice" name="Extrn" desc="Limits:" group="" helpmode="Overwrite" animate="false">
+            <value>0</value>
+            <cond type="Enable" />
+            <help>Select Internal or External</help>
+            <vis />
+            <choice>0 = Internal</choice>
+            <choice>1 = External</choice>
+          </parameter>
+          <parameter type="Choice" name="Reset" desc="Resettable?" group="" helpmode="Overwrite" animate="false">
+            <value>1</value>
+            <cond type="Enable" />
+            <help>Select Yes or No</help>
+            <vis />
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+          <parameter type="Choice" name="Mthd" desc="Integration Method" group="" helpmode="Overwrite" animate="false">
+            <value>0</value>
+            <cond type="Enable" />
+            <help>Select Trapezoidal or Rectanguar, for interpolated input select Rectangular</help>
+            <vis />
+            <choice>0 = Trapezoidal</choice>
+            <choice>1 = Rectangular</choice>
+          </parameter>
+          <parameter type="Choice" name="INTR" desc="Interpolated Input" group="" helpmode="Overwrite" animate="false">
+            <value>0</value>
+            <cond type="Enable">Mthd==1</cond>
+            <help>Select Yes or No</help>
+            <vis />
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+          <parameter type="Choice" name="INTCLR" desc="Interpolated Reset" group="" helpmode="Overwrite" animate="false">
+            <value>0</value>
+            <cond type="Enable">Reset==1</cond>
+            <help>Select Yes or No</help>
+            <vis />
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+          <parameter name="Dim" desc="Dimension" type="Integer" group="" helpmode="Append" content_type="Literal" intent="Input" dim="1" animate="false" unit="" min="1" max="2147483647">
+            <value>1</value>
+            <cond>Mthd==0</cond>
+            <vis>true</vis>
+            <help />
+          </parameter>
+          <cond>true</cond>
+        </category>
+        <category name="Main Data" visible="true">
+          <parameter type="Real" name="T" desc="Time Constant" content_type="Variable" min="1E-20" max="1E+308" unit="s" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.001</value>
+            <cond type="Enable" />
+            <help />
+            <vis />
+          </parameter>
+          <parameter type="Real" name="Yo" desc="Initial Output Value" content_type="Constant" min="-1E+308" max="1E+308" unit="" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.0</value>
+            <cond type="Enable" />
+            <help />
+            <vis />
+          </parameter>
+          <parameter type="Real" name="YRst" desc="Output Value after Reset" content_type="Variable" min="-1E+308" max="1E+308" unit="" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.0</value>
+            <cond type="Enable">Reset==1</cond>
+            <help />
+            <vis />
+          </parameter>
+          <cond>true</cond>
+        </category>
+        <category name="Limits" visible="true">
+          <cond>(Extrn==0)</cond>
+          <parameter type="Real" name="YHi" desc="Upper Limit" content_type="Variable" min="-1E+308" max="1E+308" unit="" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>100.0</value>
+            <cond type="Enable" />
+            <help />
+            <vis />
+          </parameter>
+          <parameter type="Real" name="YLo" desc="Lower Limit" content_type="Variable" min="-1E+308" max="1E+308" unit="" group="" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>-100.0</value>
+            <cond type="Enable" />
+            <help />
+            <vis />
+          </parameter>
+        </category>
+      </form>
+      <svg viewBox="-200 -200 200 200" size="2">
+        <port model="Transfer" name="I" x="-36" y="0" dim="1" mode="Input" type="Real" internal="false">(Mthd==0)||(INTR==0)</port>
+        <port model="Transfer" name="O" x="36" y="0" dim="1" mode="Output" type="Real" internal="false">true</port>
+        <port model="Transfer" name="R" x="0" y="36" dim="1" mode="Input" type="Integer" internal="false">(Reset==1)&amp;&amp;(INTCLR==0)</port>
+        <port model="Transfer" name="LmtHi" x="36" y="-36" dim="1" mode="Input" type="Real" internal="false">Extrn==1</port>
+        <port model="Transfer" name="LmtLo" x="36" y="36" dim="1" mode="Input" type="Real" internal="false">Extrn==1</port>
+        <port model="Transfer" name="I" x="-36" y="0" dim="2" mode="Input" type="Real" internal="false">(Mthd==1)&amp;&amp;(INTR==1)</port>
+        <port model="Transfer" name="R" x="0" y="36" dim="2" mode="Input" type="Real" internal="false">(Reset==1)&amp;&amp;(INTCLR==1)</port>
+        <cond>true</cond>
+        <line x1="-18" y1="-27" x2="27" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="27" y1="0" x2="-18" y2="27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-18" y1="27" x2="-18" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-36" y1="0" x2="-18" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-23" y1="-5" x2="-18" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-18" y1="0" x2="-23" y2="5" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="36" y1="0" x2="27" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>Reset==1</cond>
+        <line x1="0" y1="36" x2="0" y2="20" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-5" y1="25" x2="0" y2="20" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="0" y1="20" x2="5" y2="25" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>Extrn==1</cond>
+        <line x1="36" y1="-36" x2="13" y2="-13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="13" y1="-18" x2="13" y2="-13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="13" y1="-13" x2="18" y2="-13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="36" y1="36" x2="13" y2="13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="13" y1="18" x2="13" y2="13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="13" y1="13" x2="18" y2="13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>true</cond>
+        <line x1="-9" y1="0" x2="3" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>((INTR==1)&amp;&amp;(Mthd==1))||((Reset==1)&amp;&amp;(INTCLR==1))</cond>
+        <ellipse cx="31" cy="-10" rx="5" ry="5" stroke="Black" stroke-dasharray="none" stroke-width="0.2" fill-style="Hollow" fill-fg="Black" fill-bg="" />
+        <ellipse cx="31" cy="-10" rx="2" ry="2" stroke="Gray" stroke-dasharray="none" stroke-width="0.2" fill-style="Solid" fill-fg="Gray" fill-bg="" />
+        <line x1="25" y1="-10" x2="37" y2="-10" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="31" y1="-16" x2="31" y2="-4" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(INTR==1)&amp;&amp;(Mthd==1)</cond>
+        <line x1="-30" y1="2" x2="-28" y2="-2" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-28" y1="2" x2="-26" y2="-2" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Reset==1)&amp;&amp;(INTCLR==1)</cond>
+        <line x1="2" y1="30" x2="-2" y2="28" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="2" y1="32" x2="-2" y2="30" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>Reset==1</cond>
+        <text x="-19" y="37" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">Clear</text>
+        <cond>Extrn==1</cond>
+        <text x="24" y="-30" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">Hi</text>
+        <text x="24" y="42" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">Lo</text>
+        <cond>true</cond>
+        <text x="-3" y="-2" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">1</text>
+        <text x="-3" y="12" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">sT</text>
+      </svg>
+      <script>
+        <segment name="Fortran" id="1319393771" classid="CoreSegment">#BEGIN
+      RTCF(NRTCF) = $Yo
+      NRTCF = NRTCF + 1
+#ENDBEGIN
+#STORAGE RTCF:1
+#FUNCTION REAL EMTDC_XINT 'Integrator /w Interpolation'
+#LOCAL REAL RVD1_1
+      RVD1_1 = RTCF(NRTCF) ! Initial Output
+      NRTCF = NRTCF + 1
+#IF (Mthd==0)&amp;&amp;(Dim==1) || ((Mthd==1)&amp;&amp;(INTR==0))
+ #LOCAL REAL RVD2_1 2
+      RVD2_1(1) = $I
+      RVD2_1(2) = 0.0
+#ENDIF
+#IF (Reset==0) || ((Reset==1)&amp;&amp;(INTCLR==0))
+ #LOCAL REAL RVD2_2 2
+ #IF Reset==0
+      RVD2_2(1) = 0.0
+ #ELSE
+      RVD2_2(1) = FLOAT($R)
+ #ENDIF
+      RVD2_2(2) = 0.0
+#ENDIF
+#IF (Mthd==0)&amp;&amp;(Dim&gt;1)
+ #LOCAL INTEGER IVD1_1
+ #LOCAL REAL RVD2_1 2
+      DO IVD1_1 = 1,$Dim 
+ #STORAGE REAL:${3*Dim}
+        RVD2_1(1) = $I(IVD1_1)
+        $O(IVD1_1) = EMTDC_XINT(0, 0, 0, RVD1_1, $T, 0.0, ~
+ #CASE Extrn {~$YLo, $YHi,} {~$LmtLo, $LmtHi,}
+ #IF Reset*INTCLR==0
+     + RVD2_2, RVD2_1)
+ #ELSE
+     + $R, RVD2_1)
+ #ENDIF
+      ENDDO
+#ELSE
+ #STORAGE REAL:3
+      $O = EMTDC_XINT(~
+ #CASE Mthd {~0~}{~$INTR~}
+~, $INTCLR, $Reset, RVD1_1, $T, ~
+ #CASE Reset {~0.0, ~} {~$YRst, ~}
+ #CASE Extrn {~$YLo, $YHi, ~} {~$LmtLo, $LmtHi, ~}
+ #CASE Reset*INTCLR {~RVD2_2, } {~$R, }
+ #IF (Mthd==0) || ((Mthd==1)&amp;&amp;(INTR==0))
+     +RVD2_1)
+ #ELSE
+     +$I)
+ #ENDIF
+#ENDIF</segment>
+        <segment name="FlyBy" id="96423867" classid="CoreSegment">Resettable Integrator with nonwindup limits
+
+:I
+Input
+:R
+Re-set (Non-zero integer input will
+reset the output of the integrator
+to the value specified)
+:LmtHi
+Upper Limit
+:LmtLo
+Lower Limit
+:O
+Output</segment>
+        <segment classid="CoreSegment" id="399088258" name="C">#INCLUDE $(HomeDir)\CCoder\stdinc.pds
+#STASH STRUCT $XIntData data
+#BEGIN
+    $data.output_0 = $Yo;
+#ENDBEGIN
+#IF Mthd==1 &amp;&amp; INTR!=0
+#WARNING Interpolation on input is turned on for this modulator. Interpolation is not supported for external programs.
+#ENDIF
+#IF INTCLR!=0
+#WARNING Interpolation on reset is turned on for this modulator. Interpolation is not supported for external programs.
+#ENDIF
+$data.reset_enab = $Reset;
+$data.time = $T;
+$data.output_init = ~
+#CASE Reset {~0.0;} {~$YRst;}
+$data.lower = ~
+#CASE Extrn {~$YLo;} {~$LmtLo;}
+$data.upper = ~
+#CASE Extrn {~$YHi;} {~$LmtHi;}
+$data.reset = ~
+#IF Reset == 0 {~0.0;}{~$R;}
+$data.input = $I;
+$O = $pscadlib_xint(&amp;$data);</segment>
+      </script>
+      <graphics size="4">
+        <paramlist>
+          <param name="show_border" value="0" />
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="lock_style" value="3" />
+          <param name="lock_cx" value="-2" />
+          <param name="lock_cy" value="0" />
+        </paramlist>
+        <Gfx classid="Graphics.PathEx" id="654695620" x="5" y="0" hs="1" ws="1" locked="false" w="45" h="54">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="Black" />
+            <param name="orient" value="0" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+          <sections>
+            <start x="-23" y="-27" />
+            <line x="22" y="0" />
+            <line x="-23" y="27" />
+            <end />
+          </sections>
+        </Gfx>
+        <Port id="55785728" classid="Port" x="-36" y="0">
+          <paramlist>
+            <param name="name" value="I" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Mthd==1)&amp;&amp;(INTR==0)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="1152191588" classid="Port" x="36" y="0">
+          <paramlist>
+            <param name="name" value="O" />
+            <param name="internal" value="false" />
+            <param name="cond" value="Mthd!=0" />
+            <param name="mode" value="2" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="632801157" classid="Port" x="0" y="36">
+          <paramlist>
+            <param name="name" value="R" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Reset==1)&amp;&amp;(INTCLR==0)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="2" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="1357143381" classid="Port" x="36" y="-36">
+          <paramlist>
+            <param name="name" value="LmtHi" />
+            <param name="internal" value="false" />
+            <param name="cond" value="Extrn==1" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="1794974311" classid="Port" x="36" y="36">
+          <paramlist>
+            <param name="name" value="LmtLo" />
+            <param name="internal" value="false" />
+            <param name="cond" value="Extrn==1" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="1806971736" classid="Port" x="-36" y="0">
+          <paramlist>
+            <param name="name" value="I" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Mthd==1)&amp;&amp;(INTR==1)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="2" />
+          </paramlist>
+        </Port>
+        <Port id="1961479429" classid="Port" x="0" y="36">
+          <paramlist>
+            <param name="name" value="R" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Reset==1)&amp;&amp;(INTCLR==1)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="2" />
+          </paramlist>
+        </Port>
+        <Gfx classid="Graphics.Line" id="1014765953" x="-36" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="18" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="630235376" x="-23" y="-5">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1368218108" x="-18" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="-5" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="744289462" x="36" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="-9" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="699293664" x="0" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-16" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Reset==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="155717094" x="-5" y="25">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="-5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Reset==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1027378899" x="0" y="20">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Reset==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="173089722" x="36" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="-23" y="23" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="487615899" x="13" y="-18">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1979834522" x="13" y="-13">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1736126537" x="36" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="-23" y="-23" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2037465725" x="13" y="18">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-5" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2071974279" x="13" y="13">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Extrn==1" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="503421937" x="-9" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="12" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="true" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Ellipse" id="37852802" x="26" y="-15" w="10" h="10">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="((INTR==1)&amp;&amp;(Mthd==1))||((Reset==1)&amp;&amp;(INTCLR==1))" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Ellipse" id="1278112436" x="29" y="-12" w="4" h="4">
+          <paramlist>
+            <param name="color" value="Gray" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="Gray" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="((INTR==1)&amp;&amp;(Mthd==1))||((Reset==1)&amp;&amp;(INTCLR==1))" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1339754955" x="25" y="-10">
+          <vertex x="0" y="0" />
+          <vertex x="12" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="((INTR==1)&amp;&amp;(Mthd==1))||((Reset==1)&amp;&amp;(INTCLR==1))" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="438069574" x="31" y="-16">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="12" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="((INTR==1)&amp;&amp;(Mthd==1))||((Reset==1)&amp;&amp;(INTCLR==1))" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="782966670" x="-30" y="2">
+          <vertex x="0" y="0" />
+          <vertex x="2" y="-4" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(INTR==1)&amp;&amp;(Mthd==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1745516545" x="-28" y="2">
+          <vertex x="0" y="0" />
+          <vertex x="2" y="-4" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(INTR==1)&amp;&amp;(Mthd==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="342437892" x="2" y="30">
+          <vertex x="0" y="0" />
+          <vertex x="-4" y="-2" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Reset==1)&amp;&amp;(INTCLR==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="981060074" x="2" y="32">
+          <vertex x="0" y="0" />
+          <vertex x="-4" y="-2" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Reset==1)&amp;&amp;(INTCLR==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="877552338" x="-19" y="37">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="Reset==1" />
+            <param name="text" value="Clear" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="1972548883" x="24" y="-30">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="Extrn==1" />
+            <param name="text" value="Hi" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="2036371542" x="24" y="42">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="Extrn==1" />
+            <param name="text" value="Lo" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="1186209205" x="-3" y="-2">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="true" />
+            <param name="text" value="1" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="true" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="931933089" x="-3" y="12">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="true" />
+            <param name="text" value="sT" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="true" />
+          </paramlist>
+        </Gfx>
+        <Port id="1963108106" classid="Port" x="36" y="0">
+          <paramlist>
+            <param name="name" value="O:Dim" />
+            <param name="internal" value="false" />
+            <param name="cond" value="Mthd==0" />
+            <param name="mode" value="2" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="0" />
+          </paramlist>
+        </Port>
+        <Port id="803274947" classid="Port" x="-36" y="0">
+          <paramlist>
+            <param name="name" value="I:Dim" />
+            <param name="internal" value="false" />
+            <param name="cond" value="(Mthd==0)" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="3" />
+            <param name="electype" value="0" />
+            <param name="dim" value="0" />
+          </paramlist>
+        </Port>
+      </graphics>
+    </Definition>
+    

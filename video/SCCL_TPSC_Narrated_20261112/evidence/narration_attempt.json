@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "engine": "edge",
+  "error": "Extra data: line 13 column 1 (char 263)",
+  "script_sha256": "91912d83d047a7100e94f86c7abd5ec38628f3e9f53e85876679a0378c776458"
+}

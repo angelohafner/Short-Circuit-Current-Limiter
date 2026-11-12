@@ -1,0 +1,401 @@
+<Definition classid="UserCmpDefn" name="logic" url="" view="false" instances="0" date="0" crc="23838191" id="328220109" group="(null)">
+      <paramlist>
+        <param name="Description" value="Binary Gates" />
+      </paramlist>
+      <form>
+        <category name="Configuration">
+          <parameter type="Choice" name="Type" desc="Boolean Function:">
+            <value>1</value>
+            <choice>1 = AND</choice>
+            <choice>2 = OR</choice>
+            <choice>3 = XOR</choice>
+          </parameter>
+          <parameter type="Choice" name="Inv" desc="Invert Output?">
+            <value>1</value>
+            <choice>0 = No</choice>
+            <choice>1 = Yes</choice>
+          </parameter>
+        </category>
+      </form>
+      <svg viewBox="-200 -200 200 200">
+        <port model="Transfer" name="IN1" x="-36" y="0" dim="1" mode="Input" type="Integer">true</port>
+        <port model="Transfer" name="IN2" x="-36" y="36" dim="1" mode="Input" type="Integer">true</port>
+        <port model="Transfer" name="OUT" x="36" y="0" dim="1" mode="Output" type="Integer">true</port>
+        <line x1="-36" y1="0" x2="-36" y2="9" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-36" y1="9" x2="-22" y2="9" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-36" y1="36" x2="-36" y2="27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-36" y1="27" x2="-22" y2="27" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>!(Inv==0)</cond>
+        <ellipse cx="24" cy="17" rx="2" ry="2" stroke="Black" stroke-dasharray="none" stroke-width="0.2" fill-style="Hollow" fill-fg="Black" fill-bg="" />
+        <cond>true</cond>
+        <line x1="27" y1="18" x2="36" y2="18" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="36" y1="18" x2="36" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type==1)</cond>
+        <line x1="4" y1="0" x2="-22" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-22" y1="0" x2="-22" y2="36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-22" y1="36" x2="4" y2="36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M4.000 0.000 A17 18 0 1 1 4.000 36.000" arc="-13,0,22,36,90,-180" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>(Type==2)</cond>
+        <line x1="-9" y1="0" x2="-23" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="36" x2="-23" y2="36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-23.251 0.294 A39 39 0 0 1 -23.251 35.706" arc="-97,-21,-19,57,27,-54" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-9.000 0.000 A36 36 0 0 1 22.177 18.000" arc="-45,0,27,72,90,-60" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-9.000 36.000 A36 36 0 0 0 22.177 18.000" arc="-45,-36,27,36,-90,60" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>!(Type==1) &amp;&amp; !(Type==2)</cond>
+        <line x1="-9" y1="0" x2="-20" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <line x1="-9" y1="36" x2="-20" y2="36" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-23.251 0.294 A39 39 0 0 1 -23.251 35.706" arc="-97,-21,-19,57,27,-54" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-19.251 0.294 A39 39 0 0 1 -19.251 35.706" arc="-94,-21,-15,57,27,-54" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-9.000 0.000 A36 36 0 0 1 22.177 18.000" arc="-45,0,27,72,90,-60" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <path d="M-9.000 36.000 A36 36 0 0 0 22.177 18.000" arc="-45,-36,27,36,-90,60" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <cond>Inv==0</cond>
+        <line x1="22" y1="18" x2="27" y2="18" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+      </svg>
+      <script>
+        <segment name="Fortran" id="488922339" classid="CoreSegment">!  
+#IF Type==1
+      IF ( ($IN1 .NE. 0)  .AND.  ($IN2 .NE. 0) ) THEN
+#ELSEIF Type==2
+      IF ( ($IN1 .NE. 0)  .OR.  ($IN2 .NE. 0) ) THEN
+#ELSEIF Type==3
+      IF ((($IN1.NE.0).OR.($IN2.NE.0)).AND.(($IN1*$IN2).EQ.0)) THEN
+#ENDIF
+#IF Inv==0
+         $OUT = 1
+      ELSE
+         $OUT = 0
+#ELSE
+         $OUT = 0
+      ELSE
+         $OUT = 1
+#ENDIF
+      ENDIF
+!
+</segment>
+        <segment name="FlyBy" id="1105037598" classid="CoreSegment">
+:IN1
+Input 1
+:IN2
+Input 2
+:OUT
+Output</segment>
+      </script>
+      <graphics>
+        <paramlist>
+          <param name="lock_style" value="3" />
+          <param name="lock_cx" value="0" />
+          <param name="lock_cy" value="0" />
+        </paramlist>
+        <Port id="1082334350" classid="Port" x="-36" y="0">
+          <paramlist>
+            <param name="name" value="IN1" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="2" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="1197535493" classid="Port" x="-36" y="36">
+          <paramlist>
+            <param name="name" value="IN2" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="1" />
+            <param name="datatype" value="2" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Port id="2121633549" classid="Port" x="36" y="0">
+          <paramlist>
+            <param name="name" value="OUT" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="2" />
+            <param name="datatype" value="2" />
+            <param name="electype" value="0" />
+            <param name="dim" value="1" />
+          </paramlist>
+        </Port>
+        <Gfx classid="Graphics.Line" id="835562069" x="-36" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="409747240" x="-36" y="9">
+          <vertex x="0" y="0" />
+          <vertex x="14" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="94112007" x="-36" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1905462854" x="-36" y="27">
+          <vertex x="0" y="0" />
+          <vertex x="14" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Ellipse" id="1386749444" x="22" y="15" w="4" h="4">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="!(Inv==0)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="418588280" x="27" y="18">
+          <vertex x="0" y="0" />
+          <vertex x="9" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="488988900" x="36" y="18">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-18" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2049976920" x="4" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="-26" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1872775553" x="-22" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="36" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="827353000" x="-22" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="26" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="505628605" x="-13" y="0" w="35" h="36">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="90" />
+            <param name="sweep" value="-180" />
+            <param name="cond" value="(Type==1)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="116809483" x="-9" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="-14" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2032540697" x="-9" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="-14" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="1207759527" x="-97" y="-21" w="78" h="78">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="27" />
+            <param name="sweep" value="-54" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="1618414804" x="-45" y="0" w="72" h="72">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="90" />
+            <param name="sweep" value="-60" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="369420279" x="-45" y="-36" w="72" h="72">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="-90" />
+            <param name="sweep" value="60" />
+            <param name="cond" value="(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1534741596" x="-9" y="0">
+          <vertex x="0" y="0" />
+          <vertex x="-11" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1409069130" x="-9" y="36">
+          <vertex x="0" y="0" />
+          <vertex x="-11" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="970774152" x="-97" y="-21" w="78" h="78">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="27" />
+            <param name="sweep" value="-54" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="801278221" x="-94" y="-21" w="79" h="78">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="27" />
+            <param name="sweep" value="-54" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="611230938" x="-45" y="0" w="72" h="72">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="90" />
+            <param name="sweep" value="-60" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Path" id="770918530" x="-45" y="-36" w="72" h="72">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="start" value="-90" />
+            <param name="sweep" value="60" />
+            <param name="cond" value="!(Type==1) &amp;&amp; !(Type==2)" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1357769036" x="22" y="18">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="Inv==0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+      </graphics>
+    </Definition>
+    

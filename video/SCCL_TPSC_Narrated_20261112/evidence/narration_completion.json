@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-11-12T18:32:03.880924+00:00",
+  "narrated_video": "output/SCCL_TPSC_Narrated_EN.mp4",
+  "audio": "output/SCCL_TPSC_Narration_EN.wav",
+  "subtitles": "narration/narration_en.srt",
+  "engine": {
+    "engine": "edge-tts",
+    "version": "7.3.1",
+    "voice": "en-US-GuyNeural",
+    "rate": "+6%",
+    "pitch": "+4Hz"
+  },
+  "original_script_unchanged": true,
+  "script_sha256": "91912d83d047a7100e94f86c7abd5ec38628f3e9f53e85876679a0378c776458",
+  "video_sha256": "eb8bbdbb5d1a06234caac7db80aaeccd972a7dbd6196bc8aacb49d5eb3a5a7a1",
+  "master_and_narrated_video_payload": "SHA256=9c48efc5824fd10546d69c58d78ef9a1d26fc73497290e36f1abfaecd6deb6af",
+  "video_payload_unchanged": true,
+  "narration_checks": {
+    "passed": 46,
+    "total": 46
+  },
+  "tempo_adjusted_clips": [
+    "02_series",
+    "05_delay",
+    "06_transfer"
+  ],
+  "maximum_tempo_factor": 1.1121951219512194,
+  "integrated_loudness_lufs": -16.14,
+  "true_peak_dbtp": -1.45,
+  "loudness_parser_regression": {
+    "original_failure_reproduced": true,
+    "corrected_parse_passed": true
+  },
+  "review_scope": "Automated full decode, hashes, cue bounds, audible signal, loudness and peaks. No subjective listening review."
+}

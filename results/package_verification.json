@@ -1,0 +1,20 @@
+{
+  "native": {
+    "archive": "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\delivery\\SCCL_TPSC_Native_20261103T140711Z.zip",
+    "full_results_included": false,
+    "payload_files": 69,
+    "bytes": 6368065,
+    "sha256": "2a31451fb36cc55bf130c8bf3e55632a6f1ee21dc2c305600055a4fff0f23dab",
+    "zip_crc_passed": true,
+    "all_payload_hashes_verified": true
+  },
+  "full": {
+    "archive": "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\delivery\\SCCL_TPSC_Full_20261103T140718Z.zip",
+    "full_results_included": true,
+    "payload_files": 521,
+    "bytes": 4445862348,
+    "sha256": "9725b177ce55d5f3d61532876ae5fd45ef66b7aa05be5d99f73d7318622898c9",
+    "zip_crc_passed": true,
+    "all_payload_hashes_verified": true
+  }
+}

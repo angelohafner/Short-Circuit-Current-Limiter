@@ -1,0 +1,36 @@
+{
+  "case": "recovery_extended",
+  "project_sha256": "edf729b488ae81c25e3afaa36bda870939820901cefd9a0434c9391da1f10891",
+  "start_utc": "2026-11-03T17:01:12.826867+00:00",
+  "finish_utc": "2026-11-03T17:02:00.734243+00:00",
+  "licensed": true,
+  "pscad_version": "5.1.0",
+  "fresh_outputs": true,
+  "errors": [],
+  "duration_s": 2.5,
+  "relative_result_directory": "native_results/20261103T170112_822858Z",
+  "output_sha256": {
+    "SCCL_C_Extended.inf": "20497f724486db37e2d3aa156b522b1109727c262c25b71d70f816628b2cbdd0",
+    "SCCL_C_Extended_01.out": "b6ad9044c1f8e72fad3dde464d3a965d11ebf61cd0c1afed8880fb35f015d427",
+    "SCCL_C_Extended_02.out": "80f8001fa586f2f5765f4ea1dfb28595fe86de3c2e196e8277c3e0b4a06d8331",
+    "SCCL_C_Extended_03.out": "5e3cb83bdef3dc3141b07492d3864e2fee9b7e59e58a835ecd5ac5df056bc106",
+    "SCCL_C_Extended_04.out": "90e3861ae23fd2e31168d8157e88185f5acc52b1e00ff60e3c83d4f6e92780e7",
+    "SCCL_C_Extended_05.out": "3a336208923c56feee7f632967f7388cac93eba713e4410deeda52bc3d600789",
+    "SCCL_C_Extended_06.out": "93d9dc9c4c5114c89318563505e3ad2f0e9712b3f1cee970b0d6f8bce5bd3ab8",
+    "SCCL_C_Extended_07.out": "e11aeba1d9fed1e70014a8caf826da43f332dd1787b5be8fdcb77262b5192ea4",
+    "SCCL_C_Extended_08.out": "737d7d43667e94a36c65c1863b703b08f625120415d70f68ac1135614be0dc66",
+    "SCCL_C_Extended_09.out": "0c457af9be2554f56328146f287d0311ff43b2d3d5c97022f6b04d7517b9b522",
+    "SCCL_C_Extended_10.out": "dad944d95803f07ee8b6a43a2a920a9e28a11ed53ffd3d768a8dcb5cd3e2f9ee",
+    "SCCL_C_Extended_11.out": "bad5e696593bc5f2fa8584f4854388c87dc5d0b89f7a6cc0dfc8b586383ef78a"
+  },
+  "protected_original_hashes": {
+    "pscad/SCCL_A_Without.pscx": "1e2ea2fb07263fc40c0fd940815e7b2aba8788197d5a989760bbf9d4da2920a4",
+    "pscad/SCCL_B_With.pscx": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+    "pscad/SCCL_C_Recovery.pscx": "aacca449ce15e3c8082c82e7e7710590285a3dd0354ea8ff1a15ab69561f6c1e"
+  },
+  "originals_unchanged": true,
+  "prefault_source1_rms_kA": 0.16439891478654953,
+  "settled_source1_rms_kA": 0.16452060599331988,
+  "last_window_sliding_rms_ripple_percent": 0.038343758912196546,
+  "all_SCRs_off_at_end": true
+}

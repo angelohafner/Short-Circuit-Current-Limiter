@@ -1,0 +1,16 @@
+<workspace name="SCCL_TPSC_Study" version="5.1.0" crc="37764513">
+  <projects>
+    <project type="project" name="SCCL_A_Without" filepath=".\SCCL_A_Without.pscx" open="true" />
+    <project type="project" name="SCCL_B_With" filepath=".\SCCL_B_With.pscx" open="true" />
+    <project type="project" name="SCCL_C_Recovery" filepath=".\SCCL_C_Recovery.pscx" open="true" />
+  </projects>
+  <simulations />
+  <pmr />
+  <messagegrid expanded="">
+    <column name="Icon" />
+    <column name="Id" />
+    <column name="Component" />
+    <column name="Namespace" />
+    <column name="Description" />
+  </messagegrid>
+</workspace>

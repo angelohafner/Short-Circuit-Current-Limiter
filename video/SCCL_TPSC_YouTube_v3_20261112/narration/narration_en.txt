@@ -1,0 +1,44 @@
+02_series | 0.4-8.4 s
+This limiter keeps its reactor in series. In normal operation, the capacitor compensates the reactor's reactance.
+
+03_compensation | 8.6-17.5 s
+The thyristors are blocked. At sixty hertz, inductive and capacitive reactances nearly cancel, keeping the normal voltage drop small.
+
+04_fault | 18.5-25.4 s
+Now watch the fault response in slow motion. Initially, current flows through the capacitor.
+
+05_delay | 25.8-33.0 s
+Detection takes zero point three seven milliseconds. Conduction starts after zero point four eight milliseconds.
+
+06_transfer | 33.3-43.5 s
+Current transfers to the bypass, removing capacitor compensation. The reactor now limits fault current in this branch. It was connected all along!
+
+01_network | 44.3-50.2 s
+Only source one passes through the limiter. Source two feeds the fault directly.
+
+07_compare | 50.5-57.3 s
+Compare phase A on identical axes: red without the limiter, blue with it.
+
+08_rms | 57.6-67.0 s
+Symmetrical R M S fault current falls from seventy-nine point nine six to forty-nine point nine one kiloamps.
+
+09_reduction | 67.2-71.6 s
+That's a thirty-seven point five eight percent reduction!
+
+10_clear | 74.6-81.0 s
+The blue trace is three-phase R M S, including D C. The feeder breaker opens.
+
+11_extinction | 81.0-87.3 s
+Removing gate pulses does not force turn-off. Each thyristor needs its own current zero.
+
+12_ready | 87.4-92.1 s
+Once conduction ends and recovery is ready, the feeder can reclose.
+
+13_reclose | 92.5-101.5 s
+The magnified trace reveals a damped transient. Current returns to normal, with capacitor compensation restored.
+
+14_reactor | 102.5-109.6 s
+A larger reactor reduces fault current. These five points come from simulated cases.
+
+15_tuning | 110.0-119.5 s
+The capacitor is retuned at every point for sixty hertz. Reactor size sets limitation; capacitor tuning sets normal compensation.

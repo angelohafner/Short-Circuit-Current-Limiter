@@ -1,0 +1,44 @@
+01_network | 0.5-13.5 s
+A short circuit can unleash enormous current! Here, two sources feed the fault. The limiter acts on source one. Source two connects directly to the downstream bus.
+
+02_series | 14.5-20.8 s
+In normal operation, the reactor stays in series. The capacitor compensates its reactance.
+
+03_compensation | 21.0-31.5 s
+The thyristors are blocked. At sixty hertz, inductive and capacitive reactances nearly cancel, keeping the normal voltage drop small.
+
+04_fault | 32.5-39.4 s
+Now watch the fault response in slow motion. Initially, current flows through the capacitor.
+
+05_delay | 39.8-47.0 s
+Detection takes zero point three seven milliseconds. Conduction starts after zero point four eight milliseconds.
+
+06_transfer | 47.3-57.5 s
+Current transfers to the bypass, removing capacitor compensation. The reactor now limits source one's fault contribution. It was connected all along!
+
+07_compare | 58.5-65.3 s
+Compare phase A on identical axes: red without the limiter, blue with it.
+
+08_rms | 65.6-75.0 s
+Symmetrical R M S fault current falls from seventy-nine point nine six to forty-nine point nine one kiloamps.
+
+09_reduction | 75.2-79.6 s
+That's a thirty-seven point five eight percent reduction!
+
+10_clear | 82.6-89.0 s
+The blue trace is three-phase R M S, including D C. The feeder breaker opens.
+
+11_extinction | 89.0-95.3 s
+Removing gate pulses does not force turn-off. Each thyristor needs its own current zero.
+
+12_ready | 95.4-100.1 s
+Once conduction ends and recovery is ready, the feeder can reclose.
+
+13_reclose | 100.5-109.5 s
+The magnified trace reveals a damped transient. Current returns to normal, with capacitor compensation restored.
+
+14_reactor | 110.5-117.6 s
+A larger reactor reduces fault current. These five points come from simulated cases.
+
+15_tuning | 118.0-127.5 s
+The capacitor is retuned at every point for sixty hertz. Reactor size sets limitation; capacitor tuning sets normal compensation.

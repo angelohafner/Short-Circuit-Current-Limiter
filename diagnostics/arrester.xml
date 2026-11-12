@@ -1,0 +1,541 @@
+<Definition classid="UserCmpDefn" name="arrester" url="" view="false" instances="0" date="0" crc="51872133" id="144882344" group="Passive">
+      <paramlist>
+        <param name="Description" value="Arrester" />
+      </paramlist>
+      <form name="Arrester" w="400" h="420" splitter="60" commentlines="4">
+        <category name="Configuration" visible="true">
+          <cond />
+          <parameter type="Text" name="Name" desc="Arrester Name" group="_General" helpmode="Append" allowemptystr="true">
+            <value />
+            <cond type="Enable" />
+            <help />
+            <regex />
+            <error_msg />
+          </parameter>
+          <parameter type="Real" name="VSCAL" desc="Arrester Voltage Rating" content_type="Constant" min="0.001" max="1E+308" unit="kV" group="_General" helpmode="Append" intent="Input" dim="1" animate="false">
+            <help>Rater voltage of the arrester</help>
+            <value>160.0</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Real" name="ISCAL" desc="Number of Parallel Arrester Stacks" content_type="Constant" min="0" max="1E+308" unit="" group="_General" helpmode="Append" intent="Input" dim="1" animate="false">
+            <help>Number of parallel arresters to be modelled</help>
+            <value>1.0</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Integer" name="ENAB" desc="Enable Non-Linear Characteristic" content_type="Variable" min="-2147483648" max="2147483647" unit="" group="_General" helpmode="Append" intent="Input" dim="1" animate="false">
+            <help>Enter 1 to enable or 0 to disable, or enter a signal name to dynamically change between enable and disable</help>
+            <value>1</value>
+            <cond type="Enable" />
+            <help />
+          </parameter>
+          <parameter type="Choice" name="Cnfg" desc="I-V Characteristic" group="_General" helpmode="Overwrite" animate="false">
+            <help>Configure to use default characteristics or specified characteristics from a file or table</help>
+            <value>0</value>
+            <cond type="Enable" />
+            <help />
+            <choice>0 = Default</choice>
+            <choice>1 = User defined (table)</choice>
+            <choice>2 = User defined (external data file)</choice>
+          </parameter>
+          <parameter type="Text" name="File" desc="File Name" group="External Data File" helpmode="Append" allowemptystr="false">
+            <help>Enter the name of file with the extension</help>
+            <value>datafile</value>
+            <cond type="Enable">Cnfg==2</cond>
+            <help />
+            <regex />
+            <error_msg />
+          </parameter>
+          <parameter type="Choice" name="path" desc="Path to the Data File is given as" group="External Data File" helpmode="Append" animate="false">
+            <help>Specify whether filename is given as a relative name or absolute name</help>
+            <value>0</value>
+            <cond type="Enable">Cnfg==2</cond>
+            <help />
+            <choice>0 = Relative pathname</choice>
+            <choice>1 = Absolute pathname</choice>
+          </parameter>
+          <parameter type="Integer" name="Npnts" desc="Maximum Number of Points in the File" content_type="Literal" min="10" max="2147483647" unit="" group="External Data File" helpmode="Append" intent="Input" dim="1" animate="false">
+            <help>Actual number of points may be less than this number</help>
+            <value>20</value>
+            <cond type="Enable">(Cnfg==2)</cond>
+          </parameter>
+          <parameter type="Text" name="Curr" desc="Label for Current [kA]" group="Outputs" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <help />
+            <cond type="Enable" />
+          </parameter>
+          <parameter type="Text" name="Energy" desc="Label for Energy [kJoules]" group="Outputs" helpmode="Append" allowemptystr="true">
+            <value />
+            <regex>^[a-zA-Z][a-zA-Z0-9_]*$</regex>
+            <error_msg>Name must begin with a letter and can contain only letters, numbers and _</error_msg>
+            <help />
+            <cond type="Enable" />
+          </parameter>
+        </category>
+        <category name="I-V Characteristic (Current)" visible="true">
+          <cond>(Cnfg!=0)</cond>
+          <parameter type="Real" name="X1" desc="Point  1 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.001</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X2" desc="Point  2 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.01</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X3" desc="Point  3 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.1</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X4" desc="Point  4 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.2</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X5" desc="Point  5 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.38</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X6" desc="Point  6 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>0.65</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X7" desc="Point  7 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.11</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X8" desc="Point  8 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.5</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X9" desc="Point  9 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>2.0</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X10" desc="Point 10 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>2.8</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="X11" desc="Point 11 - Current" content_type="Constant" min="0" max="1E+308" unit="kA" group="Data Points - Current" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>200.0</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+        </category>
+        <category name="I-V Characteristic (Voltage)" visible="true">
+          <cond>(Cnfg!=0)</cond>
+          <parameter type="Real" name="Y1" desc="Point  1 - Voltage in pu" content_type="Constant" min="0.2" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.1</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y2" desc="Point  2 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.6</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y3" desc="Point  3 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.7</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y4" desc="Point  4 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.739</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y5" desc="Point  5 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.777</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y6" desc="Point  6 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.815</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y7" desc="Point  7 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.853</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y8" desc="Point  8 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.881</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y9" desc="Point  9 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.91</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y10" desc="Point 10 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>1.948</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+          <parameter type="Real" name="Y11" desc="Point 11 - Voltage in pu" content_type="Constant" min="0" max="1E+308" unit="pu" group="Data Points - Voltage" helpmode="Append" intent="Input" dim="1" animate="false">
+            <value>3.2</value>
+            <cond type="Enable">(Cnfg==1)</cond>
+            <help />
+          </parameter>
+        </category>
+      </form>
+      <svg viewBox="-200 -200 200 200">
+        <paramlist>
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="show_border" value="0" />
+        </paramlist>
+        <port model="Natural" name="NF" x="0" y="-36" dim="0" mode="Electrical" type="Switched" internal="false">true</port>
+        <port model="Natural" name="NT" x="0" y="0" dim="0" mode="Electrical" type="Switched" internal="false">true</port>
+        <cond>true</cond>
+        <line x1="-9" y1="-13" x2="-4" y2="-13" stroke="Black" stroke-dasharray="none" stroke-width="0.2" port="" />
+        <line x1="-4" y1="-13" x2="4" y2="-23" stroke="Black" stroke-dasharray="none" stroke-width="0.2" port="" />
+        <line x1="4" y1="-23" x2="9" y2="-23" stroke="Black" stroke-dasharray="none" stroke-width="0.2" port="" />
+        <line x1="0" y1="-2" x2="3" y2="-5" stroke="Black" stroke-dasharray="none" stroke-width="0.2" port="" />
+        <line x1="-3" y1="-5" x2="0" y2="-2" stroke="Black" stroke-dasharray="none" stroke-width="0.2" port="" />
+        <line x1="0" y1="-36" x2="0" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NF" />
+        <rect x="-6" y="-27" width="12" height="18" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" fill-style="Hollow" fill-fg="Black" fill-bg="" port="NF" />
+        <line x1="0" y1="-9" x2="0" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NT" />
+        <line x1="0" y1="-36" x2="0" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NT" />
+        <rect x="-6" y="-27" width="12" height="18" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" fill-style="Hollow" fill-fg="Black" fill-bg="" port="NT" />
+        <line x1="0" y1="-9" x2="0" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NF" />
+        <line x1="0" y1="-36" x2="0" y2="-27" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NF" />
+        <rect x="-6" y="-27" width="12" height="18" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" fill-style="Hollow" fill-fg="Black" fill-bg="" port="NF" />
+        <line x1="0" y1="-9" x2="0" y2="0" stroke="Black" stroke-dasharray="none" stroke-width="ByNode" port="NT" />
+      </svg>
+      <script>
+        <segment name="Branch" id="2065867717" classid="CoreSegment">NBR = $NT $NF      BREAKER  1.0E6
+</segment>
+        <segment name="Computations" id="930564289" classid="CoreSegment">#IF Cnfg==2
+INTEGER Npnts1 = 2*Npnts + 4
+INTEGER Npnts2 = 3*Npnts + 19
+#ELSE
+INTEGER Npnts1 = 24
+INTEGER Npnts2 = 52
+#ENDIF</segment>
+        <segment name="Dsdyn" id="592168207" classid="CoreSegment">!  Metal Oxide Gapless Surge Arrester: $Name
+#IF $#DIM(NT)==3 || $#DIM(NF)==3
+  #STORAGE STOR:$(Npnts2) INTEGER:6 RTCI:3 RTCF:$(Npnts1)
+  #STORAGE RTCF:$(Npnts1) STOR:$(Npnts2)
+  #STORAGE RTCF:$(Npnts1) STOR:$(Npnts2)
+#ELSEIF $#DIM(NT)==2 || $#DIM(NF)==2
+  #STORAGE STOR:$(Npnts2) INTEGER:4 RTCI:2 RTCF:$(Npnts1)
+  #STORAGE RTCF:$(Npnts1) STOR:$(Npnts2)
+#ELSEIF $#DIM(NT)==1 &amp;&amp; $#DIM(NF)==1
+  #STORAGE STOR:$(Npnts2) INTEGER:2 RTCI:1 RTCF:$(Npnts1)
+#ENDIF
+#BEGIN
+ #LOCAL REAL RVD100_1 100
+ #LOCAL REAL RVD100_2 100
+      CALL COMPONENT_ID(ICALL_NO,$#Component)
+      RVD100_1 = 0.0
+      RVD100_2 = 0.0
+ #IF Cnfg!=2
+      RVD100_1(1)  = ~
+  #CASE Cnfg {~0.001}{~$X1}
+      RVD100_2(1)  = ~
+  #CASE Cnfg {~1.1}{~$Y1}
+      RVD100_1(2)  = ~
+  #CASE Cnfg {~0.01}{~$X2}
+      RVD100_2(2)  = ~
+  #CASE Cnfg {~1.6}{~$Y2}
+      RVD100_1(3)  = ~
+  #CASE Cnfg {~0.1}{~$X3}
+      RVD100_2(3)  = ~
+  #CASE Cnfg {~1.7}{~$Y3}
+      RVD100_1(4)  = ~
+  #CASE Cnfg {~0.2}{~$X4}
+      RVD100_2(4)  = ~
+  #CASE Cnfg {~1.739}{~$Y4}
+      RVD100_1(5)  = ~
+  #CASE Cnfg {~0.38}{~$X5}
+      RVD100_2(5)  = ~
+  #CASE Cnfg {~1.777}{~$Y5}
+      RVD100_1(6)  = ~
+  #CASE Cnfg {~0.65}{~$X6}
+      RVD100_2(6)  = ~
+  #CASE Cnfg {~1.815}{~$Y6}
+      RVD100_1(7)  = ~
+  #CASE Cnfg {~1.11}{~$X7}
+      RVD100_2(7)  = ~
+  #CASE Cnfg {~1.853}{~$Y7}
+      RVD100_1(8)  = ~
+  #CASE Cnfg {~1.5}{~$X8}
+      RVD100_2(8)  = ~
+  #CASE Cnfg {~1.881}{~$Y8}
+      RVD100_1(9)  = ~
+  #CASE Cnfg {~2.0}{~$X9}
+      RVD100_2(9)  = ~
+  #CASE Cnfg {~1.91}{~$Y9}
+      RVD100_1(10) = ~
+  #CASE Cnfg {~2.8}{~$X10}
+      RVD100_2(10) = ~
+  #CASE Cnfg {~1.948}{~$Y10}
+      RVD100_1(11) = ~
+  #CASE Cnfg {~200.0}{~$X11}
+      RVD100_2(11) = ~
+  #CASE Cnfg {~3.2}{~$Y11}
+ #ENDIF
+ #IF $#DIM(NT)==3 || $#DIM(NF)==3
+      CALL ARRESTERZNO_CFG($SS,$NBR(1),$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+      CALL ARRESTERZNO_CFG($SS,$NBR(2),$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+      CALL ARRESTERZNO_CFG($SS,$NBR(3),$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+ #ELSEIF $#DIM(NT)==2 || $#DIM(NF)==2
+      CALL ARRESTERZNO_CFG($SS,$NBR(1),$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+      CALL ARRESTERZNO_CFG($SS,$NBR(2),$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+ #ELSEIF $#DIM(NT)==1 &amp;&amp; $#DIM(NF)==1
+      CALL ARRESTERZNO_CFG($SS,$NBR,$Cnfg,$VSCAL,$ISCAL,RVD100_1,RVD100_2,~
+  #CASE path {~"../$File")}{~"$File")}
+ #ENDIF
+#ENDBEGIN
+      CALL COMPONENT_ID(ICALL_NO,$#Component)
+#IF $#DIM(NT)==3 || $#DIM(NF)==3
+      CALL ARRESTERZNO_EXE($SS,$NBR(1),$ENAB)
+      CALL ARRESTERZNO_EXE($SS,$NBR(2),$ENAB)
+      CALL ARRESTERZNO_EXE($SS,$NBR(3),$ENAB)
+#ELSEIF $#DIM(NT)==2 || $#DIM(NF)==2
+      CALL ARRESTERZNO_EXE($SS,$NBR(1),$ENAB)
+      CALL ARRESTERZNO_EXE($SS,$NBR(2),$ENAB)
+#ELSEIF $#DIM(NT)==1 &amp;&amp; $#DIM(NF)==1
+      CALL ARRESTERZNO_EXE($SS,$NBR,$ENAB)
+#ENDIF</segment>
+        <segment name="Dsout" id="1303373627" classid="CoreSegment">#FUNCTION REAL E_VZNO50 Access calculated energy of arrester
+#IF $#DIM(NT)==3 || $#DIM(NF)==3
+#OUTPUT REAL Curr 3 {-$CBR:NBR(1)} {-$CBR:NBR(2)} {-$CBR:NBR(3)}
+#OUTPUT REAL Energy 3 {E_VZNO50($SS,$NBR(1))} {E_VZNO50($SS,$NBR(2))} {E_VZNO50($SS,$NBR(3))}
+#ELSEIF $#DIM(NT)==2 || $#DIM(NF)==2
+#OUTPUT REAL Curr 2 {-$CBR:NBR(1)} {-$CBR:NBR(2)}
+#OUTPUT REAL Energy 2 {E_VZNO50($SS,$NBR(1))} {E_VZNO50($SS,$NBR(2))}
+#ELSEIF $#DIM(NT)==1 &amp;&amp; $#DIM(NF)==1
+#OUTPUT REAL Curr   {-$CBR:NBR}
+#OUTPUT REAL Energy {E_VZNO50($SS,$NBR)}
+#ENDIF
+!</segment>
+        <segment name="Checks" id="2056565167" classid="CoreSegment">ERROR Dimesion Exceed - Maximum 3 phase : $#DIM(NT)&lt;4 &amp;&amp; $#DIM(NF)&lt;4</segment>
+        <segment classid="CoreSegment" id="760758798" name="FlyBy">Arrester</segment>
+      </script>
+      <graphics size="4">
+        <paramlist>
+          <param name="show_border" value="0" />
+          <param name="show_grid" value="0" />
+          <param name="size" value="0" />
+          <param name="orient" value="1" />
+          <param name="lock_style" value="3" />
+          <param name="lock_cx" value="0" />
+          <param name="lock_cy" value="0" />
+        </paramlist>
+        <Gfx classid="Graphics.Rectangle" id="885185831" x="-6" y="-27" w="12" h="18">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NT" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Rectangle" id="810472375" x="-6" y="-27" w="12" h="18">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NF" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="#ffffffff" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Port id="413475215" classid="Port" x="0" y="-36">
+          <paramlist>
+            <param name="name" value="NF" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="3" />
+            <param name="datatype" value="0" />
+            <param name="electype" value="2" />
+            <param name="dim" value="0" />
+          </paramlist>
+        </Port>
+        <Port id="1926711565" classid="Port" x="0" y="0">
+          <paramlist>
+            <param name="name" value="NT" />
+            <param name="internal" value="false" />
+            <param name="cond" value="true" />
+            <param name="mode" value="3" />
+            <param name="datatype" value="0" />
+            <param name="electype" value="2" />
+            <param name="dim" value="0" />
+          </paramlist>
+        </Port>
+        <Gfx classid="Graphics.Line" id="1837406343" x="-9" y="-13">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="483974337" x="-4" y="-13">
+          <vertex x="0" y="0" />
+          <vertex x="8" y="-10" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1284111638" x="4" y="-23">
+          <vertex x="0" y="0" />
+          <vertex x="5" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="320750582" x="0" y="-2">
+          <vertex x="0" y="0" />
+          <vertex x="3" y="-3" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="899566816" x="-3" y="-5">
+          <vertex x="0" y="0" />
+          <vertex x="3" y="3" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1941354575" x="0" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NF" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Rectangle" id="1867452950" x="-6" y="-27" w="12" h="18">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NF" />
+            <param name="fill_style" value="0" />
+            <param name="fill_fg" value="Black" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="657576224" x="0" y="-9">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NT" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2035796275" x="0" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NT" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="503463346" x="0" y="-9">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NF" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="466851041" x="0" y="-36">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NF" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="304516885" x="0" y="-9">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="9" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="7" />
+            <param name="port" value="NT" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+      </graphics>
+    </Definition>
+    

@@ -1,0 +1,84 @@
+INDEPENDENT FINAL SOURCE REVIEW -- 2026-11-12
+
+Scope
+Read-only review of the revision against docs/superpowers/plans/
+2026-11-12-video-audit-narration.md. No source files changed, no rendering,
+speech synthesis, native simulation, or raw-source hash verification performed.
+This report is the only authored review artifact.
+
+Assessment
+No new Critical, Important, or Minor source defects were found in the reviewed
+changes. The revised source is suitable for final rendered-media inspection.
+The requested narrated delivery is NOT complete: audio generation is blocked,
+and no audible performance or final audiovisual synchronization is certified.
+
+Strengths and checked evidence
+1. scenes.py:8-20 and 153-165 derive recovery captions from recorded switching
+   states. Gate removal is distinguished from SCR extinction; the reclosure
+   command is distinguished from actual all-pole closure. The final settled
+   caption is specific to the validated 2.5-second recorded endpoint.
+2. scenes.py:71-73,93-98 use the physical fault closure at 0.50001 s as the delay
+   origin: detection 0.37 ms and first conduction 0.48 ms. Caption replacement
+   removes the Text-to-MathTex morph. Compared before/frame_06_042.80s.png with
+   after_transfer/contact_sheet.jpg: the new delay expressions are stable and
+   legible in the supplied fresh-render frames.
+3. visuals.py:35-40 constrains headings to a safe width; visuals.py:105-109
+   removes duplicate zero labels. scenes.py:117-120 aligns RMS headings with
+   their numeric columns. scenes.py:171-190 explicitly identifies the five
+   simulated points and retuning of C at each L.
+4. Checked displayed native-array bounds directly from measurements.npz:
+   B I1A/ICA/IVA/VCA in 0.499-0.516 s, A/B IFA in 0.49-0.62 s, C IVA/VCA/RMS1
+   in 0.49-2.5 s all fit their plotted ranges. Recovery inset RMS1 peaks at
+   0.24949 kA within 0-0.3 kA. The extinction inset has only negligible negative
+   numerical residue (-2.25e-7 kA) and peaks at 0.74929 kA within 0-1 kA.
+5. Script claims match metadata: 79.9590 to 49.9135 kA symmetrical RMS, a
+   37.5762 percent reduction (displayed/spoken 37.58 percent). The reactor
+   remains in series, and the bypass removes capacitor compensation.
+6. Reviewed visuals.py:22-33,58-59 with terminal_geometry.json. The supplied
+   geometry evidence covers the vertical source and both asymmetric SCR
+   orientations; the largest recorded endpoint error is 1.32e-8 scene units.
+7. narration/script.json:9-23 contains 15 nonoverlapping windows within the
+   unchanged chapter bounds 0/14/32/58/80/110/128 seconds. Event windows are
+   compatible with the scene timing: delay labels at video 40.0 and 42.5 s,
+   gate withdrawal around 91 s, last extinction around 95 s, readiness around
+   97 s, reclosure at 100 s, and settling through 108 s. Actual spoken-word
+   placement still requires real generated audio and listening.
+8. generate_narration.py:30-34,97-145 bounds each audio cue, rejects excessive
+   speedup, preserves full words by placement rather than clipping, creates
+   optional subtitles, retains chapters, and records hashes. The wrapper
+   complete_narration.ps1 fails on installation, generation, or validation
+   errors. validate_narration.py explicitly rejects missing audio evidence.
+
+Independent verification
+Command: py -3.11 -B -m unittest discover -s tests -v
+Working directory: video/SCCL_TPSC_Narrated_20261112
+Result: 15 tests passed; exit code 0.
+
+Command: py -3.11 -B validate_narration.py
+Result: exit code 1, expected blocker:
+BLOCKED: narration has not been generated. No narrated video can be certified.
+
+Delivery blocker (not a newly identified source defect)
+evidence/narration_attempt.json records failed SAPI synthesis. There is no
+narration/narration_manifest.json. American male speech, expressive delivery,
+loudness, audio/video synchronization, and the narrated MP4 cannot be claimed.
+The planned SRT and script are preparation artifacts, not generated narration.
+
+Declined to judge / remaining completion gates
+- Voice quality, actual male American accent, naturalness, and word-level event
+  timing: no usable generated audio exists. Requires successful synthesis and
+  listening; source inspection cannot replace these checks.
+- Final six-scene media, every corrected full-resolution frame, whole-video
+  decode, and final archive: render/package work was still in progress during
+  this source review. The executor must inspect and validate the resulting
+  artifact before delivery. Only supplied fresh FaultTransfer frames were
+  visually reviewed here.
+- A new electrical simulation and manufacturer device-rating adequacy: outside
+  this authorized video revision; no new simulation or rating validation was
+  performed or inferred from a fresh video render.
+
+Recommendation
+Finish the fresh silent-master visual/media QA and label it accurately. Keep
+the narrated result explicitly blocked until synthesis and the audiovisual
+validator succeed, followed by a listening pass. No source fix pass is
+requested by this review.

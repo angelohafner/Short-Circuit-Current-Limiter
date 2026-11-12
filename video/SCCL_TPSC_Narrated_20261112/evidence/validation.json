@@ -1,0 +1,257 @@
+{
+  "passed": 47,
+  "total": 47,
+  "checks": [
+    {
+      "name": "A native step and continuity",
+      "pass": true,
+      "detail": 150001
+    },
+    {
+      "name": "AA network KCL",
+      "pass": true,
+      "detail": 5.945749448343918e-11
+    },
+    {
+      "name": "AB network KCL",
+      "pass": true,
+      "detail": 5.945599568235593e-11
+    },
+    {
+      "name": "AC network KCL",
+      "pass": true,
+      "detail": 5.945688386077563e-11
+    },
+    {
+      "name": "B native step and continuity",
+      "pass": true,
+      "detail": 150001
+    },
+    {
+      "name": "BA network KCL",
+      "pass": true,
+      "detail": 5.17049736359354e-11
+    },
+    {
+      "name": "BB network KCL",
+      "pass": true,
+      "detail": 5.16978682085778e-11
+    },
+    {
+      "name": "BC network KCL",
+      "pass": true,
+      "detail": 1.978596730900506e-10
+    },
+    {
+      "name": "BA internal KCL",
+      "pass": true,
+      "detail": 3.863651638912983e-06
+    },
+    {
+      "name": "BB internal KCL",
+      "pass": true,
+      "detail": 3.4066311961024052e-06
+    },
+    {
+      "name": "BC internal KCL",
+      "pass": true,
+      "detail": 4.150163710339758e-06
+    },
+    {
+      "name": "B no protective firing before fault",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B conduction decoded from device timestamps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C native step and continuity",
+      "pass": true,
+      "detail": 250001
+    },
+    {
+      "name": "CA network KCL",
+      "pass": true,
+      "detail": 5.1743831441797283e-11
+    },
+    {
+      "name": "CB network KCL",
+      "pass": true,
+      "detail": 5.1740389750420945e-11
+    },
+    {
+      "name": "CC network KCL",
+      "pass": true,
+      "detail": 1.980468566920024e-10
+    },
+    {
+      "name": "CA internal KCL",
+      "pass": true,
+      "detail": 3.863651638912983e-06
+    },
+    {
+      "name": "CB internal KCL",
+      "pass": true,
+      "detail": 3.4066311961024052e-06
+    },
+    {
+      "name": "CC internal KCL",
+      "pass": true,
+      "detail": 4.150163710339758e-06
+    },
+    {
+      "name": "C no protective firing before fault",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C conduction decoded from device timestamps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AI1 displayed RMS matches native fit",
+      "pass": true,
+      "detail": 39.975858326913404
+    },
+    {
+      "name": "AI2 displayed RMS matches native fit",
+      "pass": true,
+      "detail": 39.984747157527465
+    },
+    {
+      "name": "AIF displayed RMS matches native fit",
+      "pass": true,
+      "detail": 79.9590286084
+    },
+    {
+      "name": "BI1 displayed RMS matches native fit",
+      "pass": true,
+      "detail": 9.927221006709946
+    },
+    {
+      "name": "BI2 displayed RMS matches native fit",
+      "pass": true,
+      "detail": 39.991003960095235
+    },
+    {
+      "name": "BIF displayed RMS matches native fit",
+      "pass": true,
+      "detail": 49.91348063132299
+    },
+    {
+      "name": "Gate-off does not extinguish SCRs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Fault uses recorded closure after initialization",
+      "pass": true,
+      "detail": 0.50001
+    },
+    {
+      "name": "Detection delay from physical closure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Conduction delay from physical closure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All SCRs off before reclosure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Feeder opens before gate withdrawal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Fault removed before reclosure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All feeder poles closed after reclosure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No SCR retrigger on reclosure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Recovery settled at 2.5 s",
+      "pass": true,
+      "detail": 0.038343758912196546
+    },
+    {
+      "name": "Native extended run licensed and fresh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Protected original pscad/SCCL_A_Without.pscx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Protected original pscad/SCCL_B_With.pscx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Protected original pscad/SCCL_C_Recovery.pscx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1920 x 1080",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "30 fps",
+      "pass": true,
+      "detail": "30/1"
+    },
+    {
+      "name": "128 seconds",
+      "pass": true,
+      "detail": "128.000000"
+    },
+    {
+      "name": "H.264 portable video",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Full video decode",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "source_status": {
+    "A": "ALL RAW INF/OUT HASHES VERIFIED",
+    "B": "ALL RAW INF/OUT HASHES VERIFIED",
+    "C": "ALL RAW INF/OUT HASHES VERIFIED",
+    "L10": "ALL RAW INF/OUT HASHES VERIFIED",
+    "L12": "ALL RAW INF/OUT HASHES VERIFIED",
+    "L20": "ALL RAW INF/OUT HASHES VERIFIED",
+    "L25": "ALL RAW INF/OUT HASHES VERIFIED",
+    "fixed10": "ALL RAW INF/OUT HASHES VERIFIED",
+    "fixed25": "ALL RAW INF/OUT HASHES VERIFIED"
+  },
+  "compact_sha256": {
+    "measurements.npz": "fcb3a5c6f4b1c90f86bcd380c6234378a303804f470d0859d2aa2b288652c0b5",
+    "metadata.json": "fb8454d72d2cec7c6d0e005864c51dcc78b4e3e54aacfe8baabbd8272d329372"
+  },
+  "video_sha256": "8d5ed9d28f9d6cb81d0e9eef798ec064c4f919ed8cda3c68802d7c7f5b31d0e2"
+}

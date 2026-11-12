@@ -1,0 +1,19 @@
+Independent revision review: no new Critical, Important or Minor defects found.
+Reviewer independently ran all 15 tests, checked curve limits against compact
+measurements, compared event/RMS values, inspected transfer frames, and reviewed
+the narration pipeline and its explicit failure status. No fix pass requested.
+
+Parent's final media review: inspected all 19 full-film contact-sheet samples,
+the four focused transfer samples, and relevant full-resolution recovery and
+sizing frames. Caption transitions are stable; native state and caption agree;
+the retuned-C condition is visible. Full decode and numeric/media validation
+passed 47/47. Audio remains ungenerated; validate_narration.py correctly refuses
+to certify it. No listening review or audio timing validation is claimed.
+
+Post-review release gate finding: strict picture-frame counting exposed two
+missing hold frames (FaultTransfer 779/780 and Recovery 899/900) that container
+duration masked. Root cause: fractional Manim animation/hold quantization.
+Added exact_scene_frames() to normalize at most two hold frames before assembly.
+The 11-to-12-frame FFmpeg regression failed before the fix and passes afterward.
+The complete suite now has 16 tests. The final picture must contain 3840 frames;
+finalize_audit.py enforces this before publication and packaging.

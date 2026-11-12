@@ -1,0 +1,210 @@
+AUDITORIA CONCEITUAL DE ENGENHARIA — SCCL / TPSC
+Data: 12/11/2026
+
+OBJETO E PARECER
+
+Vídeo: ../SCCL_TPSC_Narrated_20261112/output/SCCL_TPSC_Narrated_EN.mp4
+SHA-256: eb8bbdbb5d1a06234caac7db80aaeccd972a7dbd6196bc8aacb49d5eb3a5a7a1
+Duração: 128 s; 1920 x 1080; 30 fps; seis capítulos.
+
+O princípio de funcionamento, a topologia e os resultados centrais conferem.
+Foram encontrados dois ajustes recomendados antes da publicação: uma
+identificação incorreta da grandeza RMS e um desalinhamento entre a fala
+e a abertura mostrada. Há ainda uma qualificação didática recomendada na
+descrição do transitório de religamento. Não foi encontrado erro que invalide
+a redução de 37,58% da corrente RMS simétrica no caso simulado.
+
+Esta auditoria não alterou o vídeo, a narração, os dados ou os modelos.
+
+1. ACHADOS CONFIRMADOS
+
+A1 — P2 / moderado: cabeçalho atribui à fase A uma curva RMS trifásica.
+Trecho do vídeo: 01:20–01:50.
+
+A cena de recuperação anuncia “Phase A traces | all-phase switching states”.
+As curvas i_v e v_C são da fase A, mas a curva I_1,rms e sua ampliação usam
+RMS1, que combina as três fases:
+
+RMS1[k] = sqrt{ (1/N) sum[j=k-N+1..k]
+                   (i_1A[j]^2 + i_1B[j]^2 + i_1C[j]^2)/3 }, N = 1667.
+
+A janela tem 16,67 ms. Esse RMS inclui a componente contínua e outros
+componentes presentes no sinal. Não é o RMS exclusivo da fase A nem o
+RMS fundamental simétrico obtido por ajuste fasorial na comparação anterior.
+
+Recalculando diretamente os sinais:
+  Tempo elétrico   RMS1 agregado   RMS da fase A
+  0,51000 s        11,177591 kA    14,140290 kA
+  0,64000 s         0,570056 kA     0,865775 kA
+
+Portanto, não é apenas diferença de nomenclatura sem efeito quantitativo.
+A reconstrução do RMS agregado coincide com o canal nativo com erro absoluto
+máximo inferior a 1e-8 kA.
+
+Correção recomendada: manter as curvas e explicitar “Phase-A voltage/current;
+three-phase sliding RMS”, identificando RMS1 como RMS agregado de um ciclo,
+incluindo DC. Outra opção seria calcular e mostrar somente o RMS da fase A,
+mas isso mudaria o sinal apresentado e não é necessário para corrigir o rótulo.
+
+Evidências:
+  ../SCCL_TPSC_Narrated_20261112/scenes.py:130, 143, 147
+  ../../scripts/build_project.py:44–55
+  ../SCCL_TPSC_Narrated_20261112/pscad/SCCL_C_Extended.pscx
+  frame_084.00s.png; audit_metrics.json/recovery_RMS_definition
+
+A2 — P2 / moderado: a fala de abertura antecede a abertura na animação.
+Trecho do vídeo: aproximadamente 01:21–01:28.
+
+O segmento 10_clear diz “The feeder opens to clear the fault. Now watch the
+thyristors during recovery.” Seu áudio inteiro ocupa 81,048–86,952 s.
+Nesse intervalo, o alimentador ainda aparece fechado. A sequência nativa,
+mapeada para os tempos de animação, é:
+
+Evento                      Tempo elétrico   Tempo aproximado no vídeo
+Comando de abertura         0,58334 s         87,538 s
+Primeiro polo aberto (B)    0,58439 s         87,611 s
+Polo A aberto               0,58698 s         87,793 s
+Último polo aberto (C)      0,58994 s         88,000 s
+
+O frame em 87,000 s ainda mostra “Feeder closed” ativo; em 88,000 s o
+alimentador está aberto. O áudio cabe na janela planejada, mas a própria
+janela não acompanha o evento físico mostrado. Não é falha do modelo
+elétrico: é uma inconsistência de sincronismo didático.
+
+Correção recomendada: alinhar a afirmação de abertura aos 87,6–88,0 s ou
+reescrever a fala como antecipação explícita, por exemplo:
+“Next, watch the feeder breaker open and the thyristors recover.”
+Qualquer nova gravação deve ter sua duração e seu sincronismo verificados.
+
+Evidências:
+  ../SCCL_TPSC_Narrated_20261112/narration/script.json:18
+  ../SCCL_TPSC_Narrated_20261112/narration/narration_manifest.json
+  ../SCCL_TPSC_Narrated_20261112/scenes.py:161–165
+  frame_087.00s.png; frame_088.00s.png
+  audit_metrics.json/recovery_events e clearing_narration
+
+2. QUALIFICAÇÃO DIDÁTICA RECOMENDADA
+
+A3 — P3 / baixo: “small damped transient” carece de referência.
+Trecho: 01:40,9–01:49,1.
+
+Após religamento, RMS1 atinge 0,249481 kA; a média em regime final é
+0,164523 kA. O pico fica 51,64% acima do regime normal. O transitório é
+pequeno frente aos aproximadamente 10 kA de contribuição de falta da fonte 1,
+mas não desprezível em termos relativos à corrente normal.
+
+Não é uma afirmação inequivocamente falsa: a palavra “small” depende da
+referência. Recomenda-se “a damped transient” ou “a transient that is small
+compared with the fault current”.
+
+Evidências:
+  ../SCCL_TPSC_Narrated_20261112/narration/script.json:21
+  frame_103.00s.png; audit_metrics.json/reclosing_transient
+
+3. PONTOS CONCEITUAIS E NUMÉRICOS CONFIRMADOS
+
+- O reator principal permanece em série durante toda a sequência. O bypass
+  retira a compensação capacitiva; não insere o reator somente após a falta.
+- A fonte 2 chega ao barramento downstream por sua própria impedância,
+  sem passar pelo limitador da fonte 1. A carga e a falta estão depois do
+  disjuntor do alimentador. O esquema unifilar é coerente com o modelo.
+- Os SCRs são antiparalelos, com R_b e L_b comuns no ramo de bypass. L_b é
+  diferente do reator principal L. Não foi identificado controle TCSC por
+  ângulo de disparo sendo indevidamente tratado como este bypass protetivo.
+- Em 60 Hz, L = 15,9 mH fornece X_L = 5,994159 ohm; C = 442,5 microfarads
+  fornece |X_C| = 5,994536 ohm. A compensação aproximada indicada é correta.
+- A corrente RMS fundamental simétrica, recalculada na janela elétrica
+  0,95 <= t < 1,05 s, resulta em:
+
+  Grandeza       Sem limitador      Com limitador
+  Fonte 1        39,975858 kA         9,927221 kA
+  Fonte 2        39,984747 kA        39,991004 kA
+  Falta total    79,959029 kA        49,913481 kA
+
+  Redução total: 37,576179%, arredondada corretamente para 37,58%.
+  Os picos instantâneos são 203,557828 e 128,534637 kA, respectivamente;
+  não são os 79,96 e 49,91 kA usados no percentual RMS. A distinção é
+  explicitada corretamente na cena de comparação.
+- Detecção em 0,37 ms e primeira condução em 0,48 ms: corretas quando
+  referidas ao fechamento físico da falta em 0,50001 s, não ao comando em
+  0,50000 s. São resultados deste modelo e desta configuração.
+- Retirar gate não desliga instantaneamente o SCR. Os gates são retirados
+  em 0,65606 s; a última extinção ocorre em aproximadamente 0,81891 s.
+  A animação distingue corretamente “gates off” de “SCRs off”.
+- Recovery sobe em 0,83760 s; o religamento é comandado em 1,20000 s e
+  o fechamento físico ocorre em 1,20001 s. A falta foi removida antes.
+- O gráfico de dimensionamento usa cinco casos simulados com C retunado
+  para cada L; a relação C = 1/[(2*pi*f)^2*L] está correta. A redução da
+  contribuição da fonte 1 com o aumento de L está coerente.
+- O balanço de correntes I1 + I2 = IF + ILOAD fecha nos casos A, B e C
+  com erro absoluto máximo inferior a 2e-10 kA nos dados compactos.
+- Os limites dos eixos verificados comportam os valores das curvas; não
+  foi encontrado corte de pico nas janelas examinadas.
+
+4. SIMPLIFICAÇÕES E LIMITES — NÃO CLASSIFICADOS COMO ERROS DO CASO
+
+O zero de corrente é necessário para a extinção representada. Recuperar
+bloqueio também envolve o tempo mínimo de extinção e a tensão reaplicada.
+O modelo PSCAD inclui TEXT = 100 microsegundos. A frase “needs its own
+current zero” não afirma que essa seja a única condição, e a cena ainda
+mostra espera por recuperação; por isso não foi apontada como erro.
+
+O sinal Recovery do controlador usa limiar de corrente de válvula de 1 A
+e temporização de 20 ms. Ele não mede diretamente o estado físico TON/TOFF
+de todos os SCRs. No caso auditado, a permissão aparece cerca de 18,69 ms
+depois da última extinção: não houve religamento prematuro. Essa verificação
+não demonstra robustez do intertravamento para qualquer parametrização.
+
+O controle também exige falta removida, intertravamento de energia liberado
+e tempo programado de religamento. A narração resume esses detalhes; a
+sequência e os indicadores são compatíveis com o caso de alimentador saudável.
+
+“Size the reactor” demonstra escolha de indutância para limitar corrente.
+O filme não constitui dimensionamento térmico, mecânico, de isolamento ou de
+capacidade dos semicondutores, nem validação de TRV ou de equipamento real.
+
+5. MÉTODO E RASTREABILIDADE
+
+- Inspeção do MP4 final: painel com 32 frames em 0, 4, ..., 124 s e frames
+  adicionais em momentos relevantes, incluindo abertura, extinção e religamento.
+  Foram extraídos 17 frames adicionais em resolução completa; os achados
+  visuais foram confirmados nas imagens indicadas acima. Não se declara
+  inspeção visual de cada um dos 3840 frames.
+- Conferência dos 15 textos da narração e de seus intervalos efetivamente
+  registrados; verificação do hash do MP4 contra o manifesto da narração.
+  Não foi realizada uma transcrição independente da voz nem revisão auditiva
+  subjetiva; a auditoria verbal se apoia no roteiro de síntese e no manifesto.
+- Recálculo independente de grandezas a partir de measurements.npz;
+  hashes do conjunto compacto e metadados conferidos contra sua proveniência.
+- Revisão independente adicional da topologia, modelos PSCAD, controlador,
+  cálculos RMS, casos de indutância e afirmações do roteiro.
+- Decodificação integral de vídeo e áudio: sem erros.
+- Não foi executada nova simulação PSCAD. Os resultados são os já registrados.
+- Os arquivos preexistentes de mídia/modelo/roteiro permaneceram intactos.
+
+Os 46 testes anteriores de narração verificavam integridade, nível sonoro e
+encaixe nas janelas definidas. Eles não provavam que cada janela coincidisse
+com o evento elétrico, nem validavam a semântica dos rótulos de engenharia.
+Esta auditoria acrescenta essas verificações.
+
+Reprodução dos cálculos desta auditoria, a partir da raiz do estudo:
+  py -3.11 video/engineering_audit_20261112/audit_metrics.py
+
+Evidências produzidas:
+  audit_metrics.py / audit_metrics.json
+  film_contact_4s.jpg
+  frame_*.png
+
+REFERÊNCIA PRIMÁRIA CONSULTADA
+
+PSCAD — Thyristor, documentação oficial do modelo. Condições de disparo,
+extinção no zero de corrente, recuperação e possibilidade de redisparo antes
+do tempo mínimo de extinção:
+https://www.pscad.com/webhelp/Master_Library_Models/HVDC_and_FACTS/PE_Switch/Thyristor.htm
+
+RECOMENDAÇÃO DE PUBLICAÇÃO
+
+Corrigir A1 e A2 antes de publicar e, preferencialmente, qualificar A3.
+Os achados não exigem alterar o princípio do circuito ou os resultados
+79,96 kA -> 49,91 kA / 37,58%. As mudanças propostas concentram-se na
+identificação das curvas e na precisão/sincronização da explicação.

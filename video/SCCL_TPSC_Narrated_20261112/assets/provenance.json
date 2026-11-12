@@ -1,0 +1,6 @@
+{
+  "library": "Schemdraw",
+  "version": "0.23",
+  "wheel_sha256": "b6af33cf175fb7692ed3f71b5d2702c400e009ae26efe76c6fa4f85d34e0fac5",
+  "terminal_checks": "All start=(0,0), end=(2,0); SVG symbols contain no labels."
+}

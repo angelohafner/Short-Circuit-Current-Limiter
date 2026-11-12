@@ -1,0 +1,14 @@
+{
+  "draw_sccl_diagram.py": "843cefe3604629bbafb1407c5ec8463810ca03830c79c390e0941089e781ef23",
+  "verify_diagram.py": "602b803abf5cbbdbe6c06f81c1b0665a47ada567503df769378633f8d9d629bd",
+  "diagram_inputs.json": "bdec5e250ac19eae5ee495ed77a729df535a36db69cd07935cb9ed78533fd9b5",
+  "requirements.txt": "6007f1bc3ea4b37f3b6d8fc23d43cb82dadcff3bd370bdb99fef3c91c384d511",
+  "README.txt": "d69415569c8f9297b42a0d2a728a5c942c4c1af9b9e103040911a03fa90c4ad7",
+  "dependencies/provenance.json": "8349637da3ed636ca9e6153ffade2b4b5fdbb55eff148e5e4b872612558afc4e",
+  "dependencies/schemdraw-0.23-py3-none-any.whl": "b6af33cf175fb7692ed3f71b5d2702c400e009ae26efe76c6fa4f85d34e0fac5",
+  "output/SCCL_TPSC_Didactic_Diagram.pdf": "c9378334161b8fefd70776cedc58807d73dd37503193c9f27622283a9e33795b",
+  "output/SCCL_TPSC_Didactic_Diagram.png": "2d87b54542f18f0836177f76c21a55d1b46f0d414e9f4db9fb5c47fe04ee21a5",
+  "output/SCCL_TPSC_Didactic_Diagram.svg": "d08f2cd6fb5358cd59fb2caf038eb873e1c3758385a25cd27efb5843e33dfc5f",
+  "output/figure_manifest.json": "a3d0b7ccaf7024a75b4da31eb37e6e1746ee27d0f5853153ec756aec0debe0ca",
+  "output/verification.json": "012c81b9a4bab48254a7b0186900249a093213ca44c633ecad870de1d030ef2a"
+}

@@ -1,0 +1,35 @@
+{
+  "reviewed_utc": "2026-11-12T19:35:27.521243+00:00",
+  "method": "Assistant visual inspection of final-MP4 full-resolution frames and all-scene contact sheet",
+  "video_sha256": "880e88ef9b4045c5ba949cdc28f899b63d69b2066a1aed94be37721380230495",
+  "passed": true,
+  "observations": [
+    "Opening frame shows numbered normal-operation circuit directly",
+    "Compact two-source circuit is displayed above the measured current comparison",
+    "Both source impedances and reference connections are visible; Source 2 joins downstream of SCCL",
+    "Load omission is explicitly identified",
+    "Network diagram, curves, units and numerical results remain legible",
+    "Chapters are numbered 01 through 05",
+    "Three-phase RMS including DC remains explicit",
+    "Feeder open is displayed at 80 seconds, within the verified word opens interval"
+  ],
+  "scope": "Sampled rendered frames, provider word-boundary timing and full media decoding; no new PSCAD simulation or claim of manual frame-by-frame playback",
+  "inspected_frames": [
+    {
+      "path": "evidence/final_frames/frame_000.00s.png",
+      "sha256": "ccabb7eecfd699afd6d239f3f69909448378c436d8ed0f5df347e8324993da46"
+    },
+    {
+      "path": "evidence/final_frames/frame_064.00s.png",
+      "sha256": "69713ef4f5b5119cac85df0033fe784d50dddbb55e14a534e89c3c9e89c8e38e"
+    },
+    {
+      "path": "evidence/final_frames/frame_080.00s.png",
+      "sha256": "532e62bd1fc340f20b86da96b67ff318247f6a7a3149f7ec3a2bb4c5d4743146"
+    },
+    {
+      "path": "evidence/frames_SCCL_TPSC_final/contact_sheet.jpg",
+      "sha256": "006fc9bec956e7a24a3b67430efe4ebfea5fd93a4a8633650954965c4e1a21e1"
+    }
+  ]
+}

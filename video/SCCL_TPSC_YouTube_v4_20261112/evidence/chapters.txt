@@ -1,0 +1,22 @@
+;FFMETADATA1
+title=TPSC Short-Circuit Current Limiter
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=18000
+title=Current limiter: normal operation
+[CHAPTER]
+TIMEBASE=1/1000
+START=18000
+END=44000
+title=Fault response and thyristor bypass
+[CHAPTER]
+TIMEBASE=1/1000
+START=44000
+END=72000
+title=Two-source network and fault-current comparison
+[CHAPTER]
+TIMEBASE=1/1000
+START=72000
+END=102000
+title=Fault clearing, recovery and reclosure

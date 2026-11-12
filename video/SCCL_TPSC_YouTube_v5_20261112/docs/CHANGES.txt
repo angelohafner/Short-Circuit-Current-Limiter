@@ -1,0 +1,20 @@
+SCCL / TPSC - YouTube version 5 - 2026-11-12
+
+All three visible bypass-current labels now use i_{bypass,A} and the caption
+"Phase-A bypass current": the fault-transfer trace, the main recovery trace,
+and the natural-extinction detail. The labels have sufficient space for the
+longer subscript; chart placement and caption layout are visually checked.
+
+The native recorded channel remains IVA so that the existing PSCAD measurements
+and provenance remain traceable. This is a presentation-label change, not a change
+to which current is plotted. The original electrical data and models are retained.
+
+FaultTransfer and Recovery are rendered again. NormalOperation and FaultComparison
+are reused unchanged. All fourteen source English speech clips and their timing
+are retained; none mentions the former symbol. The final narration, captions and
+video are assembled and checked together. No new speech synthesis is needed.
+
+Duration remains 102 seconds with chapter starts at 0, 18, 44 and 72 seconds.
+The final restored-state hold is still 98-102 seconds. All engineering corrections
+and physical-event alignment are preserved. No new PSCAD run is performed. V4 is
+preserved in its original folder.

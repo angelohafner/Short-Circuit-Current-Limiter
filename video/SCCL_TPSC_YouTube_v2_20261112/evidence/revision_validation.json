@@ -1,0 +1,423 @@
+{
+  "verified_utc": "2026-11-12T19:08:42.599483+00:00",
+  "passed": 77,
+  "total": 77,
+  "checks": [
+    {
+      "name": "Narration validation passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Data and media validation passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Narrated output is the validated file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: scenes.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: visuals.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/script.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_en.srt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/SCCL_TPSC_Narrated_EN.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/SCCL_TPSC_final.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/metadata.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/measurements.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data/measurements.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data/metadata.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data_access.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: visuals.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_A_Without.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_B_With.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_C_Extended.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: NetworkOverview",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: NormalOperation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: FaultTransfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: FaultComparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: Sizing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recovery rendered with changes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 10_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 13_reclose",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 14_reactor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 14_reactor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 14_reactor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 15_tuning",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 15_tuning",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 15_tuning",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 explicit RMS definition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 misleading old header removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 phase-A voltage/current heading",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 RMS labels identify aggregate phases",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 narration includes DC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 word opens spans all pole openings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 word midpoint lies during physical opening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 no tempo adjustment to event-anchored cue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A3 unqualified small removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A3 synthesized words omit small",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All six chapter durations retained",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "word_opens_video_s": [
+    87.539541,
+    88.046624
+  ],
+  "pole_opening_electrical_s": {
+    "A": 0.58698,
+    "B": 0.58439,
+    "C": 0.58994
+  },
+  "pole_opening_video_s": {
+    "A": 87.79267560536321,
+    "B": 87.61126676005603,
+    "C": 88.0
+  },
+  "fresh_scenes": [
+    "Recovery"
+  ],
+  "reused_scenes": [
+    "NetworkOverview",
+    "NormalOperation",
+    "FaultTransfer",
+    "FaultComparison",
+    "Sizing"
+  ],
+  "resynthesized_segments": [
+    "10_clear",
+    "13_reclose"
+  ],
+  "video_sha256": "d5a9fe8285fcd2cb8fac7309151b0c5c728c4324c1614e007e3befa9e611ce13",
+  "new_electrical_simulation": false,
+  "timing_method": "Provider word boundaries mapped through measured clip placement; verified against native breaker states and scene timing."
+}

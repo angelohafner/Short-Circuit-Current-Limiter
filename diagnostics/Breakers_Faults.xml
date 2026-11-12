@@ -1,0 +1,1022 @@
+<Definition classid="UserCmpDefn" name="Breakers_Faults" url="" view="false" instances="0" date="0" crc="6515084" id="1039936349" group="(null)">
+      <paramlist>
+        <param name="Description" value="Breakers and Faults" />
+      </paramlist>
+      <form />
+      <svg viewBox="-200 -200 200 200">
+        <rect x="-126" y="-36" width="233" height="52" stroke="Silver" stroke-dasharray="none" stroke-width="0.2" fill-style="Solid" fill-fg="Silver" fill-bg="" />
+        <line x1="64" y1="-27" x2="64" y2="9" stroke="White" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="62" y1="-29" x2="62" y2="11" stroke="Gray" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="100" y1="9" x2="100" y2="-27" stroke="White" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="102" y1="11" x2="102" y2="-29" stroke="Gray" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="64" y1="9" x2="100" y2="9" stroke="White" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="62" y1="11" x2="102" y2="11" stroke="Gray" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="100" y1="-27" x2="64" y2="-27" stroke="White" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="102" y1="-29" x2="62" y2="-29" stroke="Gray" stroke-dasharray="none" stroke-width="0.6" />
+        <line x1="73" y1="-6" x2="79" y2="-6" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="73" y1="-6" x2="73" y2="-14" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="79" y1="-22" x2="91" y2="-10" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="91" y1="-10" x2="79" y2="2" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="73" y1="-14" x2="79" y2="-14" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="79" y1="-14" x2="79" y2="-22" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="79" y1="2" x2="79" y2="-6" stroke="Black" stroke-dasharray="none" stroke-width="0.4" />
+        <line x1="-121" y1="-3" x2="56" y2="-3" stroke="Black" stroke-dasharray="none" stroke-width="0.2" />
+        <text x="-27" y="-8" stroke="Black" fill="Black" font-size="Small" text-anchor="Middle">More on Breakers &amp; Faults</text>
+      </svg>
+      <script />
+      <schematic zoomlevel="6" scrollx="0" scrolly="0" classid="UserCanvas">
+        <User classid="UserCmp" defn="master:breaker1" id="42007851" x="144" y="486" w="80" h="36" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="126698560">
+            <param name="NAME" value="BRK" />
+            <param name="OPCUR" value="0" />
+            <param name="ENAB" value="0" />
+            <param name="ViewB" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="ROFF" value="1.E6 [ohm]" />
+            <param name="RON" value="0.005 [ohm]" />
+            <param name="PRER" value="0.5 [ohm]" />
+            <param name="TD" value="0.0 [s]" />
+            <param name="TDR" value="0.05 [s]" />
+            <param name="PostIns" value="0" />
+            <param name="TDBO" value="0.005 [s]" />
+            <param name="IBR" value="" />
+            <param name="SBR" value="" />
+            <param name="VBR" value="" />
+            <param name="BOpen" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:breaker3" id="42526340" x="288" y="522" w="80" h="118" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="72525059">
+            <param name="Ctrl" value="0" />
+            <param name="OPCUR" value="0" />
+            <param name="ENAB" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="View" value="0" />
+            <param name="ViewB" value="0" />
+            <param name="DisPQ" value="0" />
+            <param name="NAME" value="BRK" />
+            <param name="NAMEA" value="BRKA" />
+            <param name="NAMEB" value="BRKB" />
+            <param name="NAMEC" value="BRKC" />
+            <param name="ROFF" value="1.0e6 [ohm]" />
+            <param name="RON" value="0.005 [ohm]" />
+            <param name="PRER" value="0.5 [ohm]" />
+            <param name="TDA" value="0.0 [s]" />
+            <param name="TDB" value="0.0 [s]" />
+            <param name="TDC" value="0.0 [s]" />
+            <param name="TDRA" value="0.05 [s]" />
+            <param name="TDRB" value="0.05 [s]" />
+            <param name="TDRC" value="0.05 [s]" />
+            <param name="PostIns" value="0" />
+            <param name="TDBOA" value="0.005 [s]" />
+            <param name="IBRA" value="" />
+            <param name="IBRB" value="" />
+            <param name="IBRC" value="" />
+            <param name="IBR0" value="" />
+            <param name="SBRA" value="" />
+            <param name="SBRB" value="" />
+            <param name="SBRC" value="" />
+            <param name="BP" value="" />
+            <param name="BQ" value="" />
+            <param name="Vbr" value="" />
+            <param name="BOpen1" value="0" />
+            <param name="BOpen2" value="0" />
+            <param name="BOpen3" value="0" />
+            <param name="P" value="0 [MW]" />
+            <param name="Q" value="0 [MVAR]" />
+            <param name="InitStatus" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tbreakn" id="47192740" x="522" y="450" w="78" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="130641473">
+            <param name="NUMS" value="2" />
+            <param name="INIT" value="0" />
+            <param name="TO1" value="1.0 [s]" />
+            <param name="TO2" value="1.05 [s]" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:fault_sw" id="22081476" x="864" y="486" w="25" h="44" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="90714262">
+            <param name="Name" value="Fault" />
+            <param name="OpCur" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="ROn" value="0.01 [ohm]" />
+            <param name="ROff" value="1.0E6 [ohm]" />
+            <param name="Iflt" value="IFlt" />
+            <param name="AG1" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tpflt" id="64515557" x="1008" y="414" w="116" h="120" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5223703">
+            <param name="Ctype" value="0" />
+            <param name="OpCur" value="0" />
+            <param name="Grnd" value="1" />
+            <param name="View" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="RON" value="0.01 [ohm]" />
+            <param name="ROFF" value="1.0E6 [ohm]" />
+            <param name="A" value="1" />
+            <param name="B" value="0" />
+            <param name="C" value="0" />
+            <param name="G" value="1" />
+            <param name="Ifla" value="" />
+            <param name="Iflb" value="" />
+            <param name="Iflc" value="" />
+            <param name="AG1" value="0" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tfaultn" id="43769104" x="1080" y="522" w="79" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="79534367">
+            <param name="TF" value="1.0 [s]" />
+            <param name="DF" value="0.05 [s]" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:ground" id="58377623" x="900" y="522" w="26" h="34" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="28206164" />
+        </User>
+        <User classid="UserCmp" defn="master:breakout" id="55636561" x="396" y="522" w="44" h="80" z="0" orient="4" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="6599472">
+            <param name="Dis" value="0" />
+            <param name="Com" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:datalabel" id="30967009" x="450" y="450" w="26" h="23" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="119097750">
+            <param name="Name" value="BRK" />
+            <param name="animate" value="0" />
+            <param name="display" value="0" />
+            <param name="datatype" value="2" />
+            <param name="index" value="1" />
+            <param name="Unit" value="" />
+            <param name="ivalue1" value="0" />
+            <param name="rvalue1" value="0" />
+            <param name="rvalue2" value="0" />
+            <param name="showani" value="0" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" id="473676331" x="324" y="558" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="167430324" x="324" y="486" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="614272769" x="324" y="522" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="55717029" x="54" y="486" w="64" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="54" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1884774467" x="450" y="450" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Sticky classid="Sticky" x="18" y="144" w="432" h="216" id="468952213">
+          <paramlist>
+            <param name="font" value="1" />
+            <param name="align" value="0" />
+            <param name="style" value="1" />
+            <param name="arrows" value="0" />
+            <param name="fg_color" value="0" />
+            <param name="bg_color" value="15792890" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="opacity" value="25" />
+            <param name="fg_color_adv" value="#FF000000" />
+            <param name="bg_color_adv" value="#FFFAFAF0" />
+            <param name="hl_color_adv" value="#FFFFFF00" />
+            <param name="bdr_color_adv" value="#FFFAFAF0" />
+          </paramlist>Breakers can be controlled by any Integer Signal
+(such as the signal BRK here):
+- 0 is normal closed state
+- 1 is the tripped or open state
+
+Any logic functions (or a manual switch, or a custom
+built relay model...) can be used to control the breaker.
+
+The Timed Breaker Logic component simply opens
+and closes the breaker at user specified times.
+
+When the breaker signal goes from 0 to 1, the breaker    
+will open at the first current zero.
+</Sticky>
+        <Wire classid="WireOrthogonal" name="" id="1037765865" x="54" y="558" w="64" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="54" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:breaker1" id="10267631" x="144" y="558" w="80" h="31" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="126698560">
+            <param name="NAME" value="BRK" />
+            <param name="OPCUR" value="0" />
+            <param name="ENAB" value="0" />
+            <param name="ViewB" value="1" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="ROFF" value="1.E6 [ohm]" />
+            <param name="RON" value="0.005 [ohm]" />
+            <param name="PRER" value="0.1 [ohm]" />
+            <param name="TD" value="0.0 [s]" />
+            <param name="TDR" value="0.05 [s]" />
+            <param name="PostIns" value="0" />
+            <param name="TDBO" value="0.005 [s]" />
+            <param name="IBR" value="" />
+            <param name="SBR" value="" />
+            <param name="VBR" value="" />
+            <param name="BOpen" value="0" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" id="13286982" x="180" y="486" w="82" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="72" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1456185144" x="54" y="522" w="208" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="198" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="352571500" x="180" y="558" w="82" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="72" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1151278851" x="396" y="522" w="82" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="72" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="375959266" x="540" y="522" w="82" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="72" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:breaker3" id="25299820" x="648" y="522" w="80" h="41" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="72525059">
+            <param name="Ctrl" value="0" />
+            <param name="OPCUR" value="0" />
+            <param name="ENAB" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="View" value="1" />
+            <param name="ViewB" value="1" />
+            <param name="DisPQ" value="0" />
+            <param name="NAME" value="BRK" />
+            <param name="NAMEA" value="BRKA" />
+            <param name="NAMEB" value="BRKB" />
+            <param name="NAMEC" value="BRKC" />
+            <param name="ROFF" value="1.0e6 [ohm]" />
+            <param name="RON" value="0.005 [ohm]" />
+            <param name="PRER" value="0.5 [ohm]" />
+            <param name="TDA" value="0.0 [s]" />
+            <param name="TDB" value="0.0 [s]" />
+            <param name="TDC" value="0.0 [s]" />
+            <param name="TDRA" value="0.05 [s]" />
+            <param name="TDRB" value="0.05 [s]" />
+            <param name="TDRC" value="0.05 [s]" />
+            <param name="PostIns" value="0" />
+            <param name="TDBOA" value="0.005 [s]" />
+            <param name="IBRA" value="" />
+            <param name="IBRB" value="" />
+            <param name="IBRC" value="" />
+            <param name="IBR0" value="" />
+            <param name="SBRA" value="" />
+            <param name="SBRB" value="" />
+            <param name="SBRC" value="" />
+            <param name="BP" value="" />
+            <param name="BQ" value="" />
+            <param name="Vbr" value="" />
+            <param name="BOpen1" value="0" />
+            <param name="BOpen2" value="0" />
+            <param name="BOpen3" value="0" />
+            <param name="P" value="0 [MW]" />
+            <param name="Q" value="0 [MVAR]" />
+            <param name="InitStatus" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="26371793" x="558" y="594" w="144" h="38" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="3 phase breaker" />
+            <param name="AL2" value="(Single line diagram view)" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="36019552" x="306" y="594" w="134" h="38" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="3 phase breaker" />
+            <param name="AL2" value="(3 phase diagram view)" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="55740512" x="144" y="594" w="94" h="20" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="1 phase breaker" />
+            <param name="AL2" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:breaker3" id="31902563" x="504" y="522" w="81" h="35" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="72525059">
+            <param name="Ctrl" value="0" />
+            <param name="OPCUR" value="0" />
+            <param name="ENAB" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="View" value="1" />
+            <param name="ViewB" value="0" />
+            <param name="DisPQ" value="0" />
+            <param name="NAME" value="BRK" />
+            <param name="NAMEA" value="BRKA" />
+            <param name="NAMEB" value="BRKB" />
+            <param name="NAMEC" value="BRKC" />
+            <param name="ROFF" value="1.0e6 [ohm]" />
+            <param name="RON" value="0.005 [ohm]" />
+            <param name="PRER" value="0.5 [ohm]" />
+            <param name="TDA" value="0.0 [s]" />
+            <param name="TDB" value="0.0 [s]" />
+            <param name="TDC" value="0.0 [s]" />
+            <param name="TDRA" value="0.05 [s]" />
+            <param name="TDRB" value="0.05 [s]" />
+            <param name="TDRC" value="0.05 [s]" />
+            <param name="PostIns" value="0" />
+            <param name="TDBOA" value="0.005 [s]" />
+            <param name="IBRA" value="" />
+            <param name="IBRB" value="" />
+            <param name="IBRC" value="" />
+            <param name="IBR0" value="" />
+            <param name="SBRA" value="" />
+            <param name="SBRB" value="" />
+            <param name="SBRC" value="" />
+            <param name="BP" value="" />
+            <param name="BQ" value="" />
+            <param name="Vbr" value="" />
+            <param name="BOpen1" value="0" />
+            <param name="BOpen2" value="0" />
+            <param name="BOpen3" value="0" />
+            <param name="P" value="0 [MW]" />
+            <param name="Q" value="0 [MVAR]" />
+            <param name="InitStatus" value="0" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" id="1492429766" x="936" y="450" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:fault_sw" id="18687619" x="900" y="486" w="25" h="44" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="90714262">
+            <param name="Name" value="Fault" />
+            <param name="OpCur" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="ROn" value="0.01 [ohm]" />
+            <param name="ROff" value="1.0E6 [ohm]" />
+            <param name="Iflt" value="IFlt" />
+            <param name="AG1" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:ground" id="33970848" x="864" y="522" w="26" h="34" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="28206164" />
+        </User>
+        <User classid="UserCmp" defn="master:ground" id="37302179" x="936" y="522" w="26" h="34" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="28206164" />
+        </User>
+        <User classid="UserCmp" defn="master:fault_sw" id="175293" x="936" y="486" w="25" h="44" z="0" orient="1" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="90714262">
+            <param name="Name" value="Fault" />
+            <param name="OpCur" value="0" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="ROn" value="0.01 [ohm]" />
+            <param name="ROff" value="1.0E6 [ohm]" />
+            <param name="Iflt" value="IFlt" />
+            <param name="AG1" value="0" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" id="1138568239" x="1008" y="522" w="46" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1069161147" x="936" y="486" w="10" h="154" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-144" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1125204933" x="864" y="486" w="10" h="154" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-144" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="363851920" x="900" y="414" w="82" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="72" y="0" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="2001403374" x="864" y="378" w="118" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="108" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:datalabel" id="1577639" x="1008" y="522" w="32" h="23" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="119097750">
+            <param name="Name" value="Fault" />
+            <param name="animate" value="0" />
+            <param name="display" value="0" />
+            <param name="datatype" value="2" />
+            <param name="index" value="1" />
+            <param name="Unit" value="" />
+            <param name="ivalue1" value="0" />
+            <param name="rvalue1" value="0" />
+            <param name="rvalue2" value="0" />
+            <param name="showani" value="0" />
+          </paramlist>
+        </User>
+        <Sticky classid="Sticky" x="1170" y="162" w="360" h="450" id="1163399708">
+          <paramlist>
+            <param name="font" value="1" />
+            <param name="align" value="0" />
+            <param name="style" value="1" />
+            <param name="arrows" value="0" />
+            <param name="fg_color" value="0" />
+            <param name="bg_color" value="15792890" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="opacity" value="25" />
+            <param name="fg_color_adv" value="#FF000000" />
+            <param name="bg_color_adv" value="#FFFAFAF0" />
+            <param name="hl_color_adv" value="#FFFFFF00" />
+            <param name="bdr_color_adv" value="#FFFAFAF0" />
+          </paramlist>Faults can be controlled by any Integer Signal
+(such as the signal named Fault here):
+- 0 is the normal open state
+- 1 is the faulted or closed state
+
+Any logic functions (or a manual switch, or a custom   
+built model...) can be used to control the fault.
+
+The Timed Fault Logic component simply opens
+and closes the fault at user specified times.
+
+When the fault signal goes from 0 to 1, the fault    
+will open at the first current zero.
+
+The three phase fault component puts a combination   
+of phase to phase and phase to ground faults to allow  
+any combination of faults to be selected, even during  
+multiple runs!
+</Sticky>
+        <User classid="UserCmp" defn="master:breakout" id="14198754" x="900" y="306" w="80" h="44" z="0" orient="7" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="6599472">
+            <param name="Dis" value="0" />
+            <param name="Com" value="0" />
+          </paramlist>
+        </User>
+        <Wire classid="WireOrthogonal" name="" id="699293948" x="900" y="486" w="10" h="154" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-144" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1836309949" x="900" y="306" w="10" h="154" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-144" />
+        </Wire>
+        <Wire classid="WireOrthogonal" name="" id="1151009441" x="900" y="162" w="154" h="10" orient="0" disable="false">
+          <vertex x="0" y="0" />
+          <vertex x="144" y="0" />
+        </Wire>
+        <User classid="UserCmp" defn="master:tpflt" id="60679928" x="1008" y="162" w="68" h="80" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5223703">
+            <param name="Ctype" value="0" />
+            <param name="OpCur" value="0" />
+            <param name="Grnd" value="1" />
+            <param name="View" value="1" />
+            <param name="CLVL" value="0.0 [kA]" />
+            <param name="RON" value="0.01 [ohm]" />
+            <param name="ROFF" value="1.0E6 [ohm]" />
+            <param name="A" value="1" />
+            <param name="B" value="0" />
+            <param name="C" value="0" />
+            <param name="G" value="1" />
+            <param name="Ifla" value="" />
+            <param name="Iflb" value="" />
+            <param name="Iflc" value="" />
+            <param name="AG1" value="0" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tfaultn" id="9248440" x="1116" y="414" w="79" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="79534367">
+            <param name="TF" value="1.0 [s]" />
+            <param name="DF" value="0.05 [s]" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:tfaultn" id="16127101" x="1080" y="198" w="79" h="59" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="79534367">
+            <param name="TF" value="1.0 [s]" />
+            <param name="DF" value="0.05 [s]" />
+            <param name="Name" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="10926182" x="1026" y="252" w="134" h="20" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="Single line diagram view" />
+            <param name="AL2" value="" />
+          </paramlist>
+        </User>
+        <paramlist>
+          <param name="show_grid" value="0" />
+          <param name="show_boader" value="0" />
+          <param name="orient" value="1" />
+          <param name="size" value="0" />
+          <param name="show_signal" value="0" />
+          <param name="show_virtual" value="0" />
+          <param name="show_sequence" value="0" />
+          <param name="auto_sequence" value="1" />
+          <param name="show_border" value="0" />
+          <param name="monitor_bus_voltage" value="0" />
+          <param name="show_terminals" value="0" />
+          <param name="virtual_filter" value="" />
+          <param name="animation_freq" value="500" />
+          <param name="opt_level" value="-1" />
+          <param name="compile_options" value="" />
+          <param name="precomp_options" value="" />
+          <param name="include_options" value="" />
+          <param name="gf_warn_lvl" value="-99" />
+          <param name="if_warn_lvl" value="-99" />
+          <param name="gc_warn_lvl" value="-99" />
+          <param name="gf_warn_trunccode" value="false" />
+          <param name="gf_warn_inter" value="false" />
+          <param name="gf_warn_pedandic" value="false" />
+          <param name="gf_warn_alias" value="false" />
+          <param name="gf_warn_missingamp" value="false" />
+          <param name="gf_warn_temparray" value="false" />
+          <param name="gf_warn_bindtype" value="false" />
+          <param name="gf_warn_truncchar" value="false" />
+          <param name="gf_warn_conversion" value="false" />
+          <param name="gf_warn_intdiv" value="false" />
+          <param name="gf_warn_intrinsics" value="false" />
+          <param name="gf_warn_realq" value="false" />
+          <param name="gf_warn_suspicious" value="false" />
+          <param name="gf_warn_undefloop" value="false" />
+          <param name="gf_warn_underflow" value="false" />
+          <param name="gf_warn_shadow" value="false" />
+          <param name="gf_warn_usenoonly" value="false" />
+          <param name="gf_warn_unusedummy" value="false" />
+          <param name="gf_warn_unuseparam" value="false" />
+          <param name="gf_warn_aligncommon" value="false" />
+          <param name="gf_warn_funcelim" value="false" />
+          <param name="gf_warn_realloclhs" value="false" />
+          <param name="gf_warn_compreal" value="false" />
+          <param name="gf_warn_lifetime" value="false" />
+          <param name="gf_warn_zerotrip" value="false" />
+          <param name="gf_warn_dosubscript" value="false" />
+          <param name="if_warn_align" value="false" />
+          <param name="if_warn_decl" value="false" />
+          <param name="if_warn_extrn" value="false" />
+          <param name="if_warn_gen" value="false" />
+          <param name="if_warn_ignorebounds" value="false" />
+          <param name="if_warn_ignoreloc" value="false" />
+          <param name="if_warn_shape" value="false" />
+          <param name="if_warn_uncalled" value="false" />
+          <param name="if_warn_unused" value="false" />
+          <param name="if_warn_usage" value="false" />
+          <param name="if_warn_inter" value="false" />
+          <param name="if_warn_trunccode" value="false" />
+          <param name="gc_warn_abi" value="false" />
+          <param name="gc_warn_charsub" value="false" />
+          <param name="gc_warn_doublepromo" value="false" />
+          <param name="gc_warn_format" value="false" />
+          <param name="gc_warn_formatnotlit" value="false" />
+          <param name="gc_warn_formatsec" value="false" />
+          <param name="gc_warn_nonnull" value="false" />
+          <param name="gc_warn_initself" value="false" />
+          <param name="gc_warn_implicit" value="false" />
+          <param name="gc_warn_ignorequal" value="false" />
+          <param name="gc_warn_main" value="false" />
+          <param name="gc_warn_missbrace" value="false" />
+          <param name="gc_warn_missincldir" value="false" />
+          <param name="gc_warn_brackets" value="false" />
+          <param name="gc_warn_seqpoint" value="false" />
+          <param name="gc_warn_rettype" value="false" />
+          <param name="gc_warn_switch" value="false" />
+          <param name="gc_warn_switchdef" value="false" />
+          <param name="gc_warn_unused" value="false" />
+          <param name="gc_warn_uninit" value="false" />
+          <param name="gc_warn_arrbnds" value="false" />
+          <param name="gc_warn_boolop" value="false" />
+          <param name="gc_warn_syshead" value="false" />
+          <param name="gc_warn_tramp" value="false" />
+          <param name="gc_warn_floatcomp" value="false" />
+          <param name="gc_warn_latedecl" value="false" />
+          <param name="gc_warn_shadow" value="false" />
+          <param name="gc_warn_ptrarith" value="false" />
+          <param name="gc_warn_typelimits" value="false" />
+          <param name="gc_warn_comment" value="false" />
+          <param name="gc_warn_trigraph" value="false" />
+          <param name="gc_warn_undef" value="false" />
+          <param name="gc_warn_unusedmacro" value="false" />
+          <param name="gc_warn_badfunccast" value="false" />
+          <param name="gc_warn_castqual" value="false" />
+          <param name="gc_warn_castalign" value="false" />
+          <param name="gc_warn_writestr" value="false" />
+          <param name="gc_warn_clobber" value="false" />
+          <param name="gc_warn_conver" value="false" />
+          <param name="gc_warn_nobody" value="false" />
+          <param name="gc_warn_enumcomp" value="false" />
+          <param name="gc_warn_jumpmiss" value="false" />
+          <param name="gc_warn_signcomp" value="false" />
+          <param name="gc_warn_signconv" value="false" />
+          <param name="gc_warn_address" value="false" />
+          <param name="gc_warn_logop" value="false" />
+          <param name="gc_warn_retaggr" value="false" />
+          <param name="gc_warn_strictproto" value="false" />
+          <param name="gc_warn_olddecl" value="false" />
+          <param name="gc_warn_olddefn" value="false" />
+          <param name="gc_warn_missparamtype" value="false" />
+          <param name="gc_warn_missdecl" value="false" />
+          <param name="gc_warn_missfieldinit" value="false" />
+          <param name="gc_warn_overinit" value="false" />
+          <param name="gc_warn_packed" value="false" />
+          <param name="gc_warn_padded" value="false" />
+          <param name="gc_warn_redundecl" value="false" />
+          <param name="gc_warn_nextextern" value="false" />
+          <param name="gc_warn_inline" value="false" />
+          <param name="gc_warn_badpch" value="false" />
+          <param name="gc_warn_longlong" value="false" />
+          <param name="gc_warn_varmacro" value="false" />
+          <param name="gc_warn_vla" value="false" />
+          <param name="gc_warn_disopt" value="false" />
+          <param name="gc_warn_ptrsign" value="false" />
+          <param name="gc_warn_overlenstr" value="false" />
+          <param name="gc_warn_unsuffloat" value="false" />
+          <param name="gc_warn_pedandic" value="false" />
+          <param name="gc_warn_dupldeclspec" value="false" />
+          <param name="gc_warn_formatoverflow" value="false" />
+          <param name="gc_warn_formatsign" value="false" />
+          <param name="gc_warn_formattrunc" value="false" />
+          <param name="gc_warn_nonnullcomp" value="false" />
+          <param name="gc_warn_nullderef" value="false" />
+          <param name="gc_warn_ignoreattr" value="false" />
+          <param name="gc_warn_badident" value="false" />
+          <param name="gc_warn_missattr" value="false" />
+          <param name="gc_warn_multimacro" value="false" />
+          <param name="gc_warn_selfmove" value="false" />
+          <param name="gc_warn_alloc0" value="false" />
+          <param name="gc_warn_boolcomp" value="false" />
+          <param name="gc_warn_dupbr" value="false" />
+          <param name="gc_warn_dupcon" value="false" />
+          <param name="gc_warn_tautcomp" value="false" />
+          <param name="gc_warn_freestack" value="false" />
+          <param name="gc_warn_expanddef" value="false" />
+          <param name="gc_warn_castfunc" value="false" />
+          <param name="gc_warn_dangleelse" value="false" />
+          <param name="gc_warn_datetime" value="false" />
+          <param name="gc_warn_floatconv" value="false" />
+          <param name="gc_warn_sizeptrdiv" value="false" />
+          <param name="gc_warn_sizeptracc" value="false" />
+          <param name="gc_warn_memseteltsize" value="false" />
+          <param name="gc_warn_memsettranargs" value="false" />
+          <param name="gc_warn_logbracket" value="false" />
+          <param name="gc_warn_packedalign" value="false" />
+          <param name="gc_warn_restrict" value="false" />
+          <param name="gc_warn_intbool" value="false" />
+          <param name="gf_ch_lvl" value="-99" />
+          <param name="if_ch_lvl" value="-99" />
+          <param name="gf_ch_arr" value="false" />
+          <param name="gf_ch_bit" value="false" />
+          <param name="gc_ch_bnd" value="false" />
+          <param name="gc_ch_do" value="false" />
+          <param name="gc_ch_mem" value="false" />
+          <param name="gc_ch_ptr" value="false" />
+          <param name="gc_ch_rec" value="false" />
+          <param name="if_ch_args" value="false" />
+          <param name="if_ch_assume" value="false" />
+          <param name="if_ch_bnds" value="false" />
+          <param name="if_ch_frmt" value="false" />
+          <param name="if_ch_opt" value="false" />
+          <param name="if_ch_ptrs" value="false" />
+          <param name="if_ch_shapes" value="false" />
+          <param name="if_ch_stach" value="false" />
+          <param name="if_ch_teams" value="false" />
+          <param name="if_ch_udio" value="false" />
+          <param name="if_ch_uninit" value="false" />
+          <param name="vs_warn_lvl" value="-99" />
+        </paramlist>
+        <User classid="UserCmp" name="master:statistical_breaker" id="985300676" x="648" y="198" w="80" h="59" z="0" orient="0" defn="master:statistical_breaker" link="-1" layer="" q="4" disable="false">
+          <paramlist link="-1" name="" crc="489644">
+            <param name="Name" value="" />
+            <param name="T_min" value="9.0e-3 [s]" />
+            <param name="T_max" value="15.0e-3 [s]" />
+            <param name="N_sigma" value="2" />
+            <param name="seed" value="0" />
+            <param name="seedout" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="1441908146" x="648" y="252" w="182" h="38" z="0" orient="0" link="-1" layer="" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="Statistical distribution of signals" />
+            <param name="AL2" value="for single pole breaker operation" />
+          </paramlist>
+        </User>
+        <grouping />
+        <User classid="UserCmp" id="586250771" name="master:switch" x="126" y="738" w="44" h="14" z="-1" orient="0" defn="master:switch" link="-1" q="4" disable="false">
+          <paramlist name="" link="-1" crc="88278933">
+            <param name="Name" value="" />
+            <param name="status" value="0" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" id="1925703835" name="master:switch" x="126" y="756" w="44" h="14" z="-1" orient="0" defn="master:switch" link="-1" q="4" disable="false">
+          <paramlist name="" link="-1" crc="88278933">
+            <param name="Name" value="" />
+            <param name="status" value="1" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" defn="master:annotation" id="1363880351" x="126" y="774" w="92" h="20" z="0" orient="0" link="-1" q="4" disable="false">
+          <paramlist link="-1" name="" crc="5338603">
+            <param name="AL1" value="Isolation Switch" />
+            <param name="AL2" value="" />
+          </paramlist>
+        </User>
+        <User classid="UserCmp" id="1685625579" name="master:trv" x="900" y="738" w="116" h="124" z="-1" orient="0" defn="master:trv" link="-1" q="4" disable="false">
+          <paramlist name="" link="-1" crc="70527673">
+            <param name="user_standard" value="5" />
+            <param name="user_class" value="1" />
+            <param name="tol" value="0.5 [kV]" />
+            <param name="iec1" value="1" />
+            <param name="iec2" value="1" />
+            <param name="iec3" value="1" />
+            <param name="iec4" value="1" />
+            <param name="ieee1" value="1" />
+            <param name="ieee2" value="1" />
+            <param name="ieee3" value="1" />
+            <param name="ieee4" value="1" />
+            <param name="text_4" value="" />
+            <param name="pt5x" value="0 [us]" />
+            <param name="pt5y" value="0 [kV]" />
+            <param name="pt6x" value="0 [us]" />
+            <param name="pt6y" value="0 [kV]" />
+            <param name="text_4_1" value="" />
+            <param name="pt7x" value="0 [us]" />
+            <param name="pt7y" value="0 [kV]" />
+            <param name="pt8x" value="0 [us]" />
+            <param name="pt8y" value="0 [kV]" />
+            <param name="text_4_2" value="" />
+            <param name="pt9x" value="0 [us]" />
+            <param name="pt9y" value="0 [kV]" />
+            <param name="pt10x" value="0 [us]" />
+            <param name="pt10y" value="0 [kV]" />
+            <param name="text_4_3" value="" />
+            <param name="pt11x" value="0 [us]" />
+            <param name="pt11y" value="0 [kV]" />
+            <param name="pt12x" value="0 [us]" />
+            <param name="pt12y" value="0 [kV]" />
+            <param name="text" value="" />
+            <param name="pt1x" value="0 [us]" />
+            <param name="pt1y" value="0 [kV]" />
+            <param name="text_1" value="" />
+            <param name="pt2x" value="0 [us]" />
+            <param name="pt2y" value="0 [kV]" />
+            <param name="text_2" value="" />
+            <param name="pt3x" value="0 [us]" />
+            <param name="pt3y" value="0 [kV]" />
+            <param name="text_3" value="" />
+            <param name="pt4x" value="0 [us]" />
+            <param name="pt4y" value="0 [kV]" />
+            <param name="num2" value="0" />
+            <param name="num4" value="0" />
+            <param name="flt_loc" value="0" />
+            <param name="vrm" value="33 [kV]" />
+            <param name="tmva" value="100 [MVA]" />
+          </paramlist>
+        </User>
+        <Sticky classid="Sticky" x="1170" y="666" w="360" h="144" id="437127885">
+          <paramlist>
+            <param name="font" value="1" />
+            <param name="align" value="0" />
+            <param name="style" value="1" />
+            <param name="arrows" value="0" />
+            <param name="fg_color" value="0" />
+            <param name="bg_color" value="15792890" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="opacity" value="25" />
+            <param name="fg_color_adv" value="#FF000000" />
+            <param name="bg_color_adv" value="#FFFAFAF0" />
+            <param name="hl_color_adv" value="#FFFFFF00" />
+            <param name="bdr_color_adv" value="#FFFAFAF0" />
+          </paramlist>
+
+
+
+TRV Envelope Generator and Failure Dectection</Sticky>
+      </schematic>
+      <graphics>
+        <paramlist>
+          <param name="lock_style" value="3" />
+          <param name="lock_cx" value="0" />
+          <param name="lock_cy" value="0" />
+        </paramlist>
+        <Gfx classid="Graphics.Rectangle" id="341106141" x="-126" y="-36" w="233" h="52">
+          <paramlist>
+            <param name="color" value="Silver" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="fill_style" value="1" />
+            <param name="fill_fg" value="Silver" />
+            <param name="fill_bg" value="White" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="629709941" x="64" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="36" />
+          <paramlist>
+            <param name="color" value="White" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="374495563" x="62" y="-29">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="40" />
+          <paramlist>
+            <param name="color" value="Gray" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="392315216" x="100" y="9">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-36" />
+          <paramlist>
+            <param name="color" value="White" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2087999510" x="102" y="11">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-40" />
+          <paramlist>
+            <param name="color" value="Gray" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1182691795" x="64" y="9">
+          <vertex x="0" y="0" />
+          <vertex x="36" y="0" />
+          <paramlist>
+            <param name="color" value="White" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="949659257" x="62" y="11">
+          <vertex x="0" y="0" />
+          <vertex x="40" y="0" />
+          <paramlist>
+            <param name="color" value="Gray" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1365228820" x="100" y="-27">
+          <vertex x="0" y="0" />
+          <vertex x="-36" y="0" />
+          <paramlist>
+            <param name="color" value="White" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="621736720" x="102" y="-29">
+          <vertex x="0" y="0" />
+          <vertex x="-40" y="0" />
+          <paramlist>
+            <param name="color" value="Gray" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="2" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1861788980" x="73" y="-6">
+          <vertex x="0" y="0" />
+          <vertex x="6" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="617954993" x="73" y="-6">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-8" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1275676697" x="79" y="-22">
+          <vertex x="0" y="0" />
+          <vertex x="12" y="12" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="2091549659" x="91" y="-10">
+          <vertex x="0" y="0" />
+          <vertex x="-12" y="12" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1390555916" x="73" y="-14">
+          <vertex x="0" y="0" />
+          <vertex x="6" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="1246622661" x="79" y="-14">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-8" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="486239787" x="79" y="2">
+          <vertex x="0" y="0" />
+          <vertex x="0" y="-8" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="1" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Line" id="173971777" x="-121" y="-3">
+          <vertex x="0" y="0" />
+          <vertex x="177" y="0" />
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="dasharray" value="0" />
+            <param name="thickness" value="0" />
+            <param name="port" value="" />
+            <param name="cond" value="true" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+        <Gfx classid="Graphics.Text" id="777535610" x="-27" y="-8">
+          <paramlist>
+            <param name="color" value="Black" />
+            <param name="font_size" value="0" />
+            <param name="anchor" value="1" />
+            <param name="cond" value="true" />
+            <param name="text" value="More on Breakers &amp; Faults" />
+            <param name="full_font" value="Tahoma, 12world" />
+            <param name="angle" value="0" />
+            <param name="lock" value="false" />
+          </paramlist>
+        </Gfx>
+      </graphics>
+    </Definition>
+    

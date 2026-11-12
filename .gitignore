@@ -1,0 +1,48 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Generated simulation output and packaged deliveries
+*.out
+*.npz
+*.zip
+*.inf
+*.infx
+*.bakx
+*.log
+*.dblite
+
+# Compiled artifacts and dependencies
+*.exe
+*.dll
+*.pyd
+*.o
+*.obj
+*.mod
+*.map
+*.whl
+**/dependencies/
+
+# Temporary build and test output
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Repeated portability extracts
+/video/portability checks/
+
+# PSCAD compiler output and machine-specific logs
+*.gf81/
+*.psmx
+*.f
+*.map
+*.bakx
+
+# Reproduced workspace copies
+/portability/**/extracted/

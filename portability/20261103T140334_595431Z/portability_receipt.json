@@ -1,0 +1,41 @@
+{
+  "relocated_directory": "C:\\CODES\\Short Circuit Current Limiter\\SCCL_TPSC_Study\\portability\\20261103T140334_595431Z",
+  "start_utc": "2026-11-03T14:03:44.252258+00:00",
+  "finish_utc": "2026-11-03T14:04:06.988014+00:00",
+  "relative_evidence_directory": "portability/20261103T140334_595431Z",
+  "relative_result_directory": "portability/20261103T140334_595431Z/native_results",
+  "staging_archive_sha256": "71c217c0867b8a43e6bf6078834ee0f5633112eeaf8a3afea2587e3638a8992c",
+  "staging_payload_hashes": {
+    "SCCL_TPSC_Study/pscad/SCCL_A_Without.pscx": "1e2ea2fb07263fc40c0fd940815e7b2aba8788197d5a989760bbf9d4da2920a4",
+    "SCCL_TPSC_Study/pscad/SCCL_B_With.pscx": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+    "SCCL_TPSC_Study/pscad/SCCL_C_Recovery.pscx": "aacca449ce15e3c8082c82e7e7710590285a3dd0354ea8ff1a15ab69561f6c1e",
+    "SCCL_TPSC_Study/pscad/SCCL_TPSC_Study.pswx": "f853e5fda191b68ab6d8a46ba893ab976b4633898c549d3a03292b9d1cd21edd"
+  },
+  "extracted_workspace_reopened": true,
+  "extracted_project_count": 3,
+  "licensed": true,
+  "fresh_outputs": true,
+  "errors": [],
+  "model_sha256": "120a16b4e69ec588eaffa09e8c554d01b97e661d90c203975b3f39518a353685",
+  "source_unchanged": true,
+  "result": {
+    "I1": 9.927221006709946,
+    "I2": 39.991003960095235,
+    "IF": 49.91348063132299
+  },
+  "reference_fault_rms_kA": 49.91348063132299,
+  "output_sha256": {
+    "SCCL_B_With.inf": "20497f724486db37e2d3aa156b522b1109727c262c25b71d70f816628b2cbdd0",
+    "SCCL_B_With_01.out": "1afc44ffb532e60ad085401b34a9bbaed06ed83dbeda371ecf11bd1257141f03",
+    "SCCL_B_With_02.out": "886b8e498adf61e26f8538e6a1097c061a01fff320f25ecee7c79850b437a088",
+    "SCCL_B_With_03.out": "4ca5546e6cbfc1ea295f88b9771d758f74d86c1df08ea01dca3c8cb9f1ce1f6a",
+    "SCCL_B_With_04.out": "043018227a20b89c7d97c9229e838e06d06b5bfb87b93e83c8c732d8a8b82d0a",
+    "SCCL_B_With_05.out": "f27f854c7a562e853d9d30eaf5b410b669635b4c15164227076ec7bf581534c8",
+    "SCCL_B_With_06.out": "b996ff05e85a17d0dc24769757883b3d3d22ac74d6a12eb481a413fa8c8c7467",
+    "SCCL_B_With_07.out": "6baeb9ce1b62a3573a7772ee58a3345db5ad52f7d2211446ff0e26984827ed85",
+    "SCCL_B_With_08.out": "c63e81a2953280676481070cb969b31244d1c3fbe7b4a3a2706ed96ecd5fb0d2",
+    "SCCL_B_With_09.out": "3423cfff6b83a1c57041ab940187d89be27f4bfb090c3be885b4d60ca19f9c13",
+    "SCCL_B_With_10.out": "43ce07e20d907274add1d69b9202898c66ec7677c7311d480ff35a494c8f7af9",
+    "SCCL_B_With_11.out": "11f888e1abac4567aa0fed5bf73c3198eb5f14ed2b8ea4390edf7a2f7980f69f"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "schemdraw_version": "0.23",
+  "matplotlib_version": "3.11.2",
+  "input_sha256": "bdec5e250ac19eae5ee495ed77a729df535a36db69cd07935cb9ed78533fd9b5",
+  "figure_size_inches": [
+    18,
+    17
+  ],
+  "png_dpi": 300,
+  "outputs": {
+    "SCCL_TPSC_Didactic_Diagram.pdf": "0cfe6846a18abe1daf2f38a09c3c1719fa5d15d24c676ccdbb69fad157e34a65",
+    "SCCL_TPSC_Didactic_Diagram.png": "2d87b54542f18f0836177f76c21a55d1b46f0d414e9f4db9fb5c47fe04ee21a5",
+    "SCCL_TPSC_Didactic_Diagram.svg": "71f40ffba643a230135844fe51858169ddf96a45796e53258cf1045428afc91a"
+  },
+  "verified_component_terminal_placements": [
+    {
+      "symbol": "SourceSin",
+      "start": [
+        1.4,
+        4.8
+      ],
+      "end": [
+        1.4,
+        6.3
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        2.4,
+        6.3
+      ],
+      "end": [
+        4.8,
+        6.3
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        4.8,
+        6.3
+      ],
+      "end": [
+        7.2,
+        6.3
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        23.3,
+        6.3
+      ],
+      "end": [
+        25.7,
+        6.3
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        25.7,
+        6.3
+      ],
+      "end": [
+        28.1,
+        6.3
+      ]
+    },
+    {
+      "symbol": "SourceSin",
+      "start": [
+        29.1,
+        4.8
+      ],
+      "end": [
+        29.1,
+        6.3
+      ]
+    },
+    {
+      "symbol": "Breaker",
+      "start": [
+        15.7,
+        5.8
+      ],
+      "end": [
+        15.7,
+        4.2
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        12.0,
+        3.85
+      ],
+      "end": [
+        12.0,
+        2.35
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        12.0,
+        2.35
+      ],
+      "end": [
+        12.0,
+        0.85
+      ]
+    },
+    {
+      "symbol": "Switch",
+      "start": [
+        20.7,
+        3.85
+      ],
+      "end": [
+        20.7,
+        2.35
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        20.7,
+        2.35
+      ],
+      "end": [
+        20.7,
+        0.85
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        1.1,
+        7.4
+      ],
+      "end": [
+        3.5,
+        7.4
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        3.5,
+        7.4
+      ],
+      "end": [
+        6.1,
+        7.4
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        7.8,
+        7.4
+      ],
+      "end": [
+        10.4,
+        7.4
+      ]
+    },
+    {
+      "symbol": "Capacitor",
+      "start": [
+        10.4,
+        7.4
+      ],
+      "end": [
+        13.4,
+        7.4
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        7.8,
+        4.0
+      ],
+      "end": [
+        10.4,
+        4.0
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        10.4,
+        4.0
+      ],
+      "end": [
+        13.0,
+        4.0
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        13.5,
+        5.0
+      ],
+      "end": [
+        18.5,
+        5.0
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        18.5,
+        3.0
+      ],
+      "end": [
+        13.5,
+        3.0
+      ]
+    },
+    {
+      "symbol": "MOV",
+      "start": [
+        11.0,
+        1.2
+      ],
+      "end": [
+        14.0,
+        1.2
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        1,
+        6.0
+      ],
+      "end": [
+        7,
+        6.0
+      ]
+    },
+    {
+      "symbol": "ResistorIEC",
+      "start": [
+        1,
+        3.5
+      ],
+      "end": [
+        4,
+        3.5
+      ]
+    },
+    {
+      "symbol": "Capacitor",
+      "start": [
+        4,
+        3.5
+      ],
+      "end": [
+        7,
+        3.5
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        1,
+        4
+      ],
+      "end": [
+        4,
+        4
+      ]
+    },
+    {
+      "symbol": "Capacitor",
+      "start": [
+        7,
+        5.4
+      ],
+      "end": [
+        10,
+        5.4
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        4.8,
+        2
+      ],
+      "end": [
+        7.8,
+        2
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        8.4,
+        2.8
+      ],
+      "end": [
+        12.6,
+        2.8
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        12.6,
+        1.1
+      ],
+      "end": [
+        8.4,
+        1.1
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        1,
+        4
+      ],
+      "end": [
+        4,
+        4
+      ]
+    },
+    {
+      "symbol": "Capacitor",
+      "start": [
+        7,
+        5.4
+      ],
+      "end": [
+        10,
+        5.4
+      ]
+    },
+    {
+      "symbol": "Inductor2",
+      "start": [
+        4.8,
+        2
+      ],
+      "end": [
+        7.8,
+        2
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        8.4,
+        2.8
+      ],
+      "end": [
+        12.6,
+        2.8
+      ]
+    },
+    {
+      "symbol": "SCR",
+      "start": [
+        12.6,
+        1.1
+      ],
+      "end": [
+        8.4,
+        1.1
+      ]
+    }
+  ]
+}

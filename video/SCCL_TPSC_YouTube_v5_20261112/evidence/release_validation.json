@@ -1,0 +1,54 @@
+{
+  "verified_utc": "2026-11-12T20:18:00.297235+00:00",
+  "video": "output/SCCL_TPSC_Narrated_EN.mp4",
+  "video_sha256": "3db17b560d29ba85d3055bd5a7db24e06c56c6e34be20668ed9237844f5a1ab3",
+  "duration_s": 102,
+  "format": "H.264 / yuv420p / 1920x1080 / 30 fps / AAC English",
+  "faststart": true,
+  "reports": {
+    "validation": {
+      "passed": 47,
+      "total": 47
+    },
+    "narration_validation": {
+      "passed": 45,
+      "total": 45
+    },
+    "revision_validation": {
+      "passed": 198,
+      "total": 198
+    }
+  },
+  "visual_review": "evidence/visual_review.json",
+  "corrections": [
+    "All three visible bypass-current labels use i_{bypass,A}",
+    "All three locations say Phase-A bypass current",
+    "Sizing chapter removed",
+    "Final restored state held for closing English narration",
+    "Opening starts with normal operation",
+    "Compact network integrated into current comparison",
+    "Explicit three-phase RMS including DC",
+    "Opening speech aligned to recorded breaker events",
+    "Unqualified small removed from transient narration"
+  ],
+  "word_opens_video_s": [
+    79.539541,
+    80.046624
+  ],
+  "pole_opening_video_s": {
+    "A": 79.79267560536321,
+    "B": 79.61126676005603,
+    "C": 80.0
+  },
+  "restored_state_hold_s": [
+    98,
+    102
+  ],
+  "conclusion_audio_s": [
+    98.084,
+    101.816
+  ],
+  "closing_word_end_s": 101.05638694852942,
+  "new_electrical_simulation": false,
+  "previous_version_preserved": true
+}

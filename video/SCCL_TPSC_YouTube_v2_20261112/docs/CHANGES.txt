@@ -1,0 +1,30 @@
+SCCL / TPSC — YouTube version 2 — 2026-11-12
+
+This revision implements the three findings in engineering_audit_20261112.
+
+A1: The Recovery scene explicitly identifies phase-A valve current and
+capacitor voltage. Both RMS plot labels use a three-phase superscript, and
+an on-screen note defines the signal as one-cycle RMS across all three phases,
+including DC. Narration also explains the RMS definition. The recorded signal
+and every electrical sample are unchanged.
+
+A2: The opening narration is now tied to the recorded pole-opening events.
+The provider's word timestamps place "opens" over the physical opening
+interval. The following extinction sentence was moved and fitted within its
+new window to avoid overlap. See evidence/revision_validation.json for the
+measured audio placement and the native-event comparison.
+
+A3: "a small damped transient" is replaced by "a damped transient".
+
+The Recovery scene is rendered again at 1920x1080 and 30 fps. The other five
+scene files are reused intact. Two speech segments are synthesized again;
+the other thirteen retain their original source audio. The resulting voice
+track is normalized again and remuxed with optional English subtitles.
+
+All six chapter boundaries and the total duration of 128 seconds are retained.
+The native electrical models and measurements are unchanged. No new PSCAD
+simulation is performed. The earlier version remains in its original folder.
+
+Source review independently confirmed all three conceptual corrections and
+the predicted audio timing. Final release evidence additionally records actual
+media checks and visual review of the rendered result.

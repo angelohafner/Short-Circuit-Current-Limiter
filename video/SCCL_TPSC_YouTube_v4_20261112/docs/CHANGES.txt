@@ -1,0 +1,23 @@
+SCCL / TPSC - YouTube version 4 - 2026-11-12
+
+The sizing and capacitor-tuning chapter is removed. The video now ends with
+normal operation restored and a short English closing sentence. Total duration
+is 102 seconds, retaining four chapter starts at 0, 18, 44 and 72 seconds.
+
+The first three rendered scenes are retained unchanged from V3. Recovery is
+rendered again: the final settling sweep lasts 3 seconds instead of 5, reaching
+the same final measured time, 2.5 seconds. The fully restored state is then held
+from movie time 98 to 102 seconds. Earlier electrical events and their animation
+timing are unchanged, including physical breaker opening and thyristor extinction.
+
+Two English voice clips are synthesized: a shorter description of the damped
+reclosing transient, and "Normal operation and capacitor compensation are
+restored." The conclusion plays entirely during the final restored-state hold.
+The other twelve source speech clips and their placement windows are retained.
+The sizing narration is removed. Subtitles, chapters and YouTube description are
+updated to match the shorter movie.
+
+The three previous engineering corrections remain: explicit three-phase RMS
+including DC, speech aligned with physical breaker opening, and no unqualified
+claim that the reclosing transient is small. Electrical models and measured data
+are unchanged. No new PSCAD simulation is performed. V3 is preserved.

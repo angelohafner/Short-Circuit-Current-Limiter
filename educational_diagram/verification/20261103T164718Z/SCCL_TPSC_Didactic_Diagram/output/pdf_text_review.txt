@@ -1,0 +1,94 @@
+How the TPSC limits short-circuit current
+Series reactor + protected series capacitor | Native PSCAD study, explained through its electrical topology
+
+
+A        Two sources, one faulted feeder                                                                                                                                                                           Single-line representation of the three-phase network
+
+                                                                                                     138 kV line-to-line RMS | 60 Hz | Balanced three-phase network
+                                   Source 1                                      Bus 1                                     i1            Bus 2                            i2                                                       Source 2
+                                                       Rs                Ls                                                                                                                            Ls               Rs
+
+                                                                                                 SCCL
+                                                                                          Expanded in panel B                                      Feeder breaker
+                                                                                                                                                   3-pole
+
+
+                                    IDENTICAL SOURCE EQUIVALENTS
+                                                                                                                            iload                               ifault
+                                     Rs = 0.1325 Ω Ls = 5.272 mH                              R-L load                                                                              Three-phase fault
+                                                                                                75 MW                                                                               Applied by fault switches
+                                     Per phase, unchanged in both cases
+                                                                                     PF = 0.95 lagging
+
+                                       i1(t) + i2(t) = ifault(t) + iload(t)                                                                                                         Rf = 0.005 Ω/phase
+
+
+
+
+B        Inside the SCCL                                                                                                                                                                                        One phase shown; identical circuit in phases A, B and C
+
+
+                       ireactor
+
+                             RL                 L                                 RESR                      C                        icapacitor
+                                                                                                                                                                                                                                         RC SNUBBER DETAIL
+                          0.10 Ω             15.9 mH                            0.002 Ω                  442.5 μF
+                                                                                                                                                                                                                                         Repeated across each SCR
+
+
+            Bus 1                                                                               +        vcapacitor   -                                                                 Bus 2
+                    Main reactor: always in series                                                                                                                                                                             A                                            K
+
+                                                                                                                                         T+
+                                                                                 ivalve                                                                                                                                                                    Gate
+
+
+                                                                                                                                    G−
+                                                                                                                                              G+
+                                                                                                                                                                                                                                         1000 Ω               0.02 μF
+                                                                              Rb = 0.05 Ω         Lb = 0.1 mH
+
+                                                                                                                                                                                                                                       One series R-C branch per SCR.
+                                                                                                                                         T−
+                                                                                                                                                                                                                                   Six snubbers in the three-phase model.
+                                                                                                               MOV
+                                                                                                                                                                                                                                                    Gate command
+
+
+                                                                                                         15 kV reference
+
+    Only the capacitor assembly is bypassed. The main reactor remains in the power-current path.
+
+
+C        Follow the dominant current path                                                                                                                                                              Solid + arrows: dominant current | Dashed: negligible current
+
+
+    NORMAL OPERATION                                                                                                                                 FAULT LIMITATION
+    XL ≈ XC | Low series impedance | ireactor ≈ icapacitor                                                                                           Capacitor bypassed | XL limits current | ireactor ≈ ivalve
+
+                                                               Capacitor                                                                                                                                         Capacitor
+
+
+
+
+                                                                          Both SCRs blocked                                                                                                                             Forward SCR conducting
+                    Main reactor                                                                                                                                    Main reactor
+
+
+
+
+                                             Bypass R-L                                                                                                                                         Bypass R-L
+
+
+                              Current flows mainly through the capacitor; valve current is negligible.                                                                         Positive-current half-cycle shown; the opposite SCR conducts on reversal.
+
+
+Path views omit MOV, snubbers and individual loss resistances for clarity; panel B contains the electrical connections.
+
+
+    MEASURED SYMMETRICAL RMS FAULT CURRENTS
+
+    Total without SCCL: 79.959 kA                                             Total with SCCL: 49.913 kA                                             Source 1 with SCCL: 9.927 kA                                            Source 2 with SCCL: 39.991 kA
+
+                                                                                                                                                                                        Engineering diagram | Per-phase component values | L and C remain independently editable
+

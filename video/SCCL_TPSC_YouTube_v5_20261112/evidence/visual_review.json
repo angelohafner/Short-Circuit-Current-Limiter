@@ -1,0 +1,29 @@
+{
+  "reviewed_utc": "2026-11-12T20:17:59.809215+00:00",
+  "method": "Assistant visual inspection of full-resolution frames from the final narrated MP4, including the exact last frame",
+  "video_sha256": "3db17b560d29ba85d3055bd5a7db24e06c56c6e34be20668ed9237844f5a1ab3",
+  "passed": true,
+  "observations": [
+    "Fault-transfer trace shows i_{bypass,A} and Phase-A bypass current",
+    "Main recovery trace shows i_{bypass,A} and Phase-A bypass current",
+    "Natural-extinction inset shows i_{bypass,A} and Phase-A bypass current",
+    "Longer notation fits the left chart margins without overlapping axis values",
+    "English captions are legible and do not overlap curves or status captions",
+    "Final frame still shows Normal operation restored at electrical time 2.50000 seconds"
+  ],
+  "scope": "Visual checks of the changed labels and final state, supported by full media decoding, preserved-data hashes and unchanged narration timing. No new PSCAD simulation.",
+  "inspected_frames": [
+    {
+      "path": "evidence/final_frames/frame_032.00s.png",
+      "sha256": "9b205dfcbcd9ec12673d1571cfb39c04100eeccf436f4967e3c86bf9d53fec47"
+    },
+    {
+      "path": "evidence/final_frames/frame_080.00s.png",
+      "sha256": "6205b94d173a25556b88a6d64542250efe1ee08a39bd2347e5648133f9724cfa"
+    },
+    {
+      "path": "evidence/final_frames/last_frame.png",
+      "sha256": "1637f4f2e962df920dc236c4b795b09401bde3286d276c68dd46f90a4c378b14"
+    }
+  ]
+}

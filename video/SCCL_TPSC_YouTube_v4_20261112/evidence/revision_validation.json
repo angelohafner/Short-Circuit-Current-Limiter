@@ -1,0 +1,1100 @@
+{
+  "verified_utc": "2026-11-12T19:57:28.200625+00:00",
+  "passed": 211,
+  "total": 211,
+  "checks": [
+    {
+      "name": "Narration validation passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Data and media validation passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Narrated output is the validated file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: assemble_saved_narration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: build_assets.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data_access.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: generate_narration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: package_release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: README.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: regenerate_changed_narration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: render_release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: render_video.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: requirements-lock.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: scenes.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: source_reader.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: validate_narration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: validate_revision.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: validate_video.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: visuals.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: assets/geometry.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: assets/provenance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/metadata.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/provenance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/A.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/B.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/C.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/fixed10.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/fixed25.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/L10.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/L12.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/L20.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: data/receipts/L25.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: docs/CHANGES.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/archive_validation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/chapters.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/concat_final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/narration_validation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/NormalOperation_final_media.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/package_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/previous_version_hashes.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/release_validation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/revision_validation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/SCCL_TPSC_final_media.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/validation.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: evidence/visual_review.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/FaultComparison.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/FaultTransfer.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/FaultTransfer_exact.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/NormalOperation.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/Recovery.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/Recovery_exact.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/Sizing.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/partial_movie_files/NormalOperation/partial_movie_file_list.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/partial_movie_files/NormalOperation/uncached_00000.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/partial_movie_files/NormalOperation/uncached_00001.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/partial_movie_files/NormalOperation/uncached_00002.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/final/videos/scenes/1080p30/partial_movie_files/NormalOperation/uncached_00003.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/FaultComparison.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/partial_movie_file_list.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/uncached_00000.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/uncached_00001.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/uncached_00002.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/uncached_00003.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultComparison/videos/scenes/1080p30/partial_movie_files/FaultComparison/uncached_00004.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/FaultTransfer.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/partial_movie_file_list.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00000.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00001.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00002.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00003.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00004.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00005.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00006.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00007.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00008.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/FaultTransfer/videos/scenes/1080p30/partial_movie_files/FaultTransfer/uncached_00009.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/Recovery.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/partial_movie_file_list.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00000.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00001.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00002.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00003.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00004.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00005.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00006.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00007.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Recovery/videos/scenes/1080p30/partial_movie_files/Recovery/uncached_00008.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/Sizing.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/partial_movie_file_list.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00000.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00001.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00002.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00003.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00004.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00005.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00006.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: media/renders/Sizing/videos/scenes/1080p30/partial_movie_files/Sizing/uncached_00007.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_en.srt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_en.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_planned.srt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/narration_raw.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/script.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/01_network_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/02_series_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/03_compensation_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/04_fault_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/05_delay_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/06_transfer_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/07_compare_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/08_rms_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/09_reduction_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/10_clear_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/11_extinction_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/12_ready_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/13_reclose_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/14_reactor_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: narration/segments/15_tuning_pcm.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/NormalOperation_final.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/SCCL_TPSC_final.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/SCCL_TPSC_Narrated_EN.mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: output/SCCL_TPSC_Narration_EN.wav",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: pscad/SCCL_A_Without.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: pscad/SCCL_B_With.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: pscad/SCCL_C_Extended.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: tests/test_data_access.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: tests/test_initial_display.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: tests/test_narration_timing.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: tests/test_recovery_captions.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: tests/test_scene_frame_count.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: youtube/description_en.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: youtube/tags_en.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous version preserved: youtube/thumbnail_prompt.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data/measurements.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data/metadata.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged electrical input/helper: data_access.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_A_Without.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_B_With.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged native model: SCCL_C_Extended.pscx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: NormalOperation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: FaultTransfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Unchanged source scene: FaultComparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recovery freshly rendered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 02_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 03_compensation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 04_fault",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 05_delay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 06_transfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 01_network",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 07_compare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 08_rms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 09_reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 10_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 10_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 10_clear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 11_extinction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original speech source retained: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original words retained: 12_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 13_reclose",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manifest agrees with current text: 14_conclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reused scene source unchanged: NormalOperation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reused scene source unchanged: FaultTransfer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reused scene source unchanged: FaultComparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 explicit RMS definition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 misleading old header removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 phase-A voltage/current heading",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 RMS labels identify aggregate phases",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A1 narration includes DC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 word opens spans all pole openings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 word midpoint lies during physical opening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A2 no tempo adjustment to event-anchored cue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A3 unqualified small removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "A3 synthesized words omit small",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Approved four-chapter sequence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Standalone network opening removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Sizing scene removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Sizing narration removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Brief network voice appears during comparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Network integrated into comparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Duration is 102 seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four-second final restored-state hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Conclusion entirely within restored-state hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Conclusion confirms restoration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final native feeder poles closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final native fault removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final native SCRs off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final native recovery ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final native gate disabled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Final RMS settled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Closing word preserved before end",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "word_opens_video_s": [
+    79.539541,
+    80.046624
+  ],
+  "pole_opening_electrical_s": {
+    "A": 0.58698,
+    "B": 0.58439,
+    "C": 0.58994
+  },
+  "pole_opening_video_s": {
+    "A": 79.79267560536321,
+    "B": 79.61126676005603,
+    "C": 80.0
+  },
+  "fresh_scenes": [
+    "Recovery"
+  ],
+  "reused_scenes": [
+    "NormalOperation",
+    "FaultTransfer",
+    "FaultComparison"
+  ],
+  "resynthesized_segments": [
+    "13_reclose",
+    "14_conclusion"
+  ],
+  "video_sha256": "5081ca41078138211ae58ab0cb79c47a8c69366edf33a959cbd6a0e69e00e617",
+  "restored_state_hold_s": [
+    98,
+    102
+  ],
+  "conclusion_audio_s": [
+    98.084,
+    101.816
+  ],
+  "closing_word_end_s": 101.05638694852942,
+  "new_electrical_simulation": false,
+  "timing_method": "Provider word boundaries mapped through measured clip placement; verified against native breaker states and scene timing."
+}

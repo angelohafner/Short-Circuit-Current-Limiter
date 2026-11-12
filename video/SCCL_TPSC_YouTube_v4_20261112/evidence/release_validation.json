@@ -1,0 +1,52 @@
+{
+  "verified_utc": "2026-11-12T19:57:52.641138+00:00",
+  "video": "output/SCCL_TPSC_Narrated_EN.mp4",
+  "video_sha256": "5081ca41078138211ae58ab0cb79c47a8c69366edf33a959cbd6a0e69e00e617",
+  "duration_s": 102,
+  "format": "H.264 / yuv420p / 1920x1080 / 30 fps / AAC English",
+  "faststart": true,
+  "reports": {
+    "validation": {
+      "passed": 47,
+      "total": 47
+    },
+    "narration_validation": {
+      "passed": 45,
+      "total": 45
+    },
+    "revision_validation": {
+      "passed": 211,
+      "total": 211
+    }
+  },
+  "visual_review": "evidence/visual_review.json",
+  "corrections": [
+    "Sizing chapter removed",
+    "Final restored state held for closing English narration",
+    "Opening starts with normal operation",
+    "Compact network integrated into current comparison",
+    "Explicit three-phase RMS including DC",
+    "Opening speech aligned to recorded breaker events",
+    "Unqualified small removed from transient narration"
+  ],
+  "word_opens_video_s": [
+    79.539541,
+    80.046624
+  ],
+  "pole_opening_video_s": {
+    "A": 79.79267560536321,
+    "B": 79.61126676005603,
+    "C": 80.0
+  },
+  "restored_state_hold_s": [
+    98,
+    102
+  ],
+  "conclusion_audio_s": [
+    98.084,
+    101.816
+  ],
+  "closing_word_end_s": 101.05638694852942,
+  "new_electrical_simulation": false,
+  "previous_version_preserved": true
+}

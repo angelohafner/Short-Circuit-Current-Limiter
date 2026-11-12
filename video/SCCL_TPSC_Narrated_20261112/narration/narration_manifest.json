@@ -1,0 +1,226 @@
+{
+  "status": "GENERATED",
+  "engine": {
+    "engine": "edge-tts",
+    "version": "7.3.1",
+    "voice": "en-US-GuyNeural",
+    "rate": "+6%",
+    "pitch": "+4Hz"
+  },
+  "duration_s": 128.0,
+  "segments": [
+    {
+      "id": "01_network",
+      "text": "A short circuit can unleash enormous current! Here, two sources feed the fault. The limiter acts on source one. Source two connects directly to the downstream bus.",
+      "window": [
+        0.5,
+        13.5
+      ],
+      "start_s": 1.1559999999999997,
+      "end_s": 12.844000000000001,
+      "duration_s": 11.688,
+      "tempo_factor": 1.0,
+      "source_sha256": "89718d0c7eb6214eac32ecfb15dfcd98b95cdf296ff3bab3cd1a44a3cedee84a"
+    },
+    {
+      "id": "02_series",
+      "text": "In normal operation, the reactor stays in series. The capacitor compensates its reactance.",
+      "window": [
+        14.5,
+        20.8
+      ],
+      "start_s": 14.584125,
+      "end_s": 20.715875,
+      "duration_s": 6.13175,
+      "tempo_factor": 1.1121951219512194,
+      "source_sha256": "b9df14d6c0bb8affe89dd9bc440f57b4399a12847ed07b5dcef4837a671e17d7"
+    },
+    {
+      "id": "03_compensation",
+      "text": "The thyristors are blocked. At sixty hertz, inductive and capacitive reactances nearly cancel, keeping the normal voltage drop small.",
+      "window": [
+        21.0,
+        31.5
+      ],
+      "start_s": 21.798000000000002,
+      "end_s": 30.702,
+      "duration_s": 8.904,
+      "tempo_factor": 1.0,
+      "source_sha256": "9c3565aca5ef716f06bf90169e4699d94d71b946681930aa21c0197b4b2c4256"
+    },
+    {
+      "id": "04_fault",
+      "text": "Now watch the fault response in slow motion. Initially, current flows through the capacitor.",
+      "window": [
+        32.5,
+        39.4
+      ],
+      "start_s": 32.769999999999996,
+      "end_s": 39.129999999999995,
+      "duration_s": 6.36,
+      "tempo_factor": 1.0,
+      "source_sha256": "7c3b8bd7aab476851dae01ea47bf81a1dcb93e6fc8acb87c19902e5dd11d680b"
+    },
+    {
+      "id": "05_delay",
+      "text": "Detection takes zero point three seven milliseconds. Conduction starts after zero point four eight milliseconds.",
+      "window": [
+        39.8,
+        47.0
+      ],
+      "start_s": 39.88485416666666,
+      "end_s": 46.91514583333333,
+      "duration_s": 7.030291666666667,
+      "tempo_factor": 1.051914893617021,
+      "source_sha256": "f9fc3b34e00ee040787e8b811c9ff90a06f06450bbfa21f0ccaeea4bf82f5a9d"
+    },
+    {
+      "id": "06_transfer",
+      "text": "Current transfers to the bypass, removing capacitor compensation. The reactor now limits source one's fault contribution. It was connected all along!",
+      "window": [
+        47.3,
+        57.5
+      ],
+      "start_s": 47.3851875,
+      "end_s": 57.4148125,
+      "duration_s": 10.029625,
+      "tempo_factor": 1.041194029850746,
+      "source_sha256": "63fce39a7ba8ce13e6970ae21c704b78d003de0fc959ce0ab52ebf148c31947e"
+    },
+    {
+      "id": "07_compare",
+      "text": "Compare phase A on identical axes: red without the limiter, blue with it.",
+      "window": [
+        58.5,
+        65.3
+      ],
+      "start_s": 59.452,
+      "end_s": 64.348,
+      "duration_s": 4.896,
+      "tempo_factor": 1.0,
+      "source_sha256": "50d0f45a11c402a9232a01863296bbf0fca22ce3f638edabf8b6758a6d1dbaf8"
+    },
+    {
+      "id": "08_rms",
+      "text": "Symmetrical R M S fault current falls from seventy-nine point nine six to forty-nine point nine one kiloamps.",
+      "window": [
+        65.6,
+        75.0
+      ],
+      "start_s": 67.096,
+      "end_s": 73.504,
+      "duration_s": 6.408,
+      "tempo_factor": 1.0,
+      "source_sha256": "8a10c580d21b4469e17ed82900c902ff4d7a4904230b9a3c5de950a0cbedc96c"
+    },
+    {
+      "id": "09_reduction",
+      "text": "That's a thirty-seven point five eight percent reduction!",
+      "window": [
+        75.2,
+        79.6
+      ],
+      "start_s": 75.612,
+      "end_s": 79.18799999999999,
+      "duration_s": 3.576,
+      "tempo_factor": 1.0,
+      "source_sha256": "ec6da8c2556d1640a96c3bae6fc0f8ade48fe5143a23dcf71d1fce3a64265165"
+    },
+    {
+      "id": "10_clear",
+      "text": "The feeder opens to clear the fault. Now watch the thyristors during recovery.",
+      "window": [
+        80.5,
+        87.5
+      ],
+      "start_s": 81.048,
+      "end_s": 86.952,
+      "duration_s": 5.904,
+      "tempo_factor": 1.0,
+      "source_sha256": "409ff1a48b8b97dba1cfac626f4d63937726688d8665edbd697e7a02aa9d4371"
+    },
+    {
+      "id": "11_extinction",
+      "text": "Removing gate pulses does not force turn-off. Each thyristor needs its own current zero.",
+      "window": [
+        88.0,
+        95.0
+      ],
+      "start_s": 88.26,
+      "end_s": 94.74000000000001,
+      "duration_s": 6.48,
+      "tempo_factor": 1.0,
+      "source_sha256": "68af3926978d45a27037a21784491739a3139e24ef1c4950f978bab44eb1a7ae"
+    },
+    {
+      "id": "12_ready",
+      "text": "Once conduction ends and recovery is ready, the feeder can reclose.",
+      "window": [
+        95.4,
+        100.1
+      ],
+      "start_s": 95.554,
+      "end_s": 99.946,
+      "duration_s": 4.392,
+      "tempo_factor": 1.0,
+      "source_sha256": "91182259424dd02a20a55a69d68d1907812338338e10947012f24af14394edfd"
+    },
+    {
+      "id": "13_reclose",
+      "text": "The magnified trace reveals a small damped transient. Current returns to normal, with capacitor compensation restored.",
+      "window": [
+        100.5,
+        109.5
+      ],
+      "start_s": 100.932,
+      "end_s": 109.068,
+      "duration_s": 8.136,
+      "tempo_factor": 1.0,
+      "source_sha256": "94a903245c84de1ec37419d6620ba9168172cfb10becfa2d42f170645c45aab9"
+    },
+    {
+      "id": "14_reactor",
+      "text": "A larger reactor reduces fault current. These five points come from simulated cases.",
+      "window": [
+        110.5,
+        117.6
+      ],
+      "start_s": 110.822,
+      "end_s": 117.278,
+      "duration_s": 6.456,
+      "tempo_factor": 1.0,
+      "source_sha256": "e57151189a44aa42ff2b1d5eacb73e988db5889e7f6e3ddc5a7997b6023a68a2"
+    },
+    {
+      "id": "15_tuning",
+      "text": "The capacitor is retuned at every point for sixty hertz. Reactor size sets limitation; capacitor tuning sets normal compensation.",
+      "window": [
+        118.0,
+        127.5
+      ],
+      "start_s": 118.25,
+      "end_s": 127.25,
+      "duration_s": 9.0,
+      "tempo_factor": 1.0,
+      "source_sha256": "51e2c5f68e464434f747f7bc25cc300ed501befe2901881923f4fb3786e7c8aa"
+    }
+  ],
+  "audio_sha256": "06bb9377410d10dbbc9c3d023ead407e7a2af6070b83691b5562a51573e0c2e6",
+  "video_sha256": "eb8bbdbb5d1a06234caac7db80aaeccd972a7dbd6196bc8aacb49d5eb3a5a7a1",
+  "silent_sha256": "8d5ed9d28f9d6cb81d0e9eef798ec064c4f919ed8cda3c68802d7c7f5b31d0e2",
+  "script_sha256": "91912d83d047a7100e94f86c7abd5ec38628f3e9f53e85876679a0378c776458",
+  "srt_sha256": "ca3047e38e17b818d694d30b6e314142d9e6b9e68922118748ca27893930f53b",
+  "normalization_input": {
+    "input_i": "-19.76",
+    "input_tp": "-0.81",
+    "input_lra": "4.90",
+    "input_thresh": "-30.11",
+    "output_i": "-16.44",
+    "output_tp": "-1.50",
+    "output_lra": "5.40",
+    "output_thresh": "-26.77",
+    "normalization_type": "dynamic",
+    "target_offset": "0.44"
+  },
+  "subtitle_timing": "Measured audio segment bounds; optional segment captions."
+}

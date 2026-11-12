@@ -1,0 +1,37 @@
+{
+  "reviewed_utc": "2026-11-12T19:11:58.703976+00:00",
+  "method": "Assistant visual inspection of extracted full-resolution frames and all-scene contact sheet",
+  "video_sha256": "d5a9fe8285fcd2cb8fac7309151b0c5c728c4324c1614e007e3befa9e611ce13",
+  "passed": true,
+  "observations": [
+    "Phase-A voltage/current header is legible",
+    "Main and inset RMS labels explicitly identify three phases",
+    "One-cycle RMS note including DC is visible without overlap",
+    "Feeder-open status appears at 88.00 s",
+    "Thyristor-off and reclosure states remain legible",
+    "Sampled chapter layouts retain equations, units and unclipped text"
+  ],
+  "scope": "Frame inspection, provider word-boundary alignment, and full media decoding; not a new PSCAD simulation or a claim of frame-by-frame manual playback",
+  "inspected_frames": [
+    {
+      "path": "evidence/final_frames/frame_084.00s.png",
+      "sha256": "1eab3bf02e6a003aa53a3ed50aa992dd65397bd2519e140f1faa5f6a11fbe686"
+    },
+    {
+      "path": "evidence/final_frames/frame_088.00s.png",
+      "sha256": "b9129ab9417d888e129ddb9870dc09795004774742581c103d7c802b424d8170"
+    },
+    {
+      "path": "evidence/final_frames/frame_095.00s.png",
+      "sha256": "b1cd24752a356c91f9dc4145ffcd31d0dea429e6ee9593a8d6a39914fcd5f059"
+    },
+    {
+      "path": "evidence/final_frames/frame_103.00s.png",
+      "sha256": "28ba6387c2809e53a9543f0680a7f6214a5ffab54916607c678000b6b0d92dc7"
+    },
+    {
+      "path": "evidence/frames_SCCL_TPSC_final/contact_sheet.jpg",
+      "sha256": "ce55d4b5db4ec514491d39e9d5ee257f6e69bcc0c4b4d8afe998121b70db7f88"
+    }
+  ]
+}

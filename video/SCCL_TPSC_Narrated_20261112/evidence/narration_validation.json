@@ -1,0 +1,248 @@
+{
+  "passed": 46,
+  "total": 46,
+  "checks": [
+    {
+      "name": "Hash video_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hash audio_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hash silent_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hash script_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hash srt_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Full HD 30 fps H264",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AAC English audio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "128-second movie",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six chapters retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Optional English captions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Full audiovisual decode",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mono 48 kHz PCM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "128-second audio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fifteen actual voice segments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "01_network timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "01_network audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "02_series timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "02_series audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "03_compensation timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "03_compensation audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "04_fault timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "04_fault audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "05_delay timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "05_delay audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_transfer timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_transfer audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_compare timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_compare audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "08_rms timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "08_rms audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "09_reduction timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "09_reduction audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "10_clear timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "10_clear audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "11_extinction timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "11_extinction audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "12_ready timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "12_ready audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "13_reclose timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "13_reclose audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "14_reactor timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "14_reactor audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "15_tuning timing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "15_tuning audible signal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Integrated loudness",
+      "passed": true,
+      "detail": "-16.14"
+    },
+    {
+      "name": "No digital clipping",
+      "passed": true,
+      "detail": "-1.45"
+    }
+  ],
+  "loudness": {
+    "input_i": "-16.14",
+    "input_tp": "-1.45",
+    "input_lra": "5.60",
+    "input_thresh": "-26.46",
+    "output_i": "-16.03",
+    "output_tp": "-1.50",
+    "output_lra": "5.50",
+    "output_thresh": "-26.35",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  }
+}

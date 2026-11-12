@@ -1,0 +1,27 @@
+SCCL / TPSC — YouTube version 3 — 2026-11-12
+
+Approved editorial change: start with the internal limiter operation and place
+the network context alongside the measured fault-current comparison.
+
+The 14-second standalone network opening is removed. The five remaining scenes
+are numbered 01 through 05. Normal operation starts at 0:00, fault transfer at
+0:18, comparison at 0:44, recovery at 1:12, and sizing at 1:42.
+
+Comparison lasts 28 seconds and includes a compact two-source network above the
+waveforms. Source impedances are retained. Source 1 traverses the SCCL; Source 2
+joins downstream. A short narration cue explains these paths before the current
+comparison. The drawing is labeled with SCCL and explicitly notes that the load is omitted.
+Source reference connections and source impedances are shown.
+
+The resulting film is 120 seconds long. Three English voice clips are regenerated:
+the opening sentence, the bypass explanation and the relocated network explanation.
+Twelve saved clips are retained and repositioned; clip durations are checked and fitted as needed.
+English subtitles, embedded chapters and YouTube description chapters are updated.
+
+All three engineering-audit corrections from V2 remain: explicit three-phase RMS
+including DC, opening speech tied to the physical breaker events, and the wording
+"a damped transient". Recovery moves eight seconds earlier without changing its
+internal animation timing. Its event-aligned speech receives the same time shift.
+
+Five scenes are rendered at 1920x1080 / 30 fps. Native models and measured data
+remain unchanged. No new PSCAD simulation is performed. V2 is preserved.
